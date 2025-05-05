@@ -1,4 +1,13 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------------
+// Nume proiect:Weather App
+// Fisier: Form1.cs
+// Descriere: TODO
+// Autori:
+// - Andreea : TODO
+// - Matei : Form1_Load, InitializeAsync
+//
+//-----------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,13 +28,22 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            
+        }
+        private async Task InitializeAsync()
+        {
+            LocationInfo location = await new RetryLocationService(
+                           new LoggingLocationService(new LocationServiceFactory().CreateService())).GetLocationFromIpAsync();
+            textBoxCity.Text= location.City;
         }
 
         string APIKey = "70a0b01f4ce43960e5ff1f6891a6dfd3";
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-
+            await InitializeAsync();
+            getWeather();
+            getForecast();
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
@@ -78,7 +96,8 @@ namespace WindowsFormsApp1
 
                 // Exclude ziua de azi, păstrează următoarele 5 zile
                 var groupedByDay = forecastInfo.list
-                    .Where(entry => convertDateTime(entry.dt).Date > today) // doar zile viitoare
+                    // doar zile viitoare
+                    .Where(entry => convertDateTime(entry.dt).Date > today) 
                     .GroupBy(entry => convertDateTime(entry.dt).Date)
                     .Take(5);
 
@@ -90,8 +109,9 @@ namespace WindowsFormsApp1
                     var tempMax = group.Max(x => x.main.temp_max);
                     var icon = group.First().weather[0].icon;
 
-                    ForecastUC forecastUC = new ForecastUC();
-                    forecastUC.labelDate.Text = group.Key.ToString("dddd"); // ziua săptămânii
+                    ForecastUC forecastUC = new ForecastUC(); 
+                    // ziua săptămânii
+                    forecastUC.labelDate.Text = group.Key.ToString("dddd");
                     forecastUC.pictureBoxForecastIcon.ImageLocation = "https://openweathermap.org/img/w/" + icon + ".png";
                     forecastUC.labelTempMin.Text = $"{tempMin:0} °C";
                     forecastUC.labelTempMax.Text = $"{tempMax:0} °C";

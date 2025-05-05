@@ -1,4 +1,11 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------------
+// Nume proiect:Weather App
+// Fisier: WeatherForecast.cs
+// Descriere: TODO
+// Autor: Andreea 
+//
+//-----------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +15,8 @@ namespace WindowsFormsApp1
 {
     public class WeatherForecast
     {
-        public class main //temp
+        //temp
+        public class main 
         {
             public double temp_min { get; set; }
             public double temp_max { get; set; }
@@ -24,7 +32,8 @@ namespace WindowsFormsApp1
 
         public class list
         {
-            public long dt { get; set; } // day time
+            // day time
+            public long dt { get; set; } 
             public main main { get; set; }
             public List<weather> weather { get; set; }
         }

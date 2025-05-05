@@ -1,4 +1,11 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------------
+// Nume proiect:Weather App
+// Fisier: WeatherInfo.cs
+// Descriere: TODO
+// Autor: Andreea 
+//
+//-----------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
