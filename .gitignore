@@ -1,0 +1,48 @@
+# === Fisiere si foldere generate de Visual Studio ===
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# === Build output ===
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+# === Cache si fisiere temporare ===
+*.cache
+*.dbmdl
+*.log
+*.tlog
+
+# === Fisiere generate de designer sau IDE ===
+*.Designer.cs
+*.g.cs
+*.g.i.cs
+
+# === Alte fisiere inutile sau locale ===
+*.pdb
+*.tmp
+*.bak
+*.old
+*.orig
+
+# === Setari locale Visual Studio ===
+*.vcxproj.user
+*.csproj.user
+
+# === Rider/JetBrains (daca se foloseste) ===
+.idea/
+
+# === Configurari locale pentru tool-uri ===
+*.vscode/
+*.ncrunch*
+_ReSharper.*
+*.DotSettings.user
+
+# === Backup-uri sau fisiere sistem ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
