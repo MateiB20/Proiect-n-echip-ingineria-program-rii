@@ -1,7 +1,7 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: RetryLocationService.cs
-// Descriere: Implementare serviciu reincercare prin intermediul sablonului de proiectare Decorator 
+// Descriere: Implementare decorator serviciu reincercare 
 // Autor: Matei 
 //
 //-----------------------------------------------------------------------------
@@ -13,13 +13,13 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-     ///Implementare serviciu reincercare prin intermediul sablonului de proiectare Decorator 
-     ///</summary>
+    /// <summary>
+    /// Implementare decorator serviciu reincercare 
+    /// </summary>
     class RetryLocationService : ILocationService
     {
         #region Private Member Variable
-        ILocationService _inner;
+        private ILocationService _inner;
         #endregion
         #region Public Constuctor
         public RetryLocationService(ILocationService inner)
@@ -28,12 +28,12 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region Public Methods
-        ///<summary>
-        ///Reincercare pentru access la WeatherApp
-        ///</summary>
-        ///<returns>
-        ///obiect al clasei "LocationInfo" sau exceptie in caz de eroare
-        ///</returns>>
+        /// <summary>
+        /// Reincercare pentru access la WeatherApp
+        /// </summary>
+        /// <returns>
+        /// Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+        /// </returns>>
         override public async Task<LocationInfo> GetLocationFromIpAsync()
         {
             LocationInfo location = await _inner.GetLocationFromIpAsync();

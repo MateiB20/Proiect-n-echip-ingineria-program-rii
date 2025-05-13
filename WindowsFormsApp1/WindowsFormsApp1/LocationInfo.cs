@@ -1,7 +1,7 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: LocationInfo.cs
-// Descriere: Aici se vor stoca dupa deserializare o parte din datele luate de la "http://ip-api.com/json/"
+// Descriere: Model de date pentru deserializare raspuns JSON
 // Autor: Matei  
 //
 //-----------------------------------------------------------------------------
@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Aici se vor stoca dupa deserializare o parte din datele luate de la "http://ip-api.com/json/"
-    ///</summary>
+    /// <summary>
+    /// Model de date pentru deserializare raspuns JSON
+    /// </summary>
     class LocationInfo
     {
         #region Private Member Variables
@@ -25,9 +25,6 @@ namespace WindowsFormsApp1
         private double _lon;
         #endregion
         #region Public Properties
-        ///<summary>
-        ///oras
-        ///</summary>
         public string City
         {
             get
@@ -39,10 +36,6 @@ namespace WindowsFormsApp1
                 _city = value;
             }
         }
-
-        ///<summary>
-        ///tara
-        ///</summary>
         public string Country
         {
             get
@@ -54,10 +47,6 @@ namespace WindowsFormsApp1
                 _country = value;
             }
         }
-
-        ///<summary>
-        ///latitudine
-        ///</summary>
         public double Lat
         {
             get
@@ -70,9 +59,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        ///<summary>
-        ///longitudine
-        ///</summary>
         public double Lon
         {
             get

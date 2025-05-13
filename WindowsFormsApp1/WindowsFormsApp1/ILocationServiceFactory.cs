@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Interfata abstracta pentru fabrica de servicii locatie curenta
-    ///</summary>
+    /// <summary>
+    /// Interfata abstracta pentru fabrica de servicii locatie curenta
+    /// </summary>
     abstract class ILocationServiceFactory
     {
         #region Abstract Public Method

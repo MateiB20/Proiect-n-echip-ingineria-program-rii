@@ -1,7 +1,7 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: LocationServiceFactory.cs
-// Descriere: Implementare prin intermediul sablonului de proiectare Metoda Fabrica
+// Descriere: Implementare concreta a fabricii de "LocationService"
 // Autor: Matei  
 //
 //-----------------------------------------------------------------------------
@@ -13,18 +13,18 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Implementare prin intermediul sablonului de proiectare Metoda Fabrica
-    ///</summary>
+    /// <summary>
+    /// Implementare concreta a fabricii de <see cref="LocationService"/>
+    /// </summary>
     class LocationServiceFactory : ILocationServiceFactory
     {
         #region Public Method
-        ///<summary>
-        ///Functie creare serviciu
-        ///</summary>
-        ///<returns>
-        ///un nou obiect <see cref="LocationService"/>
-        ///</returns>>
+        /// <summary>
+        /// Metoda de creare a obiectelor <see cref="ILocationService"/>
+        /// </summary>
+        /// <returns>
+        /// Un nou obiect <see cref="LocationService"/>
+        /// </returns>>
         override public ILocationService CreateService()
         {
             return new LocationService();

@@ -1,7 +1,8 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: ILocationService.cs
-// Descriere: Interfata abstracta pentru servicii locatie curenta
+// Descriere: Interfata abstracta pentru servicii locatie curenta pe baza adresei IP
+// Orice implementare concreta defineste aceasta metoda
 // Autor: Matei 
 //
 //-----------------------------------------------------------------------------
@@ -13,9 +14,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Interfata abstracta pentru servicii locatie curenta
-    ///</summary>
+    /// <summary>
+    /// Interfata abstracta pentru servicii locatie curenta pe baza adresei IP
+    /// <br/>
+    /// Orice implementare concreta defineste aceasta metoda
+    /// </summary>
     abstract class ILocationService
     {
         #region Abstract Public Method
