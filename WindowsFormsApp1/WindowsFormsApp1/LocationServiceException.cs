@@ -1,7 +1,8 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: LocationServiceException.cs
-// Descriere: Clasa de Exceptie pentruLocationService
+// Descriere: Clasa de Exceptie pentru a semnala erori în procesul serviciului
+// de locatiei curenta
 // Autor: Matei
 //
 //-----------------------------------------------------------------------------
@@ -13,15 +14,18 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Clasa de Exceptie pentru <see cref="LocationService"/>
-    ///</summary>
+    /// <summary>
+    /// Clasa de Exceptie pentru a semnala erori în procesul serviciului de locatiei curenta
+    /// </summary>
     public class LocationServiceException : Exception
     {
         #region Private Member Variable
-        DateTime _localNow;
+        private DateTime _localNow;
         #endregion
         #region Public Property
+        /// <summary>
+        /// timpul local la care a avut loc exceptia
+        /// </summary>        
         DateTime LocalNow
         {
             get

@@ -1,7 +1,7 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect:Weather App
 // Fisier: LoggingLocationService.cs
-// Descriere: Implementare serviciu logging prin intermediul sablonului de proiectare Decorator 
+// Descriere: Implementare decorator serviciu logging 
 // Autor: Matei  
 //
 //-----------------------------------------------------------------------------
@@ -13,16 +13,19 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Implementare serviciu logging prin intermediul sablonului de proiectare Decorator 
-    ///</summary>
+    /// <summary>
+    /// Implementare decorator serviciu logging 
+    /// </summary>
     class LoggingLocationService : ILocationService
     {
         #region Private Member Variables
-        string _message;
-        ILocationService _inner;
+        private string _message;
+        private ILocationService _inner;
         #endregion
         #region Public Properties
+        /// <summary>
+        /// Salveaza inregistrari despre locatie si timpul local al accesarii
+        /// </summary>
         public string Message
         {
             get
@@ -42,12 +45,12 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region Public Methods
-        ///<summary>
-        ///logging pentru access la WeatherApp
-        ///</summary>
-        ///<returns>
-        ///obiect al clasei "LocationInfo" sau exceptie in caz de eroare
-        ///</returns>>
+        /// <summary>
+        /// Logging pentru access la WeatherApp
+        /// </summary>
+        /// <returns>
+        /// Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+        /// </returns>>
         override public async Task<LocationInfo> GetLocationFromIpAsync()
         {
             LocationInfo location = await _inner.GetLocationFromIpAsync();

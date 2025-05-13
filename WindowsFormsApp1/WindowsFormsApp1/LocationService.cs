@@ -16,28 +16,26 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    ///<summary>
-    ///Serviciu preluare date locatie curenta
-    ///</summary>
+    /// <summary>
+    /// Serviciu preluare date locatie curenta
+    /// </summary>
     class LocationService : ILocationService
     {
         #region Public Method
-        ///<summary>
-        ///Trimitere cerere HTTP GET la un API public 
-        ///</summary>
-        ///<returns>
-        ///obiect al clasei "LocationInfo" sau exceptie in caz de eroare
-        ///</returns>
+        /// <summary>
+        /// Trimitere cerere HTTP GET la un API public 
+        /// </summary>
+        /// <returns>
+        /// Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+        /// </returns>
         override public async Task<LocationInfo> GetLocationFromIpAsync()
         {
             try
             {
                 HttpClient client = new HttpClient();
-
-                //response string in formatul "cheie":valoare
                 string raspuns = await client.GetStringAsync("http://ip-api.com/json/");
 
-                //CultureInfo.CurrentCulture.TextInfo pentru capitalizare a primei litere din string-ul response (JsonSerializer.Deserialize este case sensitive)
+                // Deserializare raspuns JSON
                 var raspunsFormatat = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(raspuns.ToLower());
                 return JsonConvert.DeserializeObject<LocationInfo>(raspunsFormatat);
             }
