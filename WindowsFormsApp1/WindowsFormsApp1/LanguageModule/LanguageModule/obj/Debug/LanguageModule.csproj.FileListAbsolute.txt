@@ -1,0 +1,17 @@
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\bin\Debug\LanguageModule.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\bin\Debug\LanguageModule.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\bin\Debug\de\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\bin\Debug\fr\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\bin\Debug\ro\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.Dictionary.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.Dictionary.de.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.Dictionary.fr.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.Dictionary.ro.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\de\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\fr\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\ro\LanguageModule.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\LanguageModule\LanguageModule\obj\Debug\LanguageModule.pdb

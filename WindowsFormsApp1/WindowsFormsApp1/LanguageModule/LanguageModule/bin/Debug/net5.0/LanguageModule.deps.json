@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "LanguageModule/1.0.0": {
+        "dependencies": {
+          "ThemeModule": "1.0.0.0"
+        },
+        "runtime": {
+          "LanguageModule.dll": {}
+        },
+        "resources": {
+          "de/LanguageModule.resources.dll": {
+            "locale": "de"
+          },
+          "fr/LanguageModule.resources.dll": {
+            "locale": "fr"
+          },
+          "ro/LanguageModule.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "ThemeModule/1.0.0.0": {
+        "runtime": {
+          "ThemeModule.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LanguageModule/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ThemeModule/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

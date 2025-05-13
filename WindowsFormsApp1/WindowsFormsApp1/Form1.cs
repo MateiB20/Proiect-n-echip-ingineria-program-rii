@@ -17,6 +17,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
+using LanguageModule;
+using ThemeModule;
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form,IThemeObserverService,ILanguageObserverService
@@ -60,8 +62,7 @@ namespace WindowsFormsApp1
             labelPressure.Text = Dictionary.LabelPresiune;
             getWeather();
             getForecast();
-            // labelCondition.Text = Dictionary.LabelConditie;
-            //labelDetails.Text = Dictionary.LabelDetalii;
+           
         }
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
