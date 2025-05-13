@@ -25,6 +25,10 @@ namespace WindowsFormsApp1
     /// </summary>
     public interface IThemeObserverService
     {
+        /// <summary>
+        /// Metodă pentru schimbarea tematicii grafice a aplicației.
+        /// </summary>
+        /// <param name="appTheme"></param>
         public void OnThemeChanged(AppTheme appTheme);
     }
 }

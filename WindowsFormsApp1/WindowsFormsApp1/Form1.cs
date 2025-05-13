@@ -5,7 +5,7 @@
 // Autori:
 // - Andreea : TODO
 // - Matei : Form1_Load, InitializeAsync
-// -Izabela : OnThemeChanged, ApplyThemeToControl
+// -Izabela : OnThemeChanged, ApplyThemeToControl, OnLanguageChanged
 //-----------------------------------------------------------------------------
 using Newtonsoft.Json;
 using System;
@@ -19,16 +19,16 @@ using System.Globalization;
 using System.Threading;
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form,IThemeObserverService,ILanguageObserver
+    public partial class Form1 : Form,IThemeObserverService,ILanguageObserverService
     {
-        private ThemeManagerService themeManager;
-        private LanguageManagerService languageManager;
+        private ThemeManagerService _themeManager;
+        private LanguageManagerService _languageManager;
 
         public Form1()
         {
             InitializeComponent();
-            themeManager = new ThemeManagerService();
-            languageManager = new LanguageManagerService();
+            _themeManager = new ThemeManagerService();
+            _languageManager = new LanguageManagerService();
             this.Load += Form1_Load;
 
         }
@@ -103,9 +103,9 @@ namespace WindowsFormsApp1
             await InitializeAsync();
             getWeather();
             getForecast();
-            themeManager.Register(this);
+            _themeManager.Register(this);
             flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
-            languageManager.Register(this);
+            _languageManager.Register(this);
 
         }
 
@@ -156,15 +156,15 @@ namespace WindowsFormsApp1
 
         private void buttonChangeTheme_Click(object sender, EventArgs e)
         {
-            var newTheme = themeManager.GetCurrentTheme() == AppTheme.Dark ? AppTheme.Light : AppTheme.Dark;
-            themeManager.ChangeTheme(newTheme);
+            var newTheme = _themeManager.GetCurrentTheme() == AppTheme.Dark ? AppTheme.Light : AppTheme.Dark;
+            _themeManager.ChangeTheme(newTheme);
             
         }
 
         private void comboBoxChangeLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedLang = comboBoxChangeLanguage.SelectedItem.ToString();
-            languageManager.ChangeLanguage(selectedLang);
+            _languageManager.ChangeLanguage(selectedLang);
         }
 
         void getForecast()
@@ -196,7 +196,7 @@ namespace WindowsFormsApp1
 
                     ForecastUC forecastUC = new ForecastUC(); 
                     // ziua săptămânii
-                    forecastUC.labelDate.Text = group.Key.ToString("dddd");
+                    forecastUC.labelDate.Text = group.Key.ToString("dddd",Thread.CurrentThread.CurrentUICulture);
                     forecastUC.pictureBoxForecastIcon.ImageLocation = "https://openweathermap.org/img/w/" + icon + ".png";
                     forecastUC.labelTempMin.Text = $"{tempMin:0} °C";
                     forecastUC.labelTempMax.Text = $"{tempMax:0} °C";

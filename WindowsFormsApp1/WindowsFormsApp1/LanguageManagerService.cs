@@ -8,41 +8,41 @@ namespace WindowsFormsApp1
 {
    public  class LanguageManagerService
     {
-        private List<ILanguageObserver> observers;
-        private CultureInfo currentCulture;
+        private List<ILanguageObserverService> _observers;
+        private CultureInfo _currentCulture;
         
         public LanguageManagerService()
         {
         
-            observers = new List<ILanguageObserver>();
-            currentCulture = CultureInfo.CurrentUICulture;
+            _observers = new List<ILanguageObserverService>();
+            _currentCulture = CultureInfo.CurrentUICulture;
         }
-    public void Register(ILanguageObserver observer)
+    public void Register(ILanguageObserverService observer)
         {
-            if(!observers.Contains(observer))
+            if(!_observers.Contains(observer))
             {
-                observers.Add(observer);
+                _observers.Add(observer);
             }
         }
-        public void UnRegister(ILanguageObserver observer)
+        public void UnRegister(ILanguageObserverService observer)
         {
-            if (observers.Contains(observer))
+            if (_observers.Contains(observer))
             {
-                observers.Remove(observer);
+                _observers.Remove(observer);
             }
         }
         public void ChangeLanguage(string langCode)
         {
             var newCulture = new CultureInfo(langCode);
             CultureInfo.CurrentUICulture = newCulture;
-            currentCulture = newCulture;
+            _currentCulture = newCulture;
 
-            foreach(var obs in observers)
+            foreach(var obs in _observers)
             {
                 obs.OnLanguageChanged(newCulture);
             }
         }
-        public CultureInfo GetCurrentCulture() => currentCulture;
+        public CultureInfo GetCurrentCulture() => _currentCulture;
 
     }
 }
