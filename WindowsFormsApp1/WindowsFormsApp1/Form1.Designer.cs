@@ -46,6 +46,7 @@
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonChangeTheme = new System.Windows.Forms.Button();
             this.comboBoxChangeLanguage = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeWeatherProvider = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,18 +56,20 @@
             this.labelCity.BackColor = System.Drawing.Color.Transparent;
             this.labelCity.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCity.ForeColor = System.Drawing.Color.White;
-            this.labelCity.Location = new System.Drawing.Point(84, 39);
+            this.labelCity.Location = new System.Drawing.Point(126, 61);
+            this.labelCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(71, 29);
+            this.labelCity.Size = new System.Drawing.Size(108, 45);
             this.labelCity.TabIndex = 0;
             this.labelCity.Text = "Oras: ";
             // 
             // textBoxCity
             // 
             this.textBoxCity.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCity.Location = new System.Drawing.Point(173, 36);
+            this.textBoxCity.Location = new System.Drawing.Point(260, 56);
+            this.textBoxCity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxCity.Name = "textBoxCity";
-            this.textBoxCity.Size = new System.Drawing.Size(266, 36);
+            this.textBoxCity.Size = new System.Drawing.Size(397, 52);
             this.textBoxCity.TabIndex = 1;
             // 
             // buttonSearch
@@ -75,9 +78,10 @@
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.Color.White;
-            this.buttonSearch.Location = new System.Drawing.Point(445, 34);
+            this.buttonSearch.Location = new System.Drawing.Point(668, 53);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(147, 38);
+            this.buttonSearch.Size = new System.Drawing.Size(220, 59);
             this.buttonSearch.TabIndex = 2;
             this.buttonSearch.Text = "Cauta";
             this.buttonSearch.UseVisualStyleBackColor = false;
@@ -89,9 +93,10 @@
             this.labelCondition.BackColor = System.Drawing.Color.Transparent;
             this.labelCondition.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCondition.ForeColor = System.Drawing.Color.White;
-            this.labelCondition.Location = new System.Drawing.Point(69, 201);
+            this.labelCondition.Location = new System.Drawing.Point(104, 314);
+            this.labelCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCondition.Name = "labelCondition";
-            this.labelCondition.Size = new System.Drawing.Size(114, 29);
+            this.labelCondition.Size = new System.Drawing.Size(176, 45);
             this.labelCondition.TabIndex = 3;
             this.labelCondition.Text = "Conditie:  ";
             // 
@@ -101,9 +106,10 @@
             this.labelDetails.BackColor = System.Drawing.Color.Transparent;
             this.labelDetails.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDetails.ForeColor = System.Drawing.Color.White;
-            this.labelDetails.Location = new System.Drawing.Point(70, 229);
+            this.labelDetails.Location = new System.Drawing.Point(105, 358);
+            this.labelDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDetails.Name = "labelDetails";
-            this.labelDetails.Size = new System.Drawing.Size(100, 29);
+            this.labelDetails.Size = new System.Drawing.Size(154, 45);
             this.labelDetails.TabIndex = 4;
             this.labelDetails.Text = "Detalii:   ";
             // 
@@ -113,9 +119,10 @@
             this.valueSunrise.BackColor = System.Drawing.Color.Transparent;
             this.valueSunrise.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueSunrise.ForeColor = System.Drawing.Color.White;
-            this.valueSunrise.Location = new System.Drawing.Point(278, 279);
+            this.valueSunrise.Location = new System.Drawing.Point(417, 436);
+            this.valueSunrise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueSunrise.Name = "valueSunrise";
-            this.valueSunrise.Size = new System.Drawing.Size(53, 29);
+            this.valueSunrise.Size = new System.Drawing.Size(80, 45);
             this.valueSunrise.TabIndex = 6;
             this.valueSunrise.Text = "N/A";
             // 
@@ -125,9 +132,10 @@
             this.labelSunrise.BackColor = System.Drawing.Color.Transparent;
             this.labelSunrise.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSunrise.ForeColor = System.Drawing.Color.White;
-            this.labelSunrise.Location = new System.Drawing.Point(64, 280);
+            this.labelSunrise.Location = new System.Drawing.Point(96, 438);
+            this.labelSunrise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSunrise.Name = "labelSunrise";
-            this.labelSunrise.Size = new System.Drawing.Size(106, 29);
+            this.labelSunrise.Size = new System.Drawing.Size(161, 45);
             this.labelSunrise.TabIndex = 7;
             this.labelSunrise.Text = "Rasarit:   ";
             // 
@@ -137,9 +145,10 @@
             this.labelSunset.BackColor = System.Drawing.Color.Transparent;
             this.labelSunset.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSunset.ForeColor = System.Drawing.Color.White;
-            this.labelSunset.Location = new System.Drawing.Point(64, 308);
+            this.labelSunset.Location = new System.Drawing.Point(96, 481);
+            this.labelSunset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSunset.Name = "labelSunset";
-            this.labelSunset.Size = new System.Drawing.Size(86, 29);
+            this.labelSunset.Size = new System.Drawing.Size(131, 45);
             this.labelSunset.TabIndex = 9;
             this.labelSunset.Text = "Apus:   ";
             // 
@@ -149,9 +158,10 @@
             this.valueSunset.BackColor = System.Drawing.Color.Transparent;
             this.valueSunset.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueSunset.ForeColor = System.Drawing.Color.White;
-            this.valueSunset.Location = new System.Drawing.Point(278, 308);
+            this.valueSunset.Location = new System.Drawing.Point(417, 481);
+            this.valueSunset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueSunset.Name = "valueSunset";
-            this.valueSunset.Size = new System.Drawing.Size(53, 29);
+            this.valueSunset.Size = new System.Drawing.Size(80, 45);
             this.valueSunset.TabIndex = 8;
             this.valueSunset.Text = "N/A";
             // 
@@ -161,9 +171,10 @@
             this.labelWind.BackColor = System.Drawing.Color.Transparent;
             this.labelWind.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWind.ForeColor = System.Drawing.Color.White;
-            this.labelWind.Location = new System.Drawing.Point(469, 201);
+            this.labelWind.Location = new System.Drawing.Point(704, 314);
+            this.labelWind.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWind.Name = "labelWind";
-            this.labelWind.Size = new System.Drawing.Size(81, 29);
+            this.labelWind.Size = new System.Drawing.Size(125, 45);
             this.labelWind.TabIndex = 11;
             this.labelWind.Text = "Vant:   ";
             // 
@@ -173,9 +184,10 @@
             this.valueWind.BackColor = System.Drawing.Color.Transparent;
             this.valueWind.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueWind.ForeColor = System.Drawing.Color.White;
-            this.valueWind.Location = new System.Drawing.Point(552, 201);
+            this.valueWind.Location = new System.Drawing.Point(828, 314);
+            this.valueWind.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueWind.Name = "valueWind";
-            this.valueWind.Size = new System.Drawing.Size(53, 29);
+            this.valueWind.Size = new System.Drawing.Size(80, 45);
             this.valueWind.TabIndex = 10;
             this.valueWind.Text = "N/A";
             // 
@@ -185,9 +197,10 @@
             this.labelPressure.BackColor = System.Drawing.Color.Transparent;
             this.labelPressure.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPressure.ForeColor = System.Drawing.Color.White;
-            this.labelPressure.Location = new System.Drawing.Point(469, 229);
+            this.labelPressure.Location = new System.Drawing.Point(704, 358);
+            this.labelPressure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPressure.Name = "labelPressure";
-            this.labelPressure.Size = new System.Drawing.Size(108, 29);
+            this.labelPressure.Size = new System.Drawing.Size(165, 45);
             this.labelPressure.TabIndex = 13;
             this.labelPressure.Text = "Presiune:";
             // 
@@ -197,18 +210,20 @@
             this.valuePressure.BackColor = System.Drawing.Color.Transparent;
             this.valuePressure.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valuePressure.ForeColor = System.Drawing.Color.White;
-            this.valuePressure.Location = new System.Drawing.Point(581, 229);
+            this.valuePressure.Location = new System.Drawing.Point(872, 358);
+            this.valuePressure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valuePressure.Name = "valuePressure";
-            this.valuePressure.Size = new System.Drawing.Size(53, 29);
+            this.valuePressure.Size = new System.Drawing.Size(80, 45);
             this.valuePressure.TabIndex = 12;
             this.valuePressure.Text = "N/A";
             // 
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(89, 95);
+            this.pictureBoxIcon.Location = new System.Drawing.Point(134, 148);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(94, 81);
+            this.pictureBoxIcon.Size = new System.Drawing.Size(141, 127);
             this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIcon.TabIndex = 14;
             this.pictureBoxIcon.TabStop = false;
@@ -219,9 +234,10 @@
             this.flowLayoutPanel.AutoScroll = true;
             this.flowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel.Location = new System.Drawing.Point(87, 377);
+            this.flowLayoutPanel.Location = new System.Drawing.Point(130, 589);
+            this.flowLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(544, 152);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(816, 238);
             this.flowLayoutPanel.TabIndex = 15;
             this.flowLayoutPanel.WrapContents = false;
             // 
@@ -230,9 +246,10 @@
             this.buttonChangeTheme.BackColor = System.Drawing.Color.DarkSlateGray;
             this.buttonChangeTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonChangeTheme.ForeColor = System.Drawing.Color.Snow;
-            this.buttonChangeTheme.Location = new System.Drawing.Point(598, 33);
+            this.buttonChangeTheme.Location = new System.Drawing.Point(897, 52);
+            this.buttonChangeTheme.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonChangeTheme.Name = "buttonChangeTheme";
-            this.buttonChangeTheme.Size = new System.Drawing.Size(93, 46);
+            this.buttonChangeTheme.Size = new System.Drawing.Size(140, 72);
             this.buttonChangeTheme.TabIndex = 16;
             this.buttonChangeTheme.Text = "Change Theme";
             this.buttonChangeTheme.UseVisualStyleBackColor = false;
@@ -246,20 +263,37 @@
             "ro",
             "fr",
             "de"});
-            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(606, 100);
+            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(909, 156);
+            this.comboBoxChangeLanguage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
-            this.comboBoxChangeLanguage.Size = new System.Drawing.Size(84, 24);
+            this.comboBoxChangeLanguage.Size = new System.Drawing.Size(124, 33);
             this.comboBoxChangeLanguage.TabIndex = 17;
             this.comboBoxChangeLanguage.Tag = "";
             this.comboBoxChangeLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxChangeLanguage_SelectedIndexChanged);
             // 
+            // comboBoxChangeWeatherProvider
+            // 
+            this.comboBoxChangeWeatherProvider.FormattingEnabled = true;
+            this.comboBoxChangeWeatherProvider.Items.AddRange(new object[] {
+            "OpenWeather",
+            "WeatherStack",
+            "Wttr"});
+            this.comboBoxChangeWeatherProvider.Location = new System.Drawing.Point(909, 199);
+            this.comboBoxChangeWeatherProvider.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxChangeWeatherProvider.Name = "comboBoxChangeWeatherProvider";
+            this.comboBoxChangeWeatherProvider.Size = new System.Drawing.Size(124, 33);
+            this.comboBoxChangeWeatherProvider.TabIndex = 19;
+            this.comboBoxChangeWeatherProvider.Tag = "";
+            this.comboBoxChangeWeatherProvider.SelectedIndexChanged += new System.EventHandler(this.comboBoxChangeWeatherProvider_SelectedIndexChanged);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(716, 567);
+            this.ClientSize = new System.Drawing.Size(1074, 886);
+            this.Controls.Add(this.comboBoxChangeWeatherProvider);
             this.Controls.Add(this.comboBoxChangeLanguage);
             this.Controls.Add(this.buttonChangeTheme);
             this.Controls.Add(this.flowLayoutPanel);
@@ -278,6 +312,7 @@
             this.Controls.Add(this.textBoxCity);
             this.Controls.Add(this.labelCity);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -306,6 +341,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Button buttonChangeTheme;
         private System.Windows.Forms.ComboBox comboBoxChangeLanguage;
+        private System.Windows.Forms.ComboBox comboBoxChangeWeatherProvider;
     }
 }
 
