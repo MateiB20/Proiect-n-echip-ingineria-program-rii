@@ -294,3 +294,4 @@ C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WindowsFormsApp1\Wind
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Facultate\Proiect-n-echip-ingineria-program-rii\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ApiKeysDictionary.resources
