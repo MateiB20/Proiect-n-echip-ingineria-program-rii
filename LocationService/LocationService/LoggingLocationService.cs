@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         #region Private Member Variables
         private string _message;
         private ILocationService _inner;
+        private static DateTime _lastLoggedTime = DateTime.MinValue;
         #endregion
         #region Public Properties
         /// <summary>
@@ -54,9 +55,36 @@ namespace WindowsFormsApp1
         override public async Task<LocationInfo> GetLocationFromIpAsync()
         {
             LocationInfo location = await _inner.GetLocationFromIpAsync();
-            DateTime localNow = DateTime.Now;
-            _message = $"{localNow}:{location.City}, {location.Country}, {location.Lat}, {location.Lon}";
+            if ((DateTime.Now - _lastLoggedTime).TotalSeconds > 3)
+            {
+                _message = $"{DateTime.Now}:{location.City}, {location.Country}, {location.Lat}, {location.Lon}";
+                string cale = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "istoric.txt");
+                File.AppendAllText(cale, _message);
+                _lastLoggedTime = DateTime.Now;
+            }
             return location;
+        }
+        /// <summary>
+        /// Scrie o intrare de log pentru o locatie specifica 
+        /// </summary>
+        /// <param name="city">
+        /// Numele orașului pentru care se face logging
+        /// </param>
+        /// <param name="longitude">
+        /// Longitudinea locatiei
+        /// </param>
+        /// <param name="latitude">Latitudinea locatiei
+        /// </param>
+        public void GeneralLoggingMessage(String city, double longitude, double latitude) 
+        {
+            if ((DateTime.Now - _lastLoggedTime).TotalSeconds > 3)
+            {
+                DateTime localNow = DateTime.Now;
+                _message = $"\n{localNow}:{city}, {latitude}, {longitude}";
+                string cale = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "istoric.txt");
+                File.AppendAllText(cale, _message);
+                _lastLoggedTime = DateTime.Now;
+            }
         }
         #endregion
     }

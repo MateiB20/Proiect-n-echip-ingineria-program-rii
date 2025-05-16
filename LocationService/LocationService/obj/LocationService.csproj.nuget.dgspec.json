@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\LocationService\\LocationService\\LocationService.csproj": {}
+    "D:\\Facultate\\Proiect-n-echip-ingineria-program-rii\\LocationService\\LocationService\\LocationService.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\LocationService\\LocationService\\LocationService.csproj": {
+    "D:\\Facultate\\Proiect-n-echip-ingineria-program-rii\\LocationService\\LocationService\\LocationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\LocationService\\LocationService\\LocationService.csproj",
+        "projectUniqueName": "D:\\Facultate\\Proiect-n-echip-ingineria-program-rii\\LocationService\\LocationService\\LocationService.csproj",
         "projectName": "LocationService",
-        "projectPath": "D:\\Facultate\\LocationService\\LocationService\\LocationService.csproj",
+        "projectPath": "D:\\Facultate\\Proiect-n-echip-ingineria-program-rii\\LocationService\\LocationService\\LocationService.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\LocationService\\LocationService\\obj\\",
+        "outputPath": "D:\\Facultate\\Proiect-n-echip-ingineria-program-rii\\LocationService\\LocationService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -31,6 +31,8 @@ namespace WindowsFormsApp1
         private LanguageManagerService _languageManager;
         private readonly IWeatherProviderFactory _factory;
         private IWeatherProvider _weatherProvider;
+        private LocationService _locationService;
+        private LoggingLocationService _loggingLocationService;
 
         #endregion
         #region Public Member Variables
@@ -43,11 +45,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
             _themeManager = new ThemeManagerService();
             _languageManager = new LanguageManagerService();
+            _locationService=new LocationService();  
+            _loggingLocationService =new LoggingLocationService(_locationService);
             this.Load += Form1_Load;
-
             _factory = new WeatherProviderFactory(ApiKeys.LoadFromConfig());
             _weatherProvider = _factory.Create("OpenWeather");
-
         }
         public void OnThemeChanged(AppTheme theme)
         {
@@ -57,7 +59,6 @@ namespace WindowsFormsApp1
        : "Resources/lightBackground2.jpeg";
             this.BackgroundImage = Image.FromFile(imagePath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
-
             foreach (Control ctrl in this.Controls)
             {
                      ApplyThemeToControl(ctrl, theme);
@@ -97,7 +98,6 @@ namespace WindowsFormsApp1
             try
             {
                 var info = await _weatherProvider.GetCurrentAsync(textBoxCity.Text);
-
                 pictureBoxIcon.ImageLocation = $"https://openweathermap.org/img/w/{info.weather[0].icon}.png";
                 labelCondition.Text = info.weather[0].main;
                 labelDetails.Text = info.weather[0].description;
@@ -105,9 +105,9 @@ namespace WindowsFormsApp1
                 valueSunset.Text = ConvertDateTime(info.sys.sunset).ToShortTimeString();
                 valueWind.Text = info.wind.speed.ToString();
                 valuePressure.Text = info.main.pressure.ToString();
-
                 Latitude = info.coord.lat;
                 Longitude = info.coord.lon;
+                _loggingLocationService.GeneralLoggingMessage(textBoxCity.Text, Latitude, Longitude);
             }
             catch (Exception ex)
             {
@@ -160,26 +160,30 @@ namespace WindowsFormsApp1
             try
             {
                 var forecastInfo = await _weatherProvider.GetForecastAsync(Latitude, Longitude);
-
                 var today = DateTime.Now.Date;
+
+                // Exclude ziua de azi dar pastreaza urmatoarele 5 zile
                 var days = forecastInfo.list
+
+                    // primele 5 zile viitoare
                     .Where(e => ConvertDateTime(e.dt).Date > today)
                     .GroupBy(e => ConvertDateTime(e.dt).Date)
                     .Take(5);
-
                 flowLayoutPanel.Controls.Clear();
+
+                // Pentru fiecare zi creeaza un nou ForecastUC i setează valorile
                 foreach (var group in days)
                 {
                     var tempMin = group.Min(x => x.main.temp_min);
                     var tempMax = group.Max(x => x.main.temp_max);
                     var icon = group.First().weather[0].icon;
-
                     ForecastUC forecastUC = new ForecastUC();
+
+                    // Afiseaza doar numele complet al zilei saptamanii
                     forecastUC.labelDate.Text = group.Key.ToString("dddd", Thread.CurrentThread.CurrentUICulture);
                     forecastUC.pictureBoxForecastIcon.ImageLocation = "https://openweathermap.org/img/w/" + icon + ".png";
                     forecastUC.labelTempMin.Text = $"{tempMin:0} °C";
                     forecastUC.labelTempMax.Text = $"{tempMax:0} °C";
-
                     flowLayoutPanel.Controls.Add(forecastUC);
                 }
             }
@@ -194,7 +198,6 @@ namespace WindowsFormsApp1
         #region Private Methods
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
-
             if (theme == AppTheme.Dark)
             {
                 if (ctrl == flowLayoutPanel)
@@ -203,8 +206,6 @@ namespace WindowsFormsApp1
                 }
                 buttonChangeTheme.BackColor = Color.LightSteelBlue;
                 buttonChangeTheme.ForeColor = Color.Navy;
-                
-
             }
             else
             {
@@ -215,7 +216,6 @@ namespace WindowsFormsApp1
                 buttonChangeTheme.BackColor = Color.DarkSlateGray;
                 buttonChangeTheme.ForeColor = Color.Snow;
             }
-        
         }
         private async Task InitializeAsync()
         {
@@ -240,7 +240,6 @@ namespace WindowsFormsApp1
         }
         private void pictureBoxIcon_Click(object sender, EventArgs e)
         {
-
         }
         private void buttonChangeTheme_Click(object sender, EventArgs e)
         {
