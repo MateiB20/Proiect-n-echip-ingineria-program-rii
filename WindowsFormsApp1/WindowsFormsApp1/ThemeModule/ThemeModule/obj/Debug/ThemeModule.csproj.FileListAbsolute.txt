@@ -1,6 +1,0 @@
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\ThemeModule.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\ThemeModule.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\ThemeModule.dll
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\ThemeModule.pdb
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\ThemeModule.dll
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\ThemeModule.pdb

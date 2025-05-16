@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LocationInfo\**" />
+    <Compile Remove="LocationServiceFactory\**" />
+    <Compile Remove="LocationService\**" />
+    <EmbeddedResource Remove="LocationInfo\**" />
+    <EmbeddedResource Remove="LocationServiceFactory\**" />
+    <EmbeddedResource Remove="LocationService\**" />
+    <None Remove="LocationInfo\**" />
+    <None Remove="LocationServiceFactory\**" />
+    <None Remove="LocationService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LanguageModule">
+      <HintPath>..\..\LanguageModule\LanguageModule\bin\Debug\net8.0\LanguageModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LocationInfo">
+      <HintPath>..\..\LocationInfo\LocationInfo\bin\Debug\net8.0\LocationInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="LocationService">
+      <HintPath>..\..\LocationService\LocationService\bin\Debug\net8.0\LocationService.dll</HintPath>
+    </Reference>
+    <Reference Include="LocationServiceFactory">
+      <HintPath>..\..\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationServiceFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ThemeModule">
+      <HintPath>..\..\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ApiKeysDictionary.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ApiKeysDictionary.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ApiKeysDictionary.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApiKeysDictionary.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dictionary.resx">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
