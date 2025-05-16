@@ -1,0 +1,15 @@
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.AssemblyInfoInputs.cache
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.AssemblyInfo.cs
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.csproj.CoreCompileInputs.cache
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.csproj.AssemblyReference.cache
+D:\Facultate\LocationService\LocationService\bin\Debug\net8.0\LocationService.deps.json
+D:\Facultate\LocationService\LocationService\bin\Debug\net8.0\LocationService.dll
+D:\Facultate\LocationService\LocationService\bin\Debug\net8.0\LocationService.pdb
+D:\Facultate\LocationService\LocationService\bin\Debug\net8.0\LocationInfo.dll
+D:\Facultate\LocationService\LocationService\bin\Debug\net8.0\LocationInfo.pdb
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.csproj.CopyComplete
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.dll
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\refint\LocationService.dll
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\LocationService.pdb
+D:\Facultate\LocationService\LocationService\obj\Debug\net8.0\ref\LocationService.dll

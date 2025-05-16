@@ -6,8 +6,12 @@
 *.sln.docstates
 
 # === Build output ===
-bin/
-obj/
+*/bin/
+*/obj/
+!WeatherApp/bin/
+!WeatherApp/bin/**    # unignore everything inside
+!WeatherApp/obj/
+!WeatherApp/obj/**
 [Bb]uild/
 [Bb]uild[Ll]og.*
 

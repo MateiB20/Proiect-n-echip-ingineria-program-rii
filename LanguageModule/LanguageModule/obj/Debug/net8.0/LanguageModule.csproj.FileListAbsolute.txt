@@ -1,0 +1,11 @@
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\bin\Debug\net8.0\LanguageModule.deps.json
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\bin\Debug\net8.0\LanguageModule.dll
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\bin\Debug\net8.0\LanguageModule.pdb
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.AssemblyInfoInputs.cache
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.AssemblyInfo.cs
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.csproj.CoreCompileInputs.cache
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.dll
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\refint\LanguageModule.dll
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\LanguageModule.pdb
+C:\Tony\Facultate\ip\LanguageModule\LanguageModule\obj\Debug\net8.0\ref\LanguageModule.dll
