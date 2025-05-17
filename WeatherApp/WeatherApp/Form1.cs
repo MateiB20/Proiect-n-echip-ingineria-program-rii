@@ -56,9 +56,12 @@ namespace WindowsFormsApp1
         public void OnThemeChanged(AppTheme theme)
         {
             //this.BackColor = theme == AppTheme.Dark ? Color.Black : Color.White;
+            /*string imagePath = theme == AppTheme.Dark
+           ? "Resources/darkBackground.jpg"
+           : "Resources/lightBackground2.jpeg";*/
             string imagePath = theme == AppTheme.Dark
-       ? "Resources/darkBackground.jpg"
-       : "Resources/lightBackground2.jpeg";
+                ? "Resources/dark.png"
+                : "Resources/light.png";
             this.BackgroundImage = Image.FromFile(imagePath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
             foreach (Control ctrl in this.Controls)
@@ -119,10 +122,14 @@ namespace WindowsFormsApp1
                     labelCondition.Text = "N/A";
                     labelDetails.Text = "N/A";
                 }
+                valueTemperature.Text = info.WeatherMetrics?.Temperature.ToString() + "°C" ?? "N/A";
                 valueSunrise.Text = ConvertDateTime(info.SystemInfo?.Sunrise ?? 0).ToShortTimeString();
                 valueSunset.Text = ConvertDateTime(info.SystemInfo?.Sunset ?? 0).ToShortTimeString();
-                valueWind.Text = info.Wind?.Speed.ToString() ?? "N/A";
-                valuePressure.Text = info.WeatherMetrics?.Pressure.ToString() ?? "N/A";
+                valueWind.Text = info.Wind?.Speed.ToString() + "km/h" ?? "N/A";
+                valuePressure.Text = info.WeatherMetrics?.Pressure != null
+                    ? $"{(info.WeatherMetrics.Pressure / 1000.0):0.###} hPa"
+                    : "N/A";
+                valueHumidity.Text = info.WeatherMetrics?.Humidity.ToString() + "%" ?? "N/A";
                 Latitude = info.Coordinates?.Latitude ?? 0;
                 Longitude = info.Coordinates?.Longitude ?? 0;
                 _loggingLocationService.GeneralLoggingMessage(textBoxCity.Text, Latitude, Longitude);
@@ -134,6 +141,8 @@ namespace WindowsFormsApp1
                   $"Failed to get current weather:\n{ex.Message}",
                   "Weather Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            labelLocationTime.Text = $"{textBoxCity.Text}, {DateTime.Now:HH:mm}";
+
         }
         DateTime ConvertDateTime(long seconds)
         {

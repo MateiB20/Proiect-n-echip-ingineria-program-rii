@@ -28,68 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBoxForecastIcon = new System.Windows.Forms.PictureBox();
-            this.labelDate = new System.Windows.Forms.Label();
-            this.labelTempMin = new System.Windows.Forms.Label();
-            this.labelTempMax = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForecastIcon)).BeginInit();
-            this.SuspendLayout();
+            pictureBoxForecastIcon = new PictureBox();
+            labelDate = new Label();
+            labelTempMin = new Label();
+            labelTempMax = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxForecastIcon).BeginInit();
+            SuspendLayout();
             // 
             // pictureBoxForecastIcon
             // 
-            this.pictureBoxForecastIcon.Location = new System.Drawing.Point(85, 14);
-            this.pictureBoxForecastIcon.Name = "pictureBoxForecastIcon";
-            this.pictureBoxForecastIcon.Size = new System.Drawing.Size(108, 59);
-            this.pictureBoxForecastIcon.TabIndex = 0;
-            this.pictureBoxForecastIcon.TabStop = false;
+            pictureBoxForecastIcon.Location = new Point(85, 18);
+            pictureBoxForecastIcon.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxForecastIcon.Name = "pictureBoxForecastIcon";
+            pictureBoxForecastIcon.Size = new Size(108, 74);
+            pictureBoxForecastIcon.TabIndex = 0;
+            pictureBoxForecastIcon.TabStop = false;
             // 
             // labelDate
             // 
-            this.labelDate.AutoSize = true;
-            this.labelDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDate.Location = new System.Drawing.Point(8, 24);
-            this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(49, 24);
-            this.labelDate.TabIndex = 1;
-            this.labelDate.Text = "Data";
+            labelDate.AutoSize = true;
+            labelDate.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelDate.Location = new Point(8, 30);
+            labelDate.Name = "labelDate";
+            labelDate.Size = new Size(49, 24);
+            labelDate.TabIndex = 1;
+            labelDate.Text = "Data";
             // 
             // labelTempMin
             // 
-            this.labelTempMin.AutoSize = true;
-            this.labelTempMin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTempMin.ForeColor = System.Drawing.Color.Blue;
-            this.labelTempMin.Location = new System.Drawing.Point(237, 24);
-            this.labelTempMin.Name = "labelTempMin";
-            this.labelTempMin.Size = new System.Drawing.Size(88, 24);
-            this.labelTempMin.TabIndex = 2;
-            this.labelTempMin.Text = "TempMin";
+            labelTempMin.AutoSize = true;
+            labelTempMin.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTempMin.ForeColor = Color.LightGray;
+            labelTempMin.Location = new Point(237, 30);
+            labelTempMin.Name = "labelTempMin";
+            labelTempMin.Size = new Size(88, 24);
+            labelTempMin.TabIndex = 2;
+            labelTempMin.Text = "TempMin";
             // 
             // labelTempMax
             // 
-            this.labelTempMax.AutoSize = true;
-            this.labelTempMax.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTempMax.ForeColor = System.Drawing.Color.Red;
-            this.labelTempMax.Location = new System.Drawing.Point(350, 24);
-            this.labelTempMax.Name = "labelTempMax";
-            this.labelTempMax.Size = new System.Drawing.Size(91, 24);
-            this.labelTempMax.TabIndex = 3;
-            this.labelTempMax.Text = "TempMax";
+            labelTempMax.AutoSize = true;
+            labelTempMax.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTempMax.ForeColor = Color.White;
+            labelTempMax.Location = new Point(350, 30);
+            labelTempMax.Name = "labelTempMax";
+            labelTempMax.Size = new Size(91, 24);
+            labelTempMax.TabIndex = 3;
+            labelTempMax.Text = "TempMax";
             // 
             // ForecastUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.labelTempMax);
-            this.Controls.Add(this.labelTempMin);
-            this.Controls.Add(this.labelDate);
-            this.Controls.Add(this.pictureBoxForecastIcon);
-            this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "ForecastUC";
-            this.Size = new System.Drawing.Size(444, 86);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForecastIcon)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(labelTempMax);
+            Controls.Add(labelTempMin);
+            Controls.Add(labelDate);
+            Controls.Add(pictureBoxForecastIcon);
+            ForeColor = Color.Transparent;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "ForecastUC";
+            Size = new Size(444, 108);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxForecastIcon).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
