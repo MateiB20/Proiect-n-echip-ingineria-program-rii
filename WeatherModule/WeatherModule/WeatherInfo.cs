@@ -134,7 +134,7 @@ namespace WeatherModule
             /// <summary>
             /// Metrici privind temperatura, presiunea și umiditatea.
             /// </summary>
-            [JsonPropertyName("main")]
+            [JsonPropertyName("main")] 
             public WeatherMetrics? WeatherMetrics { get; set; }
 
             /// <summary>

@@ -6,7 +6,6 @@
 //
 //-----------------------------------------------------------------------------
 
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,6 +13,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using WeatherModule;
@@ -30,17 +31,25 @@ namespace WindowsFormsApp1
 
         public async Task<WeatherInfo.CurrentWeatherResponse> GetCurrentAsync(string location)
         {
-            using var webClient = new WebClient { Encoding = Encoding.UTF8 };
-            string url = string.Format(
-                "https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&lang={2}",
-                WebUtility.UrlEncode(location),
-                _apiKey,
-                CultureInfo.CurrentUICulture.TwoLetterISOLanguageName
-            );
+            try
+            {
+                using var httpClient = new HttpClient();
+                string url = $"https://api.openweathermap.org/data/2.5/weather?q={WebUtility.UrlEncode(location)}&appid={_apiKey}&units=metric&lang={CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}";
 
-            var json = await webClient.DownloadStringTaskAsync(url);
-            return JsonConvert.DeserializeObject<WeatherInfo.CurrentWeatherResponse>(json);
+                var json = await httpClient.GetStringAsync(url);
+                return JsonSerializer.Deserialize<WeatherInfo.CurrentWeatherResponse>(json)
+                    ?? throw new Exception("Failed to deserialize weather data.");
+            }
+            catch (HttpRequestException httpEx)
+            {
+                throw new Exception("HTTP request failed.", httpEx);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Unexpected error in GetCurrentAsync.", ex);
+            }
         }
+
         public async Task<WeatherForecast.ForecastInfo> GetForecastAsync(double latitude, double longitude)
         {
             using var webClient = new WebClient { Encoding = Encoding.UTF8 };
@@ -53,7 +62,15 @@ namespace WindowsFormsApp1
             );
 
             var json = await webClient.DownloadStringTaskAsync(url);
-            return JsonConvert.DeserializeObject<WeatherForecast.ForecastInfo>(json);
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+                UnknownTypeHandling = JsonUnknownTypeHandling.JsonElement
+            };
+
+            return JsonSerializer.Deserialize<WeatherForecast.ForecastInfo>(json, options)!;
+
         }
     }
 }

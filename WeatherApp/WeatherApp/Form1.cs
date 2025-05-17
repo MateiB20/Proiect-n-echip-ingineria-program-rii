@@ -10,7 +10,7 @@
 // - Matei : Form1_Load, InitializeAsync
 // - Izabela : OnThemeChanged, ApplyThemeToControl, OnLanguageChanged
 //-----------------------------------------------------------------------------
-using Newtonsoft.Json;
+
 using System;
 using System.Data;
 using System.Drawing;
@@ -100,6 +100,12 @@ namespace WindowsFormsApp1
             try
             {
                 var info = await _weatherProvider.GetCurrentAsync(textBoxCity.Text);
+                if (info == null)
+                {
+                    MessageBox.Show("No weather information found.");
+                    return;
+                }
+
                 var weather = info?.WeatherConditions?.FirstOrDefault();
                 if (weather != null && !string.IsNullOrWhiteSpace(weather.Icon))
                 {
