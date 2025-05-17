@@ -42,6 +42,9 @@
     <Reference Include="ThemeModule">
       <HintPath>..\..\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.dll</HintPath>
     </Reference>
+    <Reference Include="WeatherModule">
+      <HintPath>..\..\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

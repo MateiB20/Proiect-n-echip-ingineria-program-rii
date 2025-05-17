@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherModule;
 
 namespace WindowsFormsApp1
 {
@@ -18,7 +19,7 @@ namespace WindowsFormsApp1
     /// </summary>
     class WttrProvider : IWeatherProvider
     {
-        public Task<WeatherInfo.root> GetCurrentAsync(string location)
+        public Task<WeatherInfo.CurrentWeatherResponse> GetCurrentAsync(string location)
         {
             throw new NotImplementedException();
         }

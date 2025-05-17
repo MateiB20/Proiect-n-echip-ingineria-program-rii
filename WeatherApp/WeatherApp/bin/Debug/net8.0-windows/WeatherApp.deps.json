@@ -14,7 +14,8 @@
           "LocationInfo": "1.0.0.0",
           "LocationService": "1.0.0.0",
           "LocationServiceFactory": "1.0.0.0",
-          "ThemeModule": "1.0.0.0"
+          "ThemeModule": "1.0.0.0",
+          "WeatherModule": "1.0.0.0"
         },
         "runtime": {
           "WeatherApp.dll": {}
@@ -97,6 +98,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "WeatherModule/1.0.0.0": {
+        "runtime": {
+          "WeatherModule.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -148,6 +157,11 @@
       "sha512": ""
     },
     "ThemeModule/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeatherModule/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

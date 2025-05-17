@@ -6,7 +6,7 @@
 // meteo curente 
 // si afisarea prognozei meteo pe următoarele 5 zile.
 // Autori:
-// - Andreea : buttonSearch_Click, getWeather, getForecast, convertDateTime
+// - Andreea : buttonSearch_Click, GetWeather, GetForecast, convertDateTime
 // - Matei : Form1_Load, InitializeAsync
 // - Izabela : OnThemeChanged, ApplyThemeToControl, OnLanguageChanged
 //-----------------------------------------------------------------------------
@@ -22,6 +22,8 @@ using System.Globalization;
 using System.Threading;
 using LanguageModule;
 using ThemeModule;
+using WeatherModule;
+
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form,IThemeObserverService,ILanguageObserverService
@@ -74,10 +76,10 @@ namespace WindowsFormsApp1
             labelSunset.Text = Dictionary.LabelApus;
             labelWind.Text = Dictionary.LabelVant;
             labelPressure.Text = Dictionary.LabelPresiune;
-            getWeather();
-            getForecast();
+            GetWeather();
+            GetForecast();
         }
-        async void getWeather()
+        async void GetWeather()
         {
             //using (WebClient webClient = new WebClient())
             //{
@@ -98,16 +100,27 @@ namespace WindowsFormsApp1
             try
             {
                 var info = await _weatherProvider.GetCurrentAsync(textBoxCity.Text);
-                pictureBoxIcon.ImageLocation = $"https://openweathermap.org/img/w/{info.weather[0].icon}.png";
-                labelCondition.Text = info.weather[0].main;
-                labelDetails.Text = info.weather[0].description;
-                valueSunrise.Text = ConvertDateTime(info.sys.sunrise).ToShortTimeString();
-                valueSunset.Text = ConvertDateTime(info.sys.sunset).ToShortTimeString();
-                valueWind.Text = info.wind.speed.ToString();
-                valuePressure.Text = info.main.pressure.ToString();
-                Latitude = info.coord.lat;
-                Longitude = info.coord.lon;
+                var weather = info?.WeatherConditions?.FirstOrDefault();
+                if (weather != null && !string.IsNullOrWhiteSpace(weather.Icon))
+                {
+                    pictureBoxIcon.ImageLocation = $"https://openweathermap.org/img/w/{weather.Icon}.png";
+                    labelCondition.Text = weather.Condition ?? "N/A";
+                    labelDetails.Text = weather.Description ?? "N/A";
+                }
+                else
+                {
+                    pictureBoxIcon.ImageLocation = null; // sau o pictogramă implicită
+                    labelCondition.Text = "N/A";
+                    labelDetails.Text = "N/A";
+                }
+                valueSunrise.Text = ConvertDateTime(info.SystemInfo?.Sunrise ?? 0).ToShortTimeString();
+                valueSunset.Text = ConvertDateTime(info.SystemInfo?.Sunset ?? 0).ToShortTimeString();
+                valueWind.Text = info.Wind?.Speed.ToString() ?? "N/A";
+                valuePressure.Text = info.WeatherMetrics?.Pressure.ToString() ?? "N/A";
+                Latitude = info.Coordinates?.Latitude ?? 0;
+                Longitude = info.Coordinates?.Longitude ?? 0;
                 _loggingLocationService.GeneralLoggingMessage(textBoxCity.Text, Latitude, Longitude);
+
             }
             catch (Exception ex)
             {
@@ -122,7 +135,7 @@ namespace WindowsFormsApp1
             day = day.AddSeconds(seconds).ToLocalTime();
             return day;
         }
-        async void getForecast()
+        async void GetForecast()
         {
             //using (WebClient webClient = new WebClient())
             //{
@@ -160,30 +173,38 @@ namespace WindowsFormsApp1
             try
             {
                 var forecastInfo = await _weatherProvider.GetForecastAsync(Latitude, Longitude);
+
+                if (forecastInfo?.ForecastEntries == null || !forecastInfo.ForecastEntries.Any())
+                    throw new Exception("No forecast data available.");
+
                 var today = DateTime.Now.Date;
 
-                // Exclude ziua de azi dar pastreaza urmatoarele 5 zile
-                var days = forecastInfo.list
-
-                    // primele 5 zile viitoare
-                    .Where(e => ConvertDateTime(e.dt).Date > today)
-                    .GroupBy(e => ConvertDateTime(e.dt).Date)
+                // Exclude ziua de azi și ia următoarele 5 zile
+                var days = forecastInfo.ForecastEntries
+                    .Where(e => ConvertDateTime(e.Timestamp).Date > today)
+                    .GroupBy(e => ConvertDateTime(e.Timestamp).Date)
                     .Take(5);
+
                 flowLayoutPanel.Controls.Clear();
 
                 // Pentru fiecare zi creeaza un nou ForecastUC i setează valorile
                 foreach (var group in days)
                 {
-                    var tempMin = group.Min(x => x.main.temp_min);
-                    var tempMax = group.Max(x => x.main.temp_max);
-                    var icon = group.First().weather[0].icon;
-                    ForecastUC forecastUC = new ForecastUC();
+                    var validEntries = group.Where(e => e.TemperatureInfo != null && e.WeatherDescriptions?.Any() == true).ToList();
+                    if (!validEntries.Any()) continue;
 
-                    // Afiseaza doar numele complet al zilei saptamanii
-                    forecastUC.labelDate.Text = group.Key.ToString("dddd", Thread.CurrentThread.CurrentUICulture);
-                    forecastUC.pictureBoxForecastIcon.ImageLocation = "https://openweathermap.org/img/w/" + icon + ".png";
-                    forecastUC.labelTempMin.Text = $"{tempMin:0} °C";
-                    forecastUC.labelTempMax.Text = $"{tempMax:0} °C";
+                    var tempMin = validEntries.Min(x => x.TemperatureInfo!.MinimumTemperature);
+                    var tempMax = validEntries.Max(x => x.TemperatureInfo!.MaximumTemperature);
+                    var icon = validEntries.First().WeatherDescriptions![0].Icon;
+
+                    var forecastUC = new ForecastUC
+                    {
+                        labelDate = { Text = group.Key.ToString("dddd", Thread.CurrentThread.CurrentUICulture) },
+                        pictureBoxForecastIcon = { ImageLocation = string.IsNullOrWhiteSpace(icon) ? null : $"https://openweathermap.org/img/w/{icon}.png" },
+                        labelTempMin = { Text = $"{tempMin:0} °C" },
+                        labelTempMax = { Text = $"{tempMax:0} °C" }
+                    };
+
                     flowLayoutPanel.Controls.Add(forecastUC);
                 }
             }
@@ -227,16 +248,16 @@ namespace WindowsFormsApp1
         private async void Form1_Load(object sender, EventArgs e)
         {
             await InitializeAsync();
-            getWeather();
-            getForecast();
+            GetWeather();
+            GetForecast();
             _themeManager.Register(this);
             flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
             _languageManager.Register(this);
         }
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            getWeather();
-            getForecast();
+            GetWeather();
+            GetForecast();
         }
         private void pictureBoxIcon_Click(object sender, EventArgs e)
         {

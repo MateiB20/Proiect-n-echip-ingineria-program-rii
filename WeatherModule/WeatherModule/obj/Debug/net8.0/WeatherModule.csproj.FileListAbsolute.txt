@@ -1,0 +1,12 @@
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.AssemblyInfoInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.AssemblyInfo.cs
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.csproj.CoreCompileInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.sourcelink.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.deps.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\refint\WeatherModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\ref\WeatherModule.dll

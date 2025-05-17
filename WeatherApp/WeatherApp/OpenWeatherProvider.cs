@@ -16,6 +16,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WeatherModule;
 
 namespace WindowsFormsApp1
 {
@@ -27,7 +28,7 @@ namespace WindowsFormsApp1
             _apiKey = apiKey;
         }
 
-        public async Task<WeatherInfo.root> GetCurrentAsync(string location)
+        public async Task<WeatherInfo.CurrentWeatherResponse> GetCurrentAsync(string location)
         {
             using var webClient = new WebClient { Encoding = Encoding.UTF8 };
             string url = string.Format(
@@ -38,7 +39,7 @@ namespace WindowsFormsApp1
             );
 
             var json = await webClient.DownloadStringTaskAsync(url);
-            return JsonConvert.DeserializeObject<WeatherInfo.root>(json);
+            return JsonConvert.DeserializeObject<WeatherInfo.CurrentWeatherResponse>(json);
         }
         public async Task<WeatherForecast.ForecastInfo> GetForecastAsync(double latitude, double longitude)
         {
