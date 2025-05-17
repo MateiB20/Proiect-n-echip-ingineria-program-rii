@@ -1,12 +1,14 @@
 ﻿//-----------------------------------------------------------------------------
-// Nume proiect:Weather App
+// Nume proiect: Weather App
 // Fisier: Form1.cs
-// Descriere: Interfata principala a aplicatiei. Se ocupa de initializarea
-// automata a locatiei utilizatorului folosind IP-ul, preluarea conditiilor
-// meteo curente 
-// si afisarea prognozei meteo pe următoarele 5 zile.
+// Descriere: Interfata principala a aplicatiei. Se ocupa de:
+// - Initializarea automata a locatiei utilizatorului folosind IP-ul
+// - Preluarea conditiilor meteo curente
+// - Afisarea prognozei meteo pe urmatoarele 5 zile
+// - Aplicarea temei (dark/light)
+// - Schimbarea limbii interfetei
 // Autori:
-// - Andreea : buttonSearch_Click, GetWeather, GetForecast, convertDateTime
+// - Andreea : buttonSearch_Click, GetWeather, GetForecast, ConvertDateTime, ClearWeatherInfo, UI
 // - Matei : Form1_Load, InitializeAsync
 // - Izabela : OnThemeChanged, ApplyThemeToControl, OnLanguageChanged
 //-----------------------------------------------------------------------------
@@ -26,52 +28,82 @@ using WeatherModule;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form,IThemeObserverService,ILanguageObserverService
+    /// <summary>
+    /// Formul principal al aplicatiei Weather App. Implementeaza observerii pentru tema si limba.
+    /// </summary>
+    public partial class Form1 : Form, IThemeObserverService, ILanguageObserverService
     {
         #region Private Member Variables
-        private ThemeManagerService _themeManager;
-        private LanguageManagerService _languageManager;
-        private readonly IWeatherProviderFactory _factory;
-        private IWeatherProvider _weatherProvider;
-        private LocationService _locationService;
-        private LoggingLocationService _loggingLocationService;
+
+        private ThemeManagerService _themeManager;                     // Manager pentru tema
+        private LanguageManagerService _languageManager;               // Manager pentru limba
+        private readonly IWeatherProviderFactory _factory;             // Factory pentru furnizorul de vreme
+        private IWeatherProvider _weatherProvider;                     // Furnizorul selectat de vreme
+        private LocationService _locationService;                      // Serviciu pentru determinarea locatiei
+        private LoggingLocationService _loggingLocationService;       // Serviciu cu logare pentru locatie
 
         #endregion
+
         #region Public Member Variables
-        double Longitude, Latitude;
-        //string APIKey = "70a0b01f4ce43960e5ff1f6891a6dfd3";
+
+        public double Longitude, Latitude;  // Coordonate actuale
+
         #endregion
-        #region Public Methods
+
+        #region Constructor
+
         public Form1()
         {
             InitializeComponent();
+
+            // Initializare servicii
             _themeManager = new ThemeManagerService();
             _languageManager = new LanguageManagerService();
-            _locationService=new LocationService();  
-            _loggingLocationService =new LoggingLocationService(_locationService);
-            this.Load += Form1_Load;
+            _locationService = new LocationService();
+            _loggingLocationService = new LoggingLocationService(_locationService);
+
+            // Factory + provider default
             _factory = new WeatherProviderFactory(ApiKeys.LoadFromConfig());
             _weatherProvider = _factory.Create("OpenWeather");
+
+            // Event pentru incarcare formular
+            this.Load += Form1_Load;
         }
+
+        #endregion
+
+        #region IThemeObserverService Implementation
+
+        /// <summary>
+        /// Actualizeaza tema aplicatiei cand utilizatorul o schimba.
+        /// </summary>
         public void OnThemeChanged(AppTheme theme)
         {
-            //this.BackColor = theme == AppTheme.Dark ? Color.Black : Color.White;
-            /*string imagePath = theme == AppTheme.Dark
-           ? "Resources/darkBackground.jpg"
-           : "Resources/lightBackground2.jpeg";*/
             string imagePath = theme == AppTheme.Dark
                 ? "Resources/dark.png"
                 : "Resources/light.png";
+
             this.BackgroundImage = Image.FromFile(imagePath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
+
             foreach (Control ctrl in this.Controls)
             {
-                     ApplyThemeToControl(ctrl, theme);
+                ApplyThemeToControl(ctrl, theme);
             }
         }
+
+        #endregion
+
+        #region ILanguageObserverService Implementation
+
+        /// <summary>
+        /// Se apeleaza cand utilizatorul schimba limba aplicatiei.
+        /// </summary>
         public void OnLanguageChanged(CultureInfo newCulture)
         {
             Thread.CurrentThread.CurrentUICulture = newCulture;
+
+            // Actualizeaza toate textele
             labelCity.Text = Dictionary.LabelOras;
             buttonSearch.Text = Dictionary.LabelCauta;
             buttonChangeTheme.Text = Dictionary.LabelSchimbaTema;
@@ -79,112 +111,94 @@ namespace WindowsFormsApp1
             labelSunset.Text = Dictionary.LabelApus;
             labelWind.Text = Dictionary.LabelVant;
             labelPressure.Text = Dictionary.LabelPresiune;
+
+            // Reincarca datele meteo
             GetWeather();
             GetForecast();
         }
+
+        #endregion
+
+        #region Weather Handling
+
+        /// <summary>
+        /// Preia si afiseaza conditiile meteo curente.
+        /// </summary>
         async void GetWeather()
         {
-            //using (WebClient webClient = new WebClient())
-            //{
-            //    webClient.Encoding = System.Text.Encoding.UTF8;
-            //    string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&lang={2}", textBoxCity.Text, APIKey, CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
-            //    var json = webClient.DownloadString(url);
-            //    WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
-            //    pictureBoxIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
-            //    labelCondition.Text = Info.weather[0].main;
-            //    labelDetails.Text = Info.weather[0].description;
-            //    valueSunset.Text = convertDateTime(Info.sys.sunset).ToShortTimeString();
-            //    valueSunrise.Text = convertDateTime(Info.sys.sunrise).ToShortTimeString();
-            //    valueWind.Text = Info.wind.speed.ToString();
-            //    valuePressure.Text = Info.main.pressure.ToString();
-            //    Longitude = Info.coord.lon;
-            //    Latitude = Info.coord.lat;
-            //}
             try
             {
                 var info = await _weatherProvider.GetCurrentAsync(textBoxCity.Text);
-                if (info == null)
+
+                if (info == null || info.WeatherConditions == null || !info.WeatherConditions.Any())
                 {
-                    MessageBox.Show("No weather information found.");
+                    MessageBox.Show("Orașul introdus nu a fost găsit. Vă rugăm să verificați denumirea.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ClearWeatherInfo();
                     return;
                 }
 
-                var weather = info?.WeatherConditions?.FirstOrDefault();
-                if (weather != null && !string.IsNullOrWhiteSpace(weather.Icon))
-                {
-                    pictureBoxIcon.ImageLocation = $"https://openweathermap.org/img/w/{weather.Icon}.png";
-                    labelCondition.Text = weather.Condition ?? "N/A";
-                    labelDetails.Text = weather.Description ?? "N/A";
-                }
-                else
-                {
-                    pictureBoxIcon.ImageLocation = null; // sau o pictogramă implicită
-                    labelCondition.Text = "N/A";
-                    labelDetails.Text = "N/A";
-                }
+                var weather = info.WeatherConditions.FirstOrDefault();
+
+                pictureBoxIcon.ImageLocation = !string.IsNullOrWhiteSpace(weather?.Icon)
+                    ? $"https://openweathermap.org/img/w/{weather.Icon}.png"
+                    : null;
+
+                labelCondition.Text = weather?.Condition ?? "N/A";
+                labelDetails.Text = weather?.Description ?? "N/A";
                 valueTemperature.Text = info.WeatherMetrics?.Temperature.ToString() + "°C" ?? "N/A";
                 valueSunrise.Text = ConvertDateTime(info.SystemInfo?.Sunrise ?? 0).ToShortTimeString();
                 valueSunset.Text = ConvertDateTime(info.SystemInfo?.Sunset ?? 0).ToShortTimeString();
                 valueWind.Text = info.Wind?.Speed.ToString() + "km/h" ?? "N/A";
-                valuePressure.Text = info.WeatherMetrics?.Pressure != null
-                    ? $"{(info.WeatherMetrics.Pressure / 1000.0):0.###} hPa"
-                    : "N/A";
+                valuePressure.Text = info.WeatherMetrics?.Pressure != null ? $"{(info.WeatherMetrics.Pressure / 1000.0):0.###} hPa" : "N/A";
                 valueHumidity.Text = info.WeatherMetrics?.Humidity.ToString() + "%" ?? "N/A";
+
                 Latitude = info.Coordinates?.Latitude ?? 0;
                 Longitude = info.Coordinates?.Longitude ?? 0;
+
                 _loggingLocationService.GeneralLoggingMessage(textBoxCity.Text, Latitude, Longitude);
 
+                labelLocationTime.Text = $"{textBoxCity.Text}, {DateTime.Now:HH:mm}";
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
-                  $"Failed to get current weather:\n{ex.Message}",
-                  "Weather Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Orașul introdus nu a fost găsit sau a apărut o eroare:\n{ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ClearWeatherInfo();
             }
-            labelLocationTime.Text = $"{textBoxCity.Text}, {DateTime.Now:HH:mm}";
-
         }
+
+        /// <summary>
+        /// Sterge informatiile meteo afisate.
+        /// </summary>
+        private void ClearWeatherInfo()
+        {
+            pictureBoxIcon.ImageLocation = null;
+            labelCondition.Text = "N/A";
+            labelDetails.Text = "N/A";
+            valueTemperature.Text = "N/A";
+            valueSunrise.Text = "N/A";
+            valueSunset.Text = "N/A";
+            valueWind.Text = "N/A";
+            valuePressure.Text = "N/A";
+            valueHumidity.Text = "N/A";
+            labelLocationTime.Text = string.Empty;
+            Latitude = 0;
+            Longitude = 0;
+        }
+
+        /// <summary>
+        /// Converteste un timestamp Unix in DateTime local.
+        /// </summary>
         DateTime ConvertDateTime(long seconds)
         {
-            DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
-            day = day.AddSeconds(seconds).ToLocalTime();
-            return day;
+            DateTime day = new DateTime(1970, 1, 1).ToLocalTime();
+            return day.AddSeconds(seconds).ToLocalTime();
         }
+
+        /// <summary>
+        /// Preia si afiseaza prognoza pe urmatoarele 5 zile.
+        /// </summary>
         async void GetForecast()
         {
-            //using (WebClient webClient = new WebClient())
-            //{
-            //    webClient.Encoding = System.Text.Encoding.UTF8;
-            //    string url = string.Format("https://api.openweathermap.org/data/2.5/forecast?lat={0}&lon={1}&appid={2}&units=metric&lang={2}", Latitude, Longitude, APIKey);
-            //    var json = webClient.DownloadString(url);
-            //    WeatherForecast.ForecastInfo forecastInfo = JsonConvert.DeserializeObject<WeatherForecast.ForecastInfo>(json);
-            //    var today = DateTime.Now.Date;
-
-            //    // Exclude ziua de azi dar pastreaza urmatoarele 5 zile
-            //    var groupedByDay = forecastInfo.list
-
-            //        // primele 5 zile viitoare
-            //        .Where(entry => convertDateTime(entry.dt).Date > today)
-            //        .GroupBy(entry => convertDateTime(entry.dt).Date)
-            //        .Take(5);
-            //    flowLayoutPanel.Controls.Clear();
-
-            //    // Pentru fiecare zi creeaza un nou ForecastUC i setează valorile
-            //    foreach (var group in groupedByDay)
-            //    {
-            //        var tempMin = group.Min(x => x.main.temp_min);
-            //        var tempMax = group.Max(x => x.main.temp_max);
-            //        var icon = group.First().weather[0].icon;
-            //        ForecastUC forecastUC = new ForecastUC();
-
-            //        // Afiseaza doar numele complet al zilei saptamanii
-            //        forecastUC.labelDate.Text = group.Key.ToString("dddd", Thread.CurrentThread.CurrentUICulture);
-            //        forecastUC.pictureBoxForecastIcon.ImageLocation = "https://openweathermap.org/img/w/" + icon + ".png";
-            //        forecastUC.labelTempMin.Text = $"{tempMin:0} °C";
-            //        forecastUC.labelTempMax.Text = $"{tempMax:0} °C";
-            //        flowLayoutPanel.Controls.Add(forecastUC);
-            //    }
-            //}
             try
             {
                 var forecastInfo = await _weatherProvider.GetForecastAsync(Latitude, Longitude);
@@ -194,7 +208,6 @@ namespace WindowsFormsApp1
 
                 var today = DateTime.Now.Date;
 
-                // Exclude ziua de azi și ia următoarele 5 zile
                 var days = forecastInfo.ForecastEntries
                     .Where(e => ConvertDateTime(e.Timestamp).Date > today)
                     .GroupBy(e => ConvertDateTime(e.Timestamp).Date)
@@ -202,7 +215,6 @@ namespace WindowsFormsApp1
 
                 flowLayoutPanel.Controls.Clear();
 
-                // Pentru fiecare zi creeaza un nou ForecastUC i setează valorile
                 foreach (var group in days)
                 {
                     var validEntries = group.Where(e => e.TemperatureInfo != null && e.WeatherDescriptions?.Any() == true).ToList();
@@ -225,58 +237,74 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
-                  $"Failed to get forecast:\n{ex.Message}",
-                  "Forecast Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to get forecast:\n{ex.Message}", "Forecast Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         #endregion
-        #region Private Methods
+
+        #region Theme Handling
+
+        /// <summary>
+        /// Aplica stilul temei pentru fiecare control.
+        /// </summary>
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
             if (theme == AppTheme.Dark)
             {
                 if (ctrl == flowLayoutPanel)
-                {
                     ctrl.BackColor = Color.FromArgb(100, 200, 200, 200);
-                }
+
                 buttonChangeTheme.BackColor = Color.LightSteelBlue;
                 buttonChangeTheme.ForeColor = Color.Navy;
             }
             else
             {
                 if (ctrl == flowLayoutPanel)
-                {
-                    ctrl.BackColor = Color.FromArgb(120, 220, 200, 210); 
-                }
+                    ctrl.BackColor = Color.FromArgb(120, 220, 200, 210);
+
                 buttonChangeTheme.BackColor = Color.DarkSlateGray;
                 buttonChangeTheme.ForeColor = Color.Snow;
             }
         }
+
+        #endregion
+
+        #region Initialization
+
+        /// <summary>
+        /// Initializeaza orasul automat pe baza IP-ului utilizatorului.
+        /// </summary>
         private async Task InitializeAsync()
         {
             LocationInfo location = await new RetryLocationService(
-                           new LoggingLocationService(new LocationServiceFactory().CreateService())).GetLocationFromIpAsync();
-            textBoxCity.Text= location.City;
-            comboBoxChangeLanguage.SelectedIndex = 1;
+                new LoggingLocationService(new LocationServiceFactory().CreateService())
+            ).GetLocationFromIpAsync();
+
+            textBoxCity.Text = location.City;
+            comboBoxChangeLanguage.SelectedIndex = 1; // Default: romana
         }
+
         private async void Form1_Load(object sender, EventArgs e)
         {
             await InitializeAsync();
             GetWeather();
             GetForecast();
             _themeManager.Register(this);
-            flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
             _languageManager.Register(this);
+            flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
         }
+
+        #endregion
+
+        #region Event Handlers
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             GetWeather();
             GetForecast();
         }
-        private void pictureBoxIcon_Click(object sender, EventArgs e)
-        {
-        }
+
         private void buttonChangeTheme_Click(object sender, EventArgs e)
         {
             var newTheme = _themeManager.GetCurrentTheme() == AppTheme.Dark ? AppTheme.Light : AppTheme.Dark;
@@ -294,6 +322,12 @@ namespace WindowsFormsApp1
             string selectedLang = comboBoxChangeLanguage.SelectedItem.ToString();
             _languageManager.ChangeLanguage(selectedLang);
         }
+
+        private void pictureBoxIcon_Click(object sender, EventArgs e)
+        {
+            // Placeholder - nu se foloseste
+        }
+
         #endregion
     }
 }
