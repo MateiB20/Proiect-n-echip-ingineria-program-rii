@@ -282,6 +282,8 @@ namespace WindowsFormsApp1
             ).GetLocationFromIpAsync();
 
             textBoxCity.Text = location.City;
+            Longitude=location.Lon; 
+            Latitude=location.Lat;
             comboBoxChangeLanguage.SelectedIndex = 1; // Default: romana
         }
 
