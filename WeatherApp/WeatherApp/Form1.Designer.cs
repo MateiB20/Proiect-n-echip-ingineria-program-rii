@@ -70,7 +70,7 @@
             labelCity.BackColor = Color.Transparent;
             labelCity.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelCity.ForeColor = Color.White;
-            labelCity.Location = new Point(84, 49);
+            labelCity.Location = new Point(65, 47);
             labelCity.Name = "labelCity";
             labelCity.Size = new Size(66, 28);
             labelCity.TabIndex = 0;
@@ -79,7 +79,7 @@
             // textBoxCity
             // 
             textBoxCity.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxCity.Location = new Point(173, 45);
+            textBoxCity.Location = new Point(126, 43);
             textBoxCity.Margin = new Padding(3, 4, 3, 4);
             textBoxCity.Name = "textBoxCity";
             textBoxCity.Size = new Size(266, 36);
@@ -91,10 +91,10 @@
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonSearch.ForeColor = Color.White;
-            buttonSearch.Location = new Point(445, 42);
+            buttonSearch.Location = new Point(398, 43);
             buttonSearch.Margin = new Padding(3, 4, 3, 4);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(147, 47);
+            buttonSearch.Size = new Size(129, 39);
             buttonSearch.TabIndex = 2;
             buttonSearch.Text = "Cauta";
             buttonSearch.UseVisualStyleBackColor = false;
@@ -242,16 +242,16 @@
             flowLayoutPanel.Location = new Point(323, 117);
             flowLayoutPanel.Margin = new Padding(3, 4, 3, 4);
             flowLayoutPanel.Name = "flowLayoutPanel";
-            flowLayoutPanel.Size = new Size(519, 220);
+            flowLayoutPanel.Size = new Size(539, 220);
             flowLayoutPanel.TabIndex = 15;
             flowLayoutPanel.WrapContents = false;
             // 
             // buttonChangeTheme
             // 
-            buttonChangeTheme.BackColor = Color.DarkSlateGray;
+            buttonChangeTheme.BackColor = SystemColors.InactiveCaptionText;
             buttonChangeTheme.BackgroundImageLayout = ImageLayout.None;
             buttonChangeTheme.ForeColor = Color.Snow;
-            buttonChangeTheme.Location = new Point(598, 42);
+            buttonChangeTheme.Location = new Point(769, 35);
             buttonChangeTheme.Margin = new Padding(3, 4, 3, 4);
             buttonChangeTheme.Name = "buttonChangeTheme";
             buttonChangeTheme.Size = new Size(93, 58);
@@ -262,26 +262,31 @@
             // 
             // comboBoxChangeLanguage
             // 
+            comboBoxChangeLanguage.BackColor = Color.White;
             comboBoxChangeLanguage.FormattingEnabled = true;
             comboBoxChangeLanguage.Items.AddRange(new object[] { "en", "ro", "fr", "de" });
-            comboBoxChangeLanguage.Location = new Point(728, 42);
+            comboBoxChangeLanguage.Location = new Point(576, 29);
             comboBoxChangeLanguage.Margin = new Padding(3, 4, 3, 4);
             comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
-            comboBoxChangeLanguage.Size = new Size(84, 28);
+            comboBoxChangeLanguage.Size = new Size(171, 28);
             comboBoxChangeLanguage.TabIndex = 17;
             comboBoxChangeLanguage.Tag = "";
+            comboBoxChangeLanguage.Text = "Select language..";
             comboBoxChangeLanguage.SelectedIndexChanged += comboBoxChangeLanguage_SelectedIndexChanged;
             // 
             // comboBoxChangeWeatherProvider
             // 
+            comboBoxChangeWeatherProvider.BackColor = Color.White;
+            comboBoxChangeWeatherProvider.Enabled = false;
             comboBoxChangeWeatherProvider.FormattingEnabled = true;
             comboBoxChangeWeatherProvider.Items.AddRange(new object[] { "OpenWeather", "WeatherStack", "Wttr" });
-            comboBoxChangeWeatherProvider.Location = new Point(728, 76);
+            comboBoxChangeWeatherProvider.Location = new Point(576, 63);
             comboBoxChangeWeatherProvider.Margin = new Padding(3, 4, 3, 4);
             comboBoxChangeWeatherProvider.Name = "comboBoxChangeWeatherProvider";
-            comboBoxChangeWeatherProvider.Size = new Size(84, 28);
+            comboBoxChangeWeatherProvider.Size = new Size(171, 28);
             comboBoxChangeWeatherProvider.TabIndex = 19;
             comboBoxChangeWeatherProvider.Tag = "";
+            comboBoxChangeWeatherProvider.Text = "Select API provider...";
             comboBoxChangeWeatherProvider.SelectedIndexChanged += comboBoxChangeWeatherProvider_SelectedIndexChanged;
             // 
             // groupBox1
@@ -292,9 +297,9 @@
             groupBox1.Controls.Add(pictureBoxIcon);
             groupBox1.Controls.Add(labelCondition);
             groupBox1.Controls.Add(labelDetails);
-            groupBox1.Location = new Point(84, 117);
+            groupBox1.Location = new Point(65, 117);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(200, 559);
+            groupBox1.Size = new Size(219, 559);
             groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
             // 
@@ -302,11 +307,11 @@
             // 
             labelLocationTime.AutoSize = true;
             labelLocationTime.BackColor = Color.Transparent;
-            labelLocationTime.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelLocationTime.Font = new Font("Calibri", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelLocationTime.ForeColor = Color.White;
             labelLocationTime.Location = new Point(9, 355);
             labelLocationTime.Name = "labelLocationTime";
-            labelLocationTime.Size = new Size(121, 28);
+            labelLocationTime.Size = new Size(181, 41);
             labelLocationTime.TabIndex = 16;
             labelLocationTime.Text = "Locatie, ora";
             // 

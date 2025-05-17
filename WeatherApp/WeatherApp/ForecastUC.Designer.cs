@@ -37,10 +37,10 @@
             // 
             // pictureBoxForecastIcon
             // 
-            pictureBoxForecastIcon.Location = new Point(85, 18);
+            pictureBoxForecastIcon.Location = new Point(101, 16);
             pictureBoxForecastIcon.Margin = new Padding(3, 4, 3, 4);
             pictureBoxForecastIcon.Name = "pictureBoxForecastIcon";
-            pictureBoxForecastIcon.Size = new Size(108, 74);
+            pictureBoxForecastIcon.Size = new Size(116, 71);
             pictureBoxForecastIcon.TabIndex = 0;
             pictureBoxForecastIcon.TabStop = false;
             // 
@@ -48,7 +48,8 @@
             // 
             labelDate.AutoSize = true;
             labelDate.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelDate.Location = new Point(8, 30);
+            labelDate.ForeColor = Color.Navy;
+            labelDate.Location = new Point(28, 30);
             labelDate.Name = "labelDate";
             labelDate.Size = new Size(49, 24);
             labelDate.TabIndex = 1;
@@ -57,9 +58,10 @@
             // labelTempMin
             // 
             labelTempMin.AutoSize = true;
+            labelTempMin.BackColor = Color.Transparent;
             labelTempMin.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelTempMin.ForeColor = Color.LightGray;
-            labelTempMin.Location = new Point(237, 30);
+            labelTempMin.ForeColor = Color.Navy;
+            labelTempMin.Location = new Point(252, 30);
             labelTempMin.Name = "labelTempMin";
             labelTempMin.Size = new Size(88, 24);
             labelTempMin.TabIndex = 2;
@@ -68,9 +70,10 @@
             // labelTempMax
             // 
             labelTempMax.AutoSize = true;
+            labelTempMax.BackColor = Color.Transparent;
             labelTempMax.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelTempMax.ForeColor = Color.White;
-            labelTempMax.Location = new Point(350, 30);
+            labelTempMax.ForeColor = Color.FromArgb(0, 0, 64);
+            labelTempMax.Location = new Point(383, 30);
             labelTempMax.Name = "labelTempMax";
             labelTempMax.Size = new Size(91, 24);
             labelTempMax.TabIndex = 3;
@@ -80,7 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Transparent;
+            BackColor = Color.White;
             Controls.Add(labelTempMax);
             Controls.Add(labelTempMin);
             Controls.Add(labelDate);
@@ -88,7 +91,7 @@
             ForeColor = Color.Transparent;
             Margin = new Padding(3, 4, 3, 4);
             Name = "ForecastUC";
-            Size = new Size(444, 108);
+            Size = new Size(492, 108);
             ((System.ComponentModel.ISupportInitialize)pictureBoxForecastIcon).EndInit();
             ResumeLayout(false);
             PerformLayout();
