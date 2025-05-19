@@ -70,7 +70,7 @@ namespace WindowsFormsApp1 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0.
+        ///   Looks up a localized string similar to 94b1cbd97eb5415896e2b3219ad164e7.
         /// </summary>
         internal static string WeatherStack {
             get {

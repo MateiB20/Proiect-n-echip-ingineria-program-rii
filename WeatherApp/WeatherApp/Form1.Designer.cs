@@ -277,7 +277,7 @@
             // comboBoxChangeWeatherProvider
             // 
             comboBoxChangeWeatherProvider.BackColor = Color.White;
-            comboBoxChangeWeatherProvider.Enabled = false;
+            comboBoxChangeWeatherProvider.Enabled = true;
             comboBoxChangeWeatherProvider.FormattingEnabled = true;
             comboBoxChangeWeatherProvider.Items.AddRange(new object[] { "OpenWeather", "WeatherStack", "Wttr" });
             comboBoxChangeWeatherProvider.Location = new Point(576, 63);

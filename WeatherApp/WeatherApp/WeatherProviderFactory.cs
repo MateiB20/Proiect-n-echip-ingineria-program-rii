@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
             {
                 "openweather" => new OpenWeatherProvider(_keys.OpenWeather),
                 "weatherstack" => new WeatherStackProvider(_keys.WeatherStack),
-                "wttr" => new WttrProvider(), // doesn't need api, boi
+                "wttr" => new WttrProvider(), // doesn't need api
                 _ => throw new NotSupportedException($"Weather provider '{providerName}' not supported.")
             };
         }

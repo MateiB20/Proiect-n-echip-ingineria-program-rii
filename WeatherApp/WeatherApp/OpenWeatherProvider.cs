@@ -26,13 +26,18 @@ namespace WindowsFormsApp1
         private readonly string _apiKey;
         public OpenWeatherProvider(string apiKey)
         {
-            _apiKey = apiKey;
+            _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
         }
 
         public async Task<WeatherInfo.CurrentWeatherResponse> GetCurrentAsync(string location)
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(location))
+                {
+                    throw new ArgumentException(nameof(location));
+                }
+
                 using var httpClient = new HttpClient();
                 string url = $"https://api.openweathermap.org/data/2.5/weather?q={WebUtility.UrlEncode(location)}&appid={_apiKey}&units=metric&lang={CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}";
 

@@ -160,6 +160,8 @@ namespace WindowsFormsApp1
                     ? $"https://openweathermap.org/img/w/{weather.Icon}.png"
                     : null;
 
+                
+
                 labelCondition.Text = weather?.Condition ?? "N/A";
                 labelDetails.Text = weather?.Description ?? "N/A";
                 valueTemperature.Text = info.WeatherMetrics?.Temperature.ToString() + "°C" ?? "N/A";
@@ -219,6 +221,7 @@ namespace WindowsFormsApp1
             try
             {
                 var forecastInfo = await _weatherProvider.GetForecastAsync(Latitude, Longitude);
+                
 
                 if (forecastInfo?.ForecastEntries == null || !forecastInfo.ForecastEntries.Any())
                     throw new Exception("No forecast data available.");
