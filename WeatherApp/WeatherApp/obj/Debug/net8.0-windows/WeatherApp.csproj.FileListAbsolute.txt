@@ -137,3 +137,46 @@ C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-progr
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\ref\WeatherApp.dll
 D:\Facultate\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherModule.dll
 D:\Facultate\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherApp.exe
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherApp.deps.json
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherApp.runtimeconfig.json
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherApp.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherApp.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\de\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\fr\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\ro\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LanguageModule.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LocationInfo.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LocationService.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LocationServiceFactory.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\ThemeModule.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherModule.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LanguageModule.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\ThemeModule.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ApiKeysDictionary.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ForecastUC.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Form1.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.de.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.fr.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.ro.resources
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.sourcelink.json
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\de\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\fr\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\ro\WeatherApp.resources.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.Up2Date
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\refint\WeatherApp.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\ref\WeatherApp.dll

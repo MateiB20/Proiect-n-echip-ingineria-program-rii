@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tony\\Facultate\\ip\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {}
   },
   "projects": {
-    "C:\\Tony\\Facultate\\ip\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tony\\Facultate\\ip\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
         "projectName": "LanguageModule",
-        "projectPath": "C:\\Tony\\Facultate\\ip\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
-        "packagesPath": "C:\\Users\\h8win\\.nuget\\packages\\",
-        "outputPath": "C:\\Tony\\Facultate\\ip\\LanguageModule\\LanguageModule\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\h8win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,8 +43,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

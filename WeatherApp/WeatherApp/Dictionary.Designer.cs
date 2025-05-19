@@ -140,5 +140,15 @@ namespace WindowsFormsApp1 {
                 return ResourceManager.GetString("LabelVant", resourceCulture);
             }
         }
+        /// <summary>
+        ///   Looks up a localized string similar to Humidity.
+        /// </summary>
+        internal static string LabelUmiditate
+        {
+            get
+            {
+                return ResourceManager.GetString("LabelUmiditate", resourceCulture);
+            }
+        }
     }
 }

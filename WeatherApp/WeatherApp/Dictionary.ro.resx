@@ -141,6 +141,9 @@
   <data name="LabelSchimbaTema" xml:space="preserve">
     <value>Schimbă tema</value>
   </data>
+  <data name="LabelUmiditate" xml:space="preserve">
+    <value>Umiditate</value>
+  </data>
   <data name="LabelVant" xml:space="preserve">
     <value>Vant</value>
   </data>

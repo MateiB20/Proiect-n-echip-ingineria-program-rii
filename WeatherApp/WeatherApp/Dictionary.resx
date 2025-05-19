@@ -141,6 +141,9 @@
   <data name="LabelSchimbaTema" xml:space="preserve">
     <value>Change Theme</value>
   </data>
+  <data name="LabelUmiditate" xml:space="preserve">
+    <value>Humidity</value>
+  </data>
   <data name="LabelVant" xml:space="preserve">
     <value>Wind</value>
   </data>

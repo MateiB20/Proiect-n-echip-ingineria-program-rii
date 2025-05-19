@@ -79,17 +79,25 @@ namespace WindowsFormsApp1
         /// </summary>
         public void OnThemeChanged(AppTheme theme)
         {
-            string imagePath = theme == AppTheme.Dark
+            try
+            {
+                string imagePath = theme == AppTheme.Dark
                 ? "Resources/dark.png"
                 : "Resources/light.png";
 
-            this.BackgroundImage = Image.FromFile(imagePath);
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+                this.BackgroundImage = Image.FromFile(imagePath);
+                this.BackgroundImageLayout = ImageLayout.Stretch;
 
-            foreach (Control ctrl in this.Controls)
-            {
-                ApplyThemeToControl(ctrl, theme);
+                foreach (Control ctrl in this.Controls)
+                {
+                    ApplyThemeToControl(ctrl, theme);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+          
         }
 
         #endregion
@@ -101,20 +109,29 @@ namespace WindowsFormsApp1
         /// </summary>
         public void OnLanguageChanged(CultureInfo newCulture)
         {
+            if(newCulture==null)
+                throw new ArgumentNullException("OnLanguageChanged: Culture cannot be null ",nameof(newCulture));
             Thread.CurrentThread.CurrentUICulture = newCulture;
+            try
+            {
+                // Actualizeaza toate textele
+                labelCity.Text = Dictionary.LabelOras;
+                buttonSearch.Text = Dictionary.LabelCauta;
+                buttonChangeTheme.Text = Dictionary.LabelSchimbaTema;
+                labelSunrise.Text = Dictionary.LabelRasarit;
+                labelSunset.Text = Dictionary.LabelApus;
+                labelWind.Text = Dictionary.LabelVant;
+                labelPressure.Text = Dictionary.LabelPresiune;
+                labelHumidity.Text = Dictionary.LabelUmiditate;
+                // Reincarca datele meteo
+                GetWeather();
+                GetForecast();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
-            // Actualizeaza toate textele
-            labelCity.Text = Dictionary.LabelOras;
-            buttonSearch.Text = Dictionary.LabelCauta;
-            buttonChangeTheme.Text = Dictionary.LabelSchimbaTema;
-            labelSunrise.Text = Dictionary.LabelRasarit;
-            labelSunset.Text = Dictionary.LabelApus;
-            labelWind.Text = Dictionary.LabelVant;
-            labelPressure.Text = Dictionary.LabelPresiune;
-
-            // Reincarca datele meteo
-            GetWeather();
-            GetForecast();
         }
 
         #endregion
@@ -250,22 +267,34 @@ namespace WindowsFormsApp1
         /// </summary>
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
-            if (theme == AppTheme.Dark)
+            if (ctrl == null) 
+                throw new ArgumentNullException("ApplyThemeToControl: Control null.");
+           
+;
+            try
             {
-                if (ctrl == flowLayoutPanel)
-                    ctrl.BackColor = Color.FromArgb(100, 200, 200, 200);
+                if (theme == AppTheme.Dark)
+                {
+                    if (ctrl == flowLayoutPanel)
+                        ctrl.BackColor = Color.FromArgb(100, 200, 200, 200);
 
-                buttonChangeTheme.BackColor = Color.LightSteelBlue;
-                buttonChangeTheme.ForeColor = Color.Navy;
+                    buttonChangeTheme.BackColor = Color.LightSteelBlue;
+                    buttonChangeTheme.ForeColor = Color.Navy;
+                }
+                else
+                {
+                    if (ctrl == flowLayoutPanel)
+                        ctrl.BackColor = Color.FromArgb(120, 220, 200, 210);
+
+                    buttonChangeTheme.BackColor = Color.DarkSlateGray;
+                    buttonChangeTheme.ForeColor = Color.Snow;
+                }
             }
-            else
+            catch(Exception ex)
             {
-                if (ctrl == flowLayoutPanel)
-                    ctrl.BackColor = Color.FromArgb(120, 220, 200, 210);
-
-                buttonChangeTheme.BackColor = Color.DarkSlateGray;
-                buttonChangeTheme.ForeColor = Color.Snow;
+                MessageBox.Show(ex.Message);
             }
+
         }
 
         #endregion
@@ -290,11 +319,20 @@ namespace WindowsFormsApp1
         private async void Form1_Load(object sender, EventArgs e)
         {
             await InitializeAsync();
+            try
+            {
+                _themeManager.Register(this);
+                _languageManager.Register(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             GetWeather();
             GetForecast();
-            _themeManager.Register(this);
-            _languageManager.Register(this);
+           
             flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
+
         }
 
         #endregion

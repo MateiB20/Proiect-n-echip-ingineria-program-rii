@@ -463,7 +463,7 @@
         private GroupBox groupBox4;
         private GroupBox groupBox5;
         private Label valueHumidity;
-        private Label labelHumidity;
+        private System.Windows.Forms.Label labelHumidity;
         private Label labelLocationTime;
     }
 }

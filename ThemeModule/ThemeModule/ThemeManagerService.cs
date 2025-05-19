@@ -24,6 +24,12 @@ namespace ThemeModule
         /// <param name="observer"></param>
         public void Register(IThemeObserverService observer)
         {
+            if (observer == null)
+                throw new ArgumentNullException(nameof(observer), "Observer cannot be null.");
+
+            if (_observers.Contains(observer))
+                throw new InvalidOperationException("Observer is already registered.");
+
             if (!_observers.Contains(observer))
                 _observers.Add(observer);
         }
@@ -33,6 +39,12 @@ namespace ThemeModule
         /// <param name="observer"></param>
         public void Unregister(IThemeObserverService observer)
         {
+            if (observer == null)
+                throw new ArgumentNullException(nameof(observer), "Observer cannot be null.");
+
+            if (!_observers.Contains(observer))
+                throw new InvalidOperationException("Observer is not registered.");
+
             if (_observers.Contains(observer))
                 _observers.Remove(observer);
         }
@@ -42,10 +54,21 @@ namespace ThemeModule
         /// <param name="newTheme"></param>
         public void ChangeTheme(AppTheme newTheme)
         {
+            if (newTheme==null)
+                throw new ArgumentException("Theme cannot be null or empty.");
+
             _currentTheme = newTheme;
             foreach (var observer in _observers)
             {
-                observer.OnThemeChanged(newTheme);
+                try
+                {
+                    observer.OnThemeChanged(newTheme);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Eroare la notificarea observatorului: {observer.GetType().Name}");
+                    Console.WriteLine($"Detalii: {ex.Message}");
+                }
             }
         }
         /// <summary>
