@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
                 var raspunsFormatat = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(raspuns.ToLower());
                 return JsonConvert.DeserializeObject<LocationInfo>(raspunsFormatat);
             }
-            catch (Exception e)
+            catch (HttpRequestException ex)
             {
                 throw new LocationServiceException("Eroare obtinere informatii locatie curenta", DateTime.Now);
             }
