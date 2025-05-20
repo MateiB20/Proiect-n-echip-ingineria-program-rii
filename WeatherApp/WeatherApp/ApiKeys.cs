@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
     public class ApiKeys
     {
         public string OpenWeather { get; private set; }
-        public string WeatherStack { get; private set; }
+        public string WeatherBit { get; private set; }
         private ApiKeys() { }
 
         public static ApiKeys LoadFromConfig()
@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
             return new ApiKeys
             {
                 OpenWeather = ApiKeysDictionary.OpenWeather,
-                WeatherStack = ApiKeysDictionary.WeatherStack
+                WeatherBit = ApiKeysDictionary.WeatherBit
             }; 
         }
     }

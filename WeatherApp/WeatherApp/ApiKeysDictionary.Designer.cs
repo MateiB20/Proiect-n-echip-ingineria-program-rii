@@ -72,9 +72,9 @@ namespace WindowsFormsApp1 {
         /// <summary>
         ///   Looks up a localized string similar to 94b1cbd97eb5415896e2b3219ad164e7.
         /// </summary>
-        internal static string WeatherStack {
+        internal static string WeatherBit {
             get {
-                return ResourceManager.GetString("WeatherStack", resourceCulture);
+                return ResourceManager.GetString("WeatherBit", resourceCulture);
             }
         }
         

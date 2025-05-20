@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             return providerName.Trim().ToLowerInvariant() switch
             {
                 "openweather" => new OpenWeatherProvider(_keys.OpenWeather),
-                "weatherstack" => new WeatherStackProvider(_keys.WeatherStack),
+                "weatherbit" => new WeatherBitProvider(_keys.WeatherBit),
                 "wttr" => new WttrProvider(), // doesn't need api
                 _ => throw new NotSupportedException($"Weather provider '{providerName}' not supported.")
             };

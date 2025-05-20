@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------------
 // Nume proiect: Weather App
-// Fisier: WeatherStackProvider.cs
+// Fisier: WeatherBitProvider.cs
 // Descriere: TODO
 // Autor: Tonix
 //
@@ -16,17 +16,18 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using WeatherModule;
 using Microsoft.VisualBasic.Logging;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WindowsFormsApp1
 {
     /// <summary>
-    /// Weather provider = WeatherStack: https://weatherstack.com/
+    /// Weather provider = WeatherBitProvider: https://weatherbit.com/
     /// </summary>
-    class WeatherStackProvider : IWeatherProvider
+    class WeatherBitProvider : IWeatherProvider
     {
         private readonly string _apiKey;
 
-        public WeatherStackProvider(string apiKey)
+        public WeatherBitProvider(string apiKey)
         {
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
         }
@@ -47,35 +48,50 @@ namespace WindowsFormsApp1
                 var data = doc.RootElement.GetProperty("data")[0];
 
 
+                double lat = data.GetProperty("lat").GetDouble();
+                double lon = data.GetProperty("lon").GetDouble();
+                string desc = data.GetProperty("weather").GetProperty("description").GetString()!;
+                string iconKey = data.GetProperty("weather").GetProperty("icon").GetString()!;
+                string iconUrl = iconKey != "" ? iconKey : "00d";
+
+                double temp = data.GetProperty("temp").GetDouble();
+                double pressure = data.GetProperty("pres").GetDouble();
+                double humidity = data.GetProperty("rh").GetDouble();
+                double windSpd = data.GetProperty("wind_spd").GetDouble();   
+
+                long sunrise = ParseUtcTime(data.GetProperty("sunrise").GetString()!);
+                long sunset = ParseUtcTime(data.GetProperty("sunset").GetString()!);
+
                 return new WeatherInfo.CurrentWeatherResponse
                 {
-                    Coordinates = new WeatherInfo.Coordinates
-                    {
-                        Latitude = double.Parse(data.GetProperty("lat").GetRawText(), CultureInfo.InvariantCulture),
-                        Longitude = double.Parse(data.GetProperty("lon").GetRawText(), CultureInfo.InvariantCulture)
-                    },
+                    Coordinates = new WeatherInfo.Coordinates { Latitude = lat, Longitude = lon },
+
                     WeatherConditions = new List<WeatherInfo.WeatherConditions>
                     {
                         new WeatherInfo.WeatherConditions
                         {
-                            Condition = data.GetProperty("weather").GetProperty("description").GetString() ?? string.Empty,
-                            Description = data.GetProperty("weather").GetProperty("description").GetString() ?? string.Empty,
-                            Icon = data.GetProperty("weather").GetProperty("icon").GetString() ?? string.Empty
+                            Condition   = desc.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0],
+                            Description = desc,
+                            Icon        = iconUrl
                         }
                     },
+
                     WeatherMetrics = new WeatherInfo.WeatherMetrics
                     {
-                        Temperature = data.GetProperty("temp").GetDouble(),
-                        Pressure = data.GetProperty("pres").GetDouble(),
-                        Humidity = data.GetProperty("rh").GetDouble()
+                        Temperature = temp,
+                        Pressure = pressure,
+                        Humidity = humidity
                     },
-                    Wind = new WeatherInfo.Wind { Speed = data.GetProperty("wind_spd").GetDouble() },
+
+                    Wind = new WeatherInfo.Wind { Speed = windSpd },
+
                     SystemInfo = new WeatherInfo.SystemInfo
                     {
-                        Sunrise = 10,// data.GetProperty("sunrise").GetInt64(),
-                        Sunset = 10, //data.GetProperty("sunset").GetInt64()
+                        Sunrise = sunrise,
+                        Sunset = sunset
                     }
                 };
+            
             }
             catch (HttpRequestException ex)
             {
@@ -99,37 +115,41 @@ namespace WindowsFormsApp1
                 var json = await httpClient.GetStringAsync(url);
                 using var doc = JsonDocument.Parse(json);
 
-                var forecastInfo = new WeatherForecast.ForecastInfo
+                var forecast = new WeatherForecast.ForecastInfo
                 {
                     ForecastEntries = new List<WeatherForecast.ForecastEntry>()
                 };
 
                 foreach (var day in doc.RootElement.GetProperty("data").EnumerateArray())
                 {
-                    long ts = 10;// day.GetProperty("ts").GetInt64();
-                    double minT = 10;// day.TryGetProperty("min_temp", out var minEl) ? ReadDouble(minEl) : ReadDouble(day.GetProperty("temp"));
-                    double maxT = 10;// day.TryGetProperty("max_temp", out var maxEl) ? ReadDouble(maxEl) : ReadDouble(day.GetProperty("temp"));
-                    string desc = day.GetProperty("weather").GetProperty("description").GetString() ?? string.Empty;
-                    string icon = day.GetProperty("weather").GetProperty("icon").GetString() ?? string.Empty;
+                    long ts = day.GetProperty("ts").GetInt64();                                
+                    double minT = day.GetProperty("min_temp").GetDouble();
+                    double maxT = day.GetProperty("max_temp").GetDouble();
+                    string desc = day.GetProperty("weather").GetProperty("description").GetString()!;
+                    string iconKey = day.GetProperty("weather").GetProperty("icon").GetString()!;
+                    string icon = iconKey != "" ? iconKey : "00d";
 
-                    forecastInfo.ForecastEntries!.Add(new WeatherForecast.ForecastEntry
+                    forecast.ForecastEntries!.Add(new WeatherForecast.ForecastEntry
                     {
                         Timestamp = ts,
-                        TemperatureInfo = new WeatherForecast.TemperatureInfo {
+                        TemperatureInfo = new WeatherForecast.TemperatureInfo
+                        {
                             MinimumTemperature = minT,
                             MaximumTemperature = maxT
                         },
                         WeatherDescriptions = new List<WeatherForecast.WeatherDescription>
                         {
-                            new WeatherForecast.WeatherDescription {
-                                Condition = desc,
+                            new WeatherForecast.WeatherDescription
+                            {
+                                Condition           = desc,
                                 DetailedDescription = desc,
-                                Icon = icon
+                                Icon                = icon
                             }
                         }
                     });
                 }
-                return forecastInfo;
+
+                return forecast;
             }
             catch (HttpRequestException ex)
             {
@@ -141,16 +161,11 @@ namespace WindowsFormsApp1
             }
         }
 
-        private static double ReadDouble(JsonElement el)
+        private static long ParseUtcTime(string hhmmUtc)
         {
-            return el.ValueKind switch
-            {
-                JsonValueKind.Number => el.GetDouble(),
-                JsonValueKind.String => double.Parse(el.GetString()!, CultureInfo.InvariantCulture),
-                _ => 0
-            };
+            var t = DateTime.ParseExact(hhmmUtc, "HH:mm", CultureInfo.InvariantCulture,
+                                        DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal);
+            return new DateTimeOffset(t).ToUnixTimeSeconds();
         }
-
-
     }
 }
