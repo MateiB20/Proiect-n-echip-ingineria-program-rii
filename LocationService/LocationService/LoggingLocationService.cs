@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
             LocationInfo location = await _inner.GetLocationFromIpAsync();
             if ((DateTime.Now - _lastLoggedTime).TotalSeconds > 3)
             {
-                _message = $"{DateTime.Now}:{location.City}, {location.Country}, {location.Lat}, {location.Lon}";
+                _message = $"\n{DateTime.Now}:{location.City}, {location.Country}, {location.Lat}, {location.Lon}";
                 string cale = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "istoric.txt");
                 File.AppendAllText(cale, _message);
                 _lastLoggedTime = DateTime.Now;
@@ -73,7 +73,8 @@ namespace WindowsFormsApp1
         /// <param name="longitude">
         /// Longitudinea locatiei
         /// </param>
-        /// <param name="latitude">Latitudinea locatiei
+        /// <param name="latitude">
+        /// Latitudinea locatiei
         /// </param>
         public void GeneralLoggingMessage(String city, double longitude, double latitude) 
         {
