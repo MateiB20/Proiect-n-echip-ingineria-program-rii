@@ -373,7 +373,7 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private void buttonHelp_Click(object sender, EventArgs e)
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string helpFilePath = AppDomain.CurrentDomain.BaseDirectory + "\\WeatherApp.chm";
 
@@ -385,6 +385,11 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Fisier negasit.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
