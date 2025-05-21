@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.Message);
             }
-          
+
         }
 
         #endregion
@@ -109,8 +109,8 @@ namespace WindowsFormsApp1
         /// </summary>
         public void OnLanguageChanged(CultureInfo newCulture)
         {
-            if(newCulture==null)
-                throw new ArgumentNullException("OnLanguageChanged: Culture cannot be null ",nameof(newCulture));
+            if (newCulture == null)
+                throw new ArgumentNullException("OnLanguageChanged: Culture cannot be null ", nameof(newCulture));
             Thread.CurrentThread.CurrentUICulture = newCulture;
             try
             {
@@ -160,7 +160,7 @@ namespace WindowsFormsApp1
                     ? $"https://openweathermap.org/img/w/{weather.Icon}.png"
                     : null;
 
-                
+
 
                 labelCondition.Text = weather?.Condition ?? "N/A";
                 labelDetails.Text = weather?.Description ?? "N/A";
@@ -221,7 +221,7 @@ namespace WindowsFormsApp1
             try
             {
                 var forecastInfo = await _weatherProvider.GetForecastAsync(Latitude, Longitude);
-                
+
 
                 if (forecastInfo?.ForecastEntries == null || !forecastInfo.ForecastEntries.Any())
                     throw new Exception("No forecast data available.");
@@ -270,10 +270,10 @@ namespace WindowsFormsApp1
         /// </summary>
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
-            if (ctrl == null) 
+            if (ctrl == null)
                 throw new ArgumentNullException("ApplyThemeToControl: Control null.");
-           
-;
+
+            ;
             try
             {
                 if (theme == AppTheme.Dark)
@@ -293,7 +293,7 @@ namespace WindowsFormsApp1
                     buttonChangeTheme.ForeColor = Color.Snow;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -314,8 +314,8 @@ namespace WindowsFormsApp1
             ).GetLocationFromIpAsync();
 
             textBoxCity.Text = location.City;
-            Longitude=location.Lon; 
-            Latitude=location.Lat;
+            Longitude = location.Lon;
+            Latitude = location.Lat;
             comboBoxChangeLanguage.SelectedIndex = 1; // Default: romana
         }
 
@@ -333,7 +333,7 @@ namespace WindowsFormsApp1
             }
             GetWeather();
             GetForecast();
-           
+
             flowLayoutPanel.BackColor = Color.FromArgb(120, 220, 200, 210);
 
         }
@@ -372,5 +372,19 @@ namespace WindowsFormsApp1
         }
 
         #endregion
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            string helpFilePath = AppDomain.CurrentDomain.BaseDirectory + "\\WeatherApp.chm";
+
+            if (System.IO.File.Exists(helpFilePath))
+            {
+                Help.ShowHelp(this, helpFilePath);
+            }
+            else
+            {
+                MessageBox.Show("Fisier negasit.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

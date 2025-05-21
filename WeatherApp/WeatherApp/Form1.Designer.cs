@@ -56,6 +56,7 @@
             groupBox5 = new GroupBox();
             valueHumidity = new Label();
             labelHumidity = new Label();
+            buttonHelp = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxIcon).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -308,9 +309,9 @@
             groupBox1.Controls.Add(labelCondition);
             groupBox1.Controls.Add(labelDetails);
             groupBox1.Location = new Point(106, 187);
-            groupBox1.Margin = new Padding(5, 5, 5, 5);
+            groupBox1.Margin = new Padding(5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(5, 5, 5, 5);
+            groupBox1.Padding = new Padding(5);
             groupBox1.Size = new Size(356, 894);
             groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
@@ -349,9 +350,9 @@
             groupBox2.Controls.Add(valueSunset);
             groupBox2.Controls.Add(labelSunset);
             groupBox2.Location = new Point(994, 579);
-            groupBox2.Margin = new Padding(5, 5, 5, 5);
+            groupBox2.Margin = new Padding(5);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(5, 5, 5, 5);
+            groupBox2.Padding = new Padding(5);
             groupBox2.Size = new Size(406, 200);
             groupBox2.TabIndex = 21;
             groupBox2.TabStop = false;
@@ -362,9 +363,9 @@
             groupBox3.Controls.Add(labelWind);
             groupBox3.Controls.Add(valueWind);
             groupBox3.Location = new Point(525, 579);
-            groupBox3.Margin = new Padding(5, 5, 5, 5);
+            groupBox3.Margin = new Padding(5);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(5, 5, 5, 5);
+            groupBox3.Padding = new Padding(5);
             groupBox3.Size = new Size(406, 200);
             groupBox3.TabIndex = 22;
             groupBox3.TabStop = false;
@@ -375,9 +376,9 @@
             groupBox4.Controls.Add(valuePressure);
             groupBox4.Controls.Add(labelPressure);
             groupBox4.Location = new Point(525, 834);
-            groupBox4.Margin = new Padding(5, 5, 5, 5);
+            groupBox4.Margin = new Padding(5);
             groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(5, 5, 5, 5);
+            groupBox4.Padding = new Padding(5);
             groupBox4.Size = new Size(406, 200);
             groupBox4.TabIndex = 23;
             groupBox4.TabStop = false;
@@ -388,9 +389,9 @@
             groupBox5.Controls.Add(valueHumidity);
             groupBox5.Controls.Add(labelHumidity);
             groupBox5.Location = new Point(994, 834);
-            groupBox5.Margin = new Padding(5, 5, 5, 5);
+            groupBox5.Margin = new Padding(5);
             groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(5, 5, 5, 5);
+            groupBox5.Padding = new Padding(5);
             groupBox5.Size = new Size(406, 200);
             groupBox5.TabIndex = 24;
             groupBox5.TabStop = false;
@@ -421,6 +422,20 @@
             labelHumidity.TabIndex = 13;
             labelHumidity.Text = "Umiditate:";
             // 
+            // buttonHelp
+            // 
+            buttonHelp.BackColor = SystemColors.InactiveCaptionText;
+            buttonHelp.BackgroundImageLayout = ImageLayout.None;
+            buttonHelp.ForeColor = Color.Snow;
+            buttonHelp.Location = new Point(1404, 56);
+            buttonHelp.Margin = new Padding(5, 6, 5, 6);
+            buttonHelp.Name = "buttonHelp";
+            buttonHelp.Size = new Size(76, 93);
+            buttonHelp.TabIndex = 25;
+            buttonHelp.Text = "Help";
+            buttonHelp.UseVisualStyleBackColor = false;
+            buttonHelp.Click += buttonHelp_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -428,6 +443,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1474, 1134);
+            Controls.Add(buttonHelp);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
@@ -489,6 +505,7 @@
         private Label valueHumidity;
         private System.Windows.Forms.Label labelHumidity;
         private Label labelLocationTime;
+        private Button buttonHelp;
     }
 }
 
