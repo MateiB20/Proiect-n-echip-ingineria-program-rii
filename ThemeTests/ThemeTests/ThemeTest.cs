@@ -1,4 +1,12 @@
-﻿using ThemeModule;
+﻿//-----------------------------------------------------------------------------
+// Nume proiect:ThemeTests
+// Fisier: ThemeTest.cs
+// Descriere: Teste preluare schimbare temă.
+// Autor: Izabela 
+//
+//-----------------------------------------------------------------------------
+
+using ThemeModule;
 
 namespace ThemeTests
 {

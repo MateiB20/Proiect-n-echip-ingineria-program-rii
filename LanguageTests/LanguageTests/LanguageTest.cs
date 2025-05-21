@@ -1,4 +1,12 @@
-﻿using LanguageModule;
+﻿//-----------------------------------------------------------------------------
+// Nume proiect:LanguageTests
+// Fisier: LanguageTest.cs
+// Descriere: Teste schimbare limbă.
+// Autor: Izabela 
+//
+//-----------------------------------------------------------------------------
+
+using LanguageModule;
 using System.Globalization;
 
 namespace LanguageTests
