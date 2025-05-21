@@ -74,20 +74,19 @@
             labelCity.BackColor = Color.Transparent;
             labelCity.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelCity.ForeColor = Color.White;
-            labelCity.Location = new Point(106, 87);
-            labelCity.Margin = new Padding(5, 0, 5, 0);
+            labelCity.Location = new Point(65, 54);
             labelCity.Name = "labelCity";
-            labelCity.Size = new Size(108, 45);
+            labelCity.Size = new Size(66, 28);
             labelCity.TabIndex = 0;
             labelCity.Text = "Oras: ";
             // 
             // textBoxCity
             // 
             textBoxCity.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxCity.Location = new Point(205, 81);
-            textBoxCity.Margin = new Padding(5, 6, 5, 6);
+            textBoxCity.Location = new Point(126, 51);
+            textBoxCity.Margin = new Padding(3, 4, 3, 4);
             textBoxCity.Name = "textBoxCity";
-            textBoxCity.Size = new Size(430, 52);
+            textBoxCity.Size = new Size(266, 36);
             textBoxCity.TabIndex = 1;
             // 
             // buttonSearch
@@ -96,10 +95,10 @@
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonSearch.ForeColor = Color.White;
-            buttonSearch.Location = new Point(647, 81);
-            buttonSearch.Margin = new Padding(5, 6, 5, 6);
+            buttonSearch.Location = new Point(398, 51);
+            buttonSearch.Margin = new Padding(3, 4, 3, 4);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(210, 62);
+            buttonSearch.Size = new Size(129, 39);
             buttonSearch.TabIndex = 2;
             buttonSearch.Text = "Cauta";
             buttonSearch.UseVisualStyleBackColor = false;
@@ -111,10 +110,9 @@
             labelCondition.BackColor = Color.Transparent;
             labelCondition.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelCondition.ForeColor = Color.White;
-            labelCondition.Location = new Point(13, 705);
-            labelCondition.Margin = new Padding(5, 0, 5, 0);
+            labelCondition.Location = new Point(8, 441);
             labelCondition.Name = "labelCondition";
-            labelCondition.Size = new Size(171, 45);
+            labelCondition.Size = new Size(105, 28);
             labelCondition.TabIndex = 3;
             labelCondition.Text = "Conditie:  ";
             // 
@@ -124,10 +122,9 @@
             labelDetails.BackColor = Color.Transparent;
             labelDetails.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelDetails.ForeColor = Color.White;
-            labelDetails.Location = new Point(15, 761);
-            labelDetails.Margin = new Padding(5, 0, 5, 0);
+            labelDetails.Location = new Point(9, 476);
             labelDetails.Name = "labelDetails";
-            labelDetails.Size = new Size(149, 45);
+            labelDetails.Size = new Size(92, 28);
             labelDetails.TabIndex = 4;
             labelDetails.Text = "Detalii:   ";
             // 
@@ -137,10 +134,9 @@
             valueSunrise.BackColor = Color.Transparent;
             valueSunrise.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valueSunrise.ForeColor = Color.White;
-            valueSunrise.Location = new Point(244, 73);
-            valueSunrise.Margin = new Padding(5, 0, 5, 0);
+            valueSunrise.Location = new Point(150, 46);
             valueSunrise.Name = "valueSunrise";
-            valueSunrise.Size = new Size(78, 45);
+            valueSunrise.Size = new Size(48, 28);
             valueSunrise.TabIndex = 6;
             valueSunrise.Text = "N/A";
             // 
@@ -150,10 +146,9 @@
             labelSunrise.BackColor = Color.Transparent;
             labelSunrise.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelSunrise.ForeColor = Color.White;
-            labelSunrise.Location = new Point(34, 73);
-            labelSunrise.Margin = new Padding(5, 0, 5, 0);
+            labelSunrise.Location = new Point(21, 46);
             labelSunrise.Name = "labelSunrise";
-            labelSunrise.Size = new Size(157, 45);
+            labelSunrise.Size = new Size(97, 28);
             labelSunrise.TabIndex = 7;
             labelSunrise.Text = "Rasarit:   ";
             // 
@@ -163,10 +158,9 @@
             labelSunset.BackColor = Color.Transparent;
             labelSunset.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelSunset.ForeColor = Color.White;
-            labelSunset.Location = new Point(34, 129);
-            labelSunset.Margin = new Padding(5, 0, 5, 0);
+            labelSunset.Location = new Point(21, 81);
             labelSunset.Name = "labelSunset";
-            labelSunset.Size = new Size(127, 45);
+            labelSunset.Size = new Size(79, 28);
             labelSunset.TabIndex = 9;
             labelSunset.Text = "Apus:   ";
             // 
@@ -176,10 +170,9 @@
             valueSunset.BackColor = Color.Transparent;
             valueSunset.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valueSunset.ForeColor = Color.White;
-            valueSunset.Location = new Point(244, 129);
-            valueSunset.Margin = new Padding(5, 0, 5, 0);
+            valueSunset.Location = new Point(150, 81);
             valueSunset.Name = "valueSunset";
-            valueSunset.Size = new Size(78, 45);
+            valueSunset.Size = new Size(48, 28);
             valueSunset.TabIndex = 8;
             valueSunset.Text = "N/A";
             // 
@@ -189,10 +182,9 @@
             labelWind.BackColor = Color.Transparent;
             labelWind.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelWind.ForeColor = Color.White;
-            labelWind.Location = new Point(34, 95);
-            labelWind.Margin = new Padding(5, 0, 5, 0);
+            labelWind.Location = new Point(21, 59);
             labelWind.Name = "labelWind";
-            labelWind.Size = new Size(122, 45);
+            labelWind.Size = new Size(76, 28);
             labelWind.TabIndex = 11;
             labelWind.Text = "Vant:   ";
             // 
@@ -202,10 +194,9 @@
             valueWind.BackColor = Color.Transparent;
             valueWind.Font = new Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valueWind.ForeColor = Color.White;
-            valueWind.Location = new Point(169, 95);
-            valueWind.Margin = new Padding(5, 0, 5, 0);
+            valueWind.Location = new Point(104, 59);
             valueWind.Name = "valueWind";
-            valueWind.Size = new Size(91, 54);
+            valueWind.Size = new Size(59, 35);
             valueWind.TabIndex = 10;
             valueWind.Text = "N/A";
             // 
@@ -215,10 +206,9 @@
             labelPressure.BackColor = Color.Transparent;
             labelPressure.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelPressure.ForeColor = Color.White;
-            labelPressure.Location = new Point(39, 105);
-            labelPressure.Margin = new Padding(5, 0, 5, 0);
+            labelPressure.Location = new Point(24, 66);
             labelPressure.Name = "labelPressure";
-            labelPressure.Size = new Size(158, 45);
+            labelPressure.Size = new Size(98, 28);
             labelPressure.TabIndex = 13;
             labelPressure.Text = "Presiune:";
             // 
@@ -228,20 +218,19 @@
             valuePressure.BackColor = Color.Transparent;
             valuePressure.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valuePressure.ForeColor = Color.White;
-            valuePressure.Location = new Point(221, 105);
-            valuePressure.Margin = new Padding(5, 0, 5, 0);
+            valuePressure.Location = new Point(136, 66);
             valuePressure.Name = "valuePressure";
-            valuePressure.Size = new Size(78, 45);
+            valuePressure.Size = new Size(48, 28);
             valuePressure.TabIndex = 12;
             valuePressure.Text = "N/A";
             // 
             // pictureBoxIcon
             // 
             pictureBoxIcon.BackColor = Color.Transparent;
-            pictureBoxIcon.Location = new Point(57, 87);
-            pictureBoxIcon.Margin = new Padding(5, 6, 5, 6);
+            pictureBoxIcon.Location = new Point(35, 54);
+            pictureBoxIcon.Margin = new Padding(3, 4, 3, 4);
             pictureBoxIcon.Name = "pictureBoxIcon";
-            pictureBoxIcon.Size = new Size(192, 195);
+            pictureBoxIcon.Size = new Size(118, 122);
             pictureBoxIcon.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxIcon.TabIndex = 14;
             pictureBoxIcon.TabStop = false;
@@ -254,10 +243,10 @@
             flowLayoutPanel.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             flowLayoutPanel.ForeColor = Color.Transparent;
-            flowLayoutPanel.Location = new Point(525, 199);
-            flowLayoutPanel.Margin = new Padding(5, 6, 5, 6);
+            flowLayoutPanel.Location = new Point(323, 124);
+            flowLayoutPanel.Margin = new Padding(3, 4, 3, 4);
             flowLayoutPanel.Name = "flowLayoutPanel";
-            flowLayoutPanel.Size = new Size(876, 352);
+            flowLayoutPanel.Size = new Size(539, 220);
             flowLayoutPanel.TabIndex = 15;
             flowLayoutPanel.WrapContents = false;
             // 
@@ -266,10 +255,10 @@
             buttonChangeTheme.BackColor = SystemColors.InactiveCaptionText;
             buttonChangeTheme.BackgroundImageLayout = ImageLayout.None;
             buttonChangeTheme.ForeColor = Color.Snow;
-            buttonChangeTheme.Location = new Point(1250, 68);
-            buttonChangeTheme.Margin = new Padding(5, 6, 5, 6);
+            buttonChangeTheme.Location = new Point(769, 42);
+            buttonChangeTheme.Margin = new Padding(3, 4, 3, 4);
             buttonChangeTheme.Name = "buttonChangeTheme";
-            buttonChangeTheme.Size = new Size(151, 93);
+            buttonChangeTheme.Size = new Size(93, 58);
             buttonChangeTheme.TabIndex = 16;
             buttonChangeTheme.Text = "Change Theme";
             buttonChangeTheme.UseVisualStyleBackColor = false;
@@ -279,11 +268,11 @@
             // 
             comboBoxChangeLanguage.BackColor = Color.White;
             comboBoxChangeLanguage.FormattingEnabled = true;
-            comboBoxChangeLanguage.Items.AddRange(new object[] { "en", "ro", "fr", "de" });
-            comboBoxChangeLanguage.Location = new Point(936, 58);
-            comboBoxChangeLanguage.Margin = new Padding(5, 6, 5, 6);
+            comboBoxChangeLanguage.Items.AddRange(new object[] { "EN", "DE", "FR", "RO" });
+            comboBoxChangeLanguage.Location = new Point(576, 36);
+            comboBoxChangeLanguage.Margin = new Padding(3, 4, 3, 4);
             comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
-            comboBoxChangeLanguage.Size = new Size(275, 40);
+            comboBoxChangeLanguage.Size = new Size(171, 28);
             comboBoxChangeLanguage.TabIndex = 17;
             comboBoxChangeLanguage.Tag = "";
             comboBoxChangeLanguage.Text = "Select language..";
@@ -294,10 +283,10 @@
             comboBoxChangeWeatherProvider.BackColor = Color.White;
             comboBoxChangeWeatherProvider.FormattingEnabled = true;
             comboBoxChangeWeatherProvider.Items.AddRange(new object[] { "OpenWeather", "WeatherBit", "Wttr" });
-            comboBoxChangeWeatherProvider.Location = new Point(936, 113);
-            comboBoxChangeWeatherProvider.Margin = new Padding(5, 6, 5, 6);
+            comboBoxChangeWeatherProvider.Location = new Point(576, 71);
+            comboBoxChangeWeatherProvider.Margin = new Padding(3, 4, 3, 4);
             comboBoxChangeWeatherProvider.Name = "comboBoxChangeWeatherProvider";
-            comboBoxChangeWeatherProvider.Size = new Size(275, 40);
+            comboBoxChangeWeatherProvider.Size = new Size(171, 28);
             comboBoxChangeWeatherProvider.TabIndex = 19;
             comboBoxChangeWeatherProvider.Tag = "";
             comboBoxChangeWeatherProvider.Text = "Select API provider...";
@@ -311,11 +300,9 @@
             groupBox1.Controls.Add(pictureBoxIcon);
             groupBox1.Controls.Add(labelCondition);
             groupBox1.Controls.Add(labelDetails);
-            groupBox1.Location = new Point(106, 199);
-            groupBox1.Margin = new Padding(5);
+            groupBox1.Location = new Point(65, 124);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(5);
-            groupBox1.Size = new Size(356, 894);
+            groupBox1.Size = new Size(219, 559);
             groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
             // 
@@ -325,10 +312,9 @@
             labelLocationTime.BackColor = Color.Transparent;
             labelLocationTime.Font = new Font("Calibri", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelLocationTime.ForeColor = Color.White;
-            labelLocationTime.Location = new Point(15, 580);
-            labelLocationTime.Margin = new Padding(5, 0, 5, 0);
+            labelLocationTime.Location = new Point(9, 362);
             labelLocationTime.Name = "labelLocationTime";
-            labelLocationTime.Size = new Size(283, 64);
+            labelLocationTime.Size = new Size(181, 41);
             labelLocationTime.TabIndex = 16;
             labelLocationTime.Text = "Locatie, ora";
             // 
@@ -338,10 +324,9 @@
             valueTemperature.BackColor = Color.Transparent;
             valueTemperature.Font = new Font("Calibri", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valueTemperature.ForeColor = Color.White;
-            valueTemperature.Location = new Point(57, 404);
-            valueTemperature.Margin = new Padding(5, 0, 5, 0);
+            valueTemperature.Location = new Point(35, 252);
             valueTemperature.Name = "valueTemperature";
-            valueTemperature.Size = new Size(127, 73);
+            valueTemperature.Size = new Size(78, 45);
             valueTemperature.TabIndex = 15;
             valueTemperature.Text = "N/A";
             // 
@@ -352,11 +337,9 @@
             groupBox2.Controls.Add(valueSunrise);
             groupBox2.Controls.Add(valueSunset);
             groupBox2.Controls.Add(labelSunset);
-            groupBox2.Location = new Point(994, 591);
-            groupBox2.Margin = new Padding(5);
+            groupBox2.Location = new Point(612, 369);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(5);
-            groupBox2.Size = new Size(406, 200);
+            groupBox2.Size = new Size(250, 125);
             groupBox2.TabIndex = 21;
             groupBox2.TabStop = false;
             // 
@@ -365,11 +348,9 @@
             groupBox3.BackColor = Color.Transparent;
             groupBox3.Controls.Add(labelWind);
             groupBox3.Controls.Add(valueWind);
-            groupBox3.Location = new Point(525, 591);
-            groupBox3.Margin = new Padding(5);
+            groupBox3.Location = new Point(323, 369);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(5);
-            groupBox3.Size = new Size(406, 200);
+            groupBox3.Size = new Size(250, 125);
             groupBox3.TabIndex = 22;
             groupBox3.TabStop = false;
             // 
@@ -378,11 +359,9 @@
             groupBox4.BackColor = Color.Transparent;
             groupBox4.Controls.Add(valuePressure);
             groupBox4.Controls.Add(labelPressure);
-            groupBox4.Location = new Point(525, 846);
-            groupBox4.Margin = new Padding(5);
+            groupBox4.Location = new Point(323, 529);
             groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(5);
-            groupBox4.Size = new Size(406, 200);
+            groupBox4.Size = new Size(250, 125);
             groupBox4.TabIndex = 23;
             groupBox4.TabStop = false;
             // 
@@ -391,11 +370,9 @@
             groupBox5.BackColor = Color.Transparent;
             groupBox5.Controls.Add(valueHumidity);
             groupBox5.Controls.Add(labelHumidity);
-            groupBox5.Location = new Point(994, 846);
-            groupBox5.Margin = new Padding(5);
+            groupBox5.Location = new Point(612, 529);
             groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(5);
-            groupBox5.Size = new Size(406, 200);
+            groupBox5.Size = new Size(250, 125);
             groupBox5.TabIndex = 24;
             groupBox5.TabStop = false;
             // 
@@ -405,10 +382,9 @@
             valueHumidity.BackColor = Color.Transparent;
             valueHumidity.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             valueHumidity.ForeColor = Color.White;
-            valueHumidity.Location = new Point(244, 105);
-            valueHumidity.Margin = new Padding(5, 0, 5, 0);
+            valueHumidity.Location = new Point(150, 66);
             valueHumidity.Name = "valueHumidity";
-            valueHumidity.Size = new Size(78, 45);
+            valueHumidity.Size = new Size(48, 28);
             valueHumidity.TabIndex = 12;
             valueHumidity.Text = "N/A";
             // 
@@ -418,10 +394,9 @@
             labelHumidity.BackColor = Color.Transparent;
             labelHumidity.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelHumidity.ForeColor = Color.White;
-            labelHumidity.Location = new Point(39, 105);
-            labelHumidity.Margin = new Padding(5, 0, 5, 0);
+            labelHumidity.Location = new Point(24, 66);
             labelHumidity.Name = "labelHumidity";
-            labelHumidity.Size = new Size(179, 45);
+            labelHumidity.Size = new Size(111, 28);
             labelHumidity.TabIndex = 13;
             labelHumidity.Text = "Umiditate:";
             // 
@@ -431,31 +406,32 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { helpToolStripMenuItem, exitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1474, 40);
+            menuStrip1.Padding = new Padding(4, 1, 0, 1);
+            menuStrip1.Size = new Size(907, 26);
             menuStrip1.TabIndex = 26;
             menuStrip1.Text = "menuStrip1";
             // 
             // helpToolStripMenuItem
             // 
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(94, 36);
+            helpToolStripMenuItem.Size = new Size(61, 24);
             helpToolStripMenuItem.Text = "Help..";
             helpToolStripMenuItem.Click += helpToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(71, 36);
+            exitToolStripMenuItem.Size = new Size(47, 24);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1474, 1134);
+            ClientSize = new Size(907, 659);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
@@ -471,7 +447,7 @@
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(5, 6, 5, 6);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "WeatherApp";
             Load += Form1_Load;

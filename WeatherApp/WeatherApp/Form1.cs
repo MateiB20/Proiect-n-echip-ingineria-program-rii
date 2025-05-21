@@ -114,7 +114,6 @@ namespace WindowsFormsApp1
             Thread.CurrentThread.CurrentUICulture = newCulture;
             try
             {
-                // Actualizeaza toate textele
                 labelCity.Text = Dictionary.LabelOras;
                 buttonSearch.Text = Dictionary.LabelCauta;
                 buttonChangeTheme.Text = Dictionary.LabelSchimbaTema;
@@ -123,7 +122,6 @@ namespace WindowsFormsApp1
                 labelWind.Text = Dictionary.LabelVant;
                 labelPressure.Text = Dictionary.LabelPresiune;
                 labelHumidity.Text = Dictionary.LabelUmiditate;
-                // Reincarca datele meteo
                 GetWeather();
                 GetForecast();
             }
@@ -316,7 +314,7 @@ namespace WindowsFormsApp1
             textBoxCity.Text = location.City;
             Longitude = location.Lon;
             Latitude = location.Lat;
-            comboBoxChangeLanguage.SelectedIndex = 1; // Default: romana
+            
         }
 
         private async void Form1_Load(object sender, EventArgs e)
@@ -362,8 +360,11 @@ namespace WindowsFormsApp1
 
         private void comboBoxChangeLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedLang = comboBoxChangeLanguage.SelectedItem.ToString();
-            _languageManager.ChangeLanguage(selectedLang);
+
+            if (comboBoxChangeLanguage?.SelectedItem is string selectedLang)
+            {
+                _languageManager.ChangeLanguage(selectedLang);
+            }   
         }
 
         private void pictureBoxIcon_Click(object sender, EventArgs e)

@@ -22,9 +22,7 @@ namespace LanguageModule
             if (observer == null)
                 throw new ArgumentNullException(nameof(observer), "Observer cannot be null.");
 
-            if (_observers.Contains(observer))
-                throw new InvalidOperationException("Observer is already registered.");
-
+            
             if (!_observers.Contains(observer))
             {
                 _observers.Add(observer);

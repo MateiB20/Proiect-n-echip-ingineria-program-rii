@@ -157,7 +157,6 @@ C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-pr
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LanguageModule.pdb
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\ThemeModule.pdb
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ApiKeysDictionary.resources
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.resources
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ForecastUC.resources
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Form1.resources
@@ -227,3 +226,4 @@ C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\ref\WeatherApp.dll
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherProvider.dll
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherProvider.pdb
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherProvider.dll

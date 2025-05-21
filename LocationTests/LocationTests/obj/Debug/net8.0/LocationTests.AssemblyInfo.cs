@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LocationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad746a6c06a70913a282218cf49c0e2ddfd9364c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+525709372dfa2afc87fcee89c652b1e97468efa0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LocationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LocationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
