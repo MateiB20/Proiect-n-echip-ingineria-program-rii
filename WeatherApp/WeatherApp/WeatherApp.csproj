@@ -46,6 +46,9 @@
     <Reference Include="WeatherModule">
       <HintPath>..\..\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.dll</HintPath>
     </Reference>
+    <Reference Include="WeatherProvider">
+      <HintPath>..\..\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

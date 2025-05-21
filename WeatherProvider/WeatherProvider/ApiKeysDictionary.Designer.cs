@@ -39,7 +39,7 @@ namespace WindowsFormsApp1 {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WindowsFormsApp1.ApiKeysDictionary", typeof(ApiKeysDictionary).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WeatherProvider.ApiKeysDictionary", typeof(ApiKeysDictionary).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

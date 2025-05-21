@@ -1,0 +1,17 @@
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.ApiKeysDictionary.resources
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.GenerateResource.cache
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.AssemblyInfoInputs.cache
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.AssemblyInfo.cs
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.CoreCompileInputs.cache
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.sourcelink.json
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.AssemblyReference.cache
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.deps.json
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.pdb
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherModule.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherP.78FB57CF.Up2Date
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\refint\WeatherProvider.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.pdb
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\ref\WeatherProvider.dll

@@ -15,7 +15,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using WeatherModule;
-using Microsoft.VisualBasic.Logging;
+//using Microsoft.VisualBasic.Logging;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WindowsFormsApp1
@@ -70,9 +70,9 @@ namespace WindowsFormsApp1
                     {
                         new WeatherInfo.WeatherConditions
                         {
-                            Condition   = desc.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0],
+                            Condition = desc.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0],
                             Description = desc,
-                            Icon        = iconUrl
+                            Icon = iconUrl
                         }
                     },
 
@@ -141,9 +141,9 @@ namespace WindowsFormsApp1
                         {
                             new WeatherForecast.WeatherDescription
                             {
-                                Condition           = desc,
+                                Condition = desc,
                                 DetailedDescription = desc,
-                                Icon                = icon
+                                Icon = icon
                             }
                         }
                     });

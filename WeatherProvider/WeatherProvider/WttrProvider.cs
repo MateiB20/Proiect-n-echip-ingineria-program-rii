@@ -13,7 +13,7 @@ using System.Net;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 using WeatherModule;
 
 namespace WindowsFormsApp1
@@ -66,9 +66,9 @@ namespace WindowsFormsApp1
                     {
                         new()
                         {
-                            Condition   = desc.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0],
+                            Condition = desc.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0],
                             Description = desc,
-                            Icon        = iconUrl
+                            Icon = iconUrl
                         }
                     },
 
@@ -140,9 +140,9 @@ namespace WindowsFormsApp1
                     {
                         new()
                         {
-                            Condition           = noon.GetProperty("weatherDesc")[0].GetProperty("value").GetString()!,
+                            Condition = noon.GetProperty("weatherDesc")[0].GetProperty("value").GetString()!,
                             DetailedDescription = noon.GetProperty("weatherDesc")[0].GetProperty("value").GetString()!,
-                            Icon                = "00d"
+                            Icon = "00d"
                         }
                     }
                 });

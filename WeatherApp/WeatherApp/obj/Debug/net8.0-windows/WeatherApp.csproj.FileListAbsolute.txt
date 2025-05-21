@@ -203,7 +203,6 @@ C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\LocationServiceFactory.pdb
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\ThemeModule.pdb
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.csproj.AssemblyReference.cache
-C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ApiKeysDictionary.resources
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Dictionary.resources
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.ForecastUC.resources
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WindowsFormsApp1.Form1.resources
@@ -226,3 +225,5 @@ C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.pdb
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\WeatherApp.genruntimeconfig.cache
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows\ref\WeatherApp.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherProvider.dll
+C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows\WeatherProvider.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherModule\\WeatherModule\\WeatherModule.csproj": {}
+    "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherProvider\\WeatherProvider\\WeatherProvider.csproj": {}
   },
   "projects": {
-    "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherModule\\WeatherModule\\WeatherModule.csproj": {
+    "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherProvider\\WeatherProvider\\WeatherProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherModule\\WeatherModule\\WeatherModule.csproj",
-        "projectName": "WeatherModule",
-        "projectPath": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherModule\\WeatherModule\\WeatherModule.csproj",
+        "projectUniqueName": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherProvider\\WeatherProvider\\WeatherProvider.csproj",
+        "projectName": "WeatherProvider",
+        "projectPath": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherProvider\\WeatherProvider\\WeatherProvider.csproj",
         "packagesPath": "C:\\Users\\h8win\\.nuget\\packages\\",
-        "outputPath": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherModule\\WeatherModule\\obj\\",
+        "outputPath": "C:\\Tony\\Facultate\\ip\\Proiect-n-echip-ingineria-program-rii\\WeatherProvider\\WeatherProvider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
