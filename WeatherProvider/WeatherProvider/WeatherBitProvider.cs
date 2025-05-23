@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
     /// <summary>
     /// Weather provider = WeatherBitProvider: https://weatherbit.com/
     /// </summary>
-    class WeatherBitProvider : IWeatherProvider
+    public class WeatherBitProvider : IWeatherProvider
     {
         private readonly string _apiKey;
 

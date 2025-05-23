@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
     /// <summary>
     /// Weather provider = Wttr: wttr.io
     /// </summary>
-    class WttrProvider : IWeatherProvider
+    public class WttrProvider : IWeatherProvider
     {
         public async Task<WeatherInfo.CurrentWeatherResponse> GetCurrentAsync(string location)
         {
