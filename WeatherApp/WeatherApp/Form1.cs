@@ -11,6 +11,7 @@
 // - Andreea : buttonSearch_Click, GetWeather, GetForecast, ConvertDateTime, ClearWeatherInfo, UI
 // - Matei : Form1_Load, InitializeAsync
 // - Izabela : OnThemeChanged, ApplyThemeToControl, OnLanguageChanged
+// - Antonin : GetWeather(api), GetForecast(api), helpToolStripMenuItem_Click, exitToolStripMenuItem_Click, comboBoxChangeWeatherProvider_SelectedIndexChanged
 //-----------------------------------------------------------------------------
 
 using System;
