@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html#aaa1fcba60e6dc133bad89123a646207d"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html#aaa1fcba60e6dc133bad89123a646207d"><param name="Name" value="WindowsFormsApp1::ForecastUC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a794a40bb1ca26b382a8c51f6f026d823"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a794a40bb1ca26b382a8c51f6f026d823"><param name="Name" value="WindowsFormsApp1::Form1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#af6828895b29aa6e2dd06911133376313"><param name="Name" value="OnLanguageChanged(CultureInfo newCulture)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a0fc424dcbe1ff3748a89f33980b88836"><param name="Name" value="OnThemeChanged(AppTheme theme)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_windows_forms_app1.html"><param name="Name" value="WindowsFormsApp1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html"><param name="Name" value="WindowsFormsApp1::ForecastUC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html"><param name="Name" value="WindowsFormsApp1::ForecastUC"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html#aaa1fcba60e6dc133bad89123a646207d"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="Name" value="WindowsFormsApp1::Form1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="Name" value="WindowsFormsApp1::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a794a40bb1ca26b382a8c51f6f026d823"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="Name" value="WindowsFormsApp1::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#af6828895b29aa6e2dd06911133376313"><param name="Name" value="OnLanguageChanged(CultureInfo newCulture)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="Name" value="WindowsFormsApp1::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a0fc424dcbe1ff3748a89f33980b88836"><param name="Name" value="OnThemeChanged(AppTheme theme)"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

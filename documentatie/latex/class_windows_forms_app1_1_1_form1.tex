@@ -1,0 +1,93 @@
+\doxysection{Windows\+Forms\+App1.\+Form1 Class Reference}
+\hypertarget{class_windows_forms_app1_1_1_form1}{}\label{class_windows_forms_app1_1_1_form1}\index{WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}}
+
+
+Formularul principal al aplicatiei Weather App. Se ocupa de gestionarea temei, limbii, locatiei si informatiilor meteo.  
+
+
+Inheritance diagram for Windows\+Forms\+App1.\+Form1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_windows_forms_app1_1_1_form1}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_windows_forms_app1_1_1_form1_a0fc424dcbe1ff3748a89f33980b88836}{On\+Theme\+Changed}} (App\+Theme theme)
+\begin{DoxyCompactList}\small\item\em Aplica tema selectata asupra intregului formular si asupra controalelor sale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_windows_forms_app1_1_1_form1_af6828895b29aa6e2dd06911133376313}{On\+Language\+Changed}} (Culture\+Info new\+Culture)
+\begin{DoxyCompactList}\small\item\em Se apeleaza automat atunci cand limba aplicatiei este schimbata. Actualizeaza textele UI si reincarca datele. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_windows_forms_app1_1_1_form1_abffe4daa94631bdad1fe2792d5edc45a}\label{class_windows_forms_app1_1_1_form1_abffe4daa94631bdad1fe2792d5edc45a} 
+double {\bfseries Longitude}
+\item 
+\Hypertarget{class_windows_forms_app1_1_1_form1_a779f26b0cb9a3112ca5f51b1fc6bac03}\label{class_windows_forms_app1_1_1_form1_a779f26b0cb9a3112ca5f51b1fc6bac03} 
+double {\bfseries Latitude}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_windows_forms_app1_1_1_form1_a794a40bb1ca26b382a8c51f6f026d823}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Eliberarea resurselor utilizate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Formularul principal al aplicatiei Weather App. Se ocupa de gestionarea temei, limbii, locatiei si informatiilor meteo. 
+
+Implementeaza observerii pentru tema si limba. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_windows_forms_app1_1_1_form1_a794a40bb1ca26b382a8c51f6f026d823}\index{WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily \label{class_windows_forms_app1_1_1_form1_a794a40bb1ca26b382a8c51f6f026d823} 
+override void Windows\+Forms\+App1.\+Form1.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Eliberarea resurselor utilizate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true dacă resursele gestionate trebuie eliberate; altfel, false.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_windows_forms_app1_1_1_form1_af6828895b29aa6e2dd06911133376313}\index{WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}!OnLanguageChanged@{OnLanguageChanged}}
+\index{OnLanguageChanged@{OnLanguageChanged}!WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}}
+\doxysubsubsection{\texorpdfstring{OnLanguageChanged()}{OnLanguageChanged()}}
+{\footnotesize\ttfamily \label{class_windows_forms_app1_1_1_form1_af6828895b29aa6e2dd06911133376313} 
+void Windows\+Forms\+App1.\+Form1.\+On\+Language\+Changed (\begin{DoxyParamCaption}\item[{Culture\+Info}]{new\+Culture}{}\end{DoxyParamCaption})}
+
+
+
+Se apeleaza automat atunci cand limba aplicatiei este schimbata. Actualizeaza textele UI si reincarca datele. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Culture} & Noua cultura aplicata (ex\+: "{}ro-\/\+RO"{}).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_windows_forms_app1_1_1_form1_a0fc424dcbe1ff3748a89f33980b88836}\index{WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}!OnThemeChanged@{OnThemeChanged}}
+\index{OnThemeChanged@{OnThemeChanged}!WindowsFormsApp1.Form1@{WindowsFormsApp1.Form1}}
+\doxysubsubsection{\texorpdfstring{OnThemeChanged()}{OnThemeChanged()}}
+{\footnotesize\ttfamily \label{class_windows_forms_app1_1_1_form1_a0fc424dcbe1ff3748a89f33980b88836} 
+void Windows\+Forms\+App1.\+Form1.\+On\+Theme\+Changed (\begin{DoxyParamCaption}\item[{App\+Theme}]{theme}{}\end{DoxyParamCaption})}
+
+
+
+Aplica tema selectata asupra intregului formular si asupra controalelor sale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theme} & Tema selectata (Dark sau Light).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Andreea/\+Desktop/\+Anul 3/sem 2/\+IP/proiect/\+Proiect-\/n-\/echip-\/ingineria-\/program-\/rii/\+Weather\+App/\+Weather\+App/Form1.\+cs\item 
+C\+:/\+Users/\+Andreea/\+Desktop/\+Anul 3/sem 2/\+IP/proiect/\+Proiect-\/n-\/echip-\/ingineria-\/program-\/rii/\+Weather\+App/\+Weather\+App/Form1.\+Designer.\+cs\end{DoxyCompactItemize}
