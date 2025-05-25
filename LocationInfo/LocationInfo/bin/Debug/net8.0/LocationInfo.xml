@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LocationInfo</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsApp1.LocationInfo">
+            <summary>
+            Model de date pentru deserializare raspuns JSON
+            </summary>
+        </member>
+    </members>
+</doc>

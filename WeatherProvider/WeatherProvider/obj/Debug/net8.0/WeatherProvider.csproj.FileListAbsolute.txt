@@ -15,3 +15,24 @@ C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\Weath
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\refint\WeatherProvider.dll
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.pdb
 C:\Tony\Facultate\ip\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\ref\WeatherProvider.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.deps.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherProvider.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherModule.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\bin\Debug\net8.0\WeatherModule.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.AssemblyReference.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.ApiKeysDictionary.resources
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.GenerateResource.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.AssemblyInfoInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.AssemblyInfo.cs
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.csproj.CoreCompileInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.sourcelink.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherP.78FB57CF.Up2Date
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\refint\WeatherProvider.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\WeatherProvider.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherProvider\WeatherProvider\obj\Debug\net8.0\ref\WeatherProvider.dll

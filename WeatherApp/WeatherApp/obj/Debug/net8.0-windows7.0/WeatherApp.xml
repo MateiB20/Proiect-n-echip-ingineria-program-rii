@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherApp</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsApp1.Dictionary">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelApus">
+            <summary>
+              Caută un șir localizat similar cu „Apus”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelCauta">
+            <summary>
+              Caută un șir localizat similar cu Cauta.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelConditie">
+            <summary>
+              Caută un șir localizat similar cu Conditie.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelDetalii">
+            <summary>
+              Caută un șir localizat similar cu Detalii.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelOras">
+            <summary>
+              Caută un șir localizat similar cu Oras.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelPresiune">
+            <summary>
+              Caută un șir localizat similar cu „Presiune”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelRasarit">
+            <summary>
+              Caută un șir localizat similar cu „Răsărit”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelSchimbaTema">
+            <summary>
+              Caută un șir localizat similar cu „Schimbă Tema”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelVant">
+            <summary>
+              Caută un șir localizat similar cu „Vânt”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Dictionary.LabelUmiditate">
+            <summary>
+              Caută un șir localizat similar cu „Umiditate”.
+            </summary>
+        </member>
+        <member name="F:WindowsFormsApp1.ForecastUC.components">
+            <summary> 
+            Variabilă necesară pentru designer.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.ForecastUC.Dispose(System.Boolean)">
+            <summary> 
+            Eliberează resursele utilizate.
+            </summary>
+            <param name="disposing">true dacă resursele gestionate trebuie eliberate; altfel, false.</param>
+        </member>
+        <member name="M:WindowsFormsApp1.ForecastUC.InitializeComponent">
+            <summary> 
+            Metodă necesară pentru suportul designerului – nu modificați
+            conținutul acestei metode cu editorul de cod.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.Form1">
+            <summary>
+            Formul principal al aplicatiei Weather App. Implementeaza observerii pentru tema si limba.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.OnThemeChanged(ThemeModule.AppTheme)">
+            <summary>
+            Actualizeaza tema aplicatiei cand utilizatorul o schimba.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.OnLanguageChanged(System.Globalization.CultureInfo)">
+            <summary>
+            Se apeleaza cand utilizatorul schimba limba aplicatiei.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.GetWeather">
+            <summary>
+            Preia si afiseaza conditiile meteo curente.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.ClearWeatherInfo">
+            <summary>
+            Sterge informatiile meteo afisate.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.ConvertDateTime(System.Int64)">
+            <summary>
+            Converteste un timestamp Unix in DateTime local.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.GetForecast">
+            <summary>
+            Preia si afiseaza prognoza pe urmatoarele 5 zile.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.ApplyThemeToControl(System.Windows.Forms.Control,ThemeModule.AppTheme)">
+            <summary>
+            Aplica stilul temei pentru fiecare control.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.InitializeAsync">
+            <summary>
+            Initializeaza orasul automat pe baza IP-ului utilizatorului.
+            </summary>
+        </member>
+        <member name="F:WindowsFormsApp1.Form1.components">
+            <summary>
+            Componente necesare pentru Designer.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.Dispose(System.Boolean)">
+            <summary>
+            Eliberarea resurselor utilizate.
+            </summary>
+            <param name="disposing">true dacă resursele gestionate trebuie eliberate; altfel, false.</param>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.InitializeComponent">
+            <summary>
+            Metodă necesară pentru suportul Designerului – nu modificați
+            conținutul acestei metode folosind editorul de cod.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.Properties.Resources">
+            <summary>
+              O clasă de resurse puternic tipizată, folosită pentru a accesa șiruri localizate etc.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Properties.Resources.ResourceManager">
+            <summary>
+              Returnează instanța ResourceManager memorată în cache, utilizată de această clasă.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Properties.Resources.Culture">
+            <summary>
+              Suprascrie proprietatea CurrentUICulture a threadului curent pentru toate
+              căutările de resurse folosind această clasă de resurse puternic tipizată.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Properties.Resources.dark">
+            <summary>
+              Caută o resursă localizată de tip System.Drawing.Bitmap cu numele „dark”.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.Properties.Resources.light">
+            <summary>
+              Caută o resursă localizată de tip System.Drawing.Bitmap cu numele „light”.
+            </summary>
+        </member>
+    </members>
+</doc>

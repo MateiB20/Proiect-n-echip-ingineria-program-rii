@@ -7,6 +7,10 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>WindowsFormsApp1</RootNamespace>
+
+	 <!-- Adaugat pentru documentatie XML -->
+	 <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
   </PropertyGroup>
 
   <ItemGroup>

@@ -15,3 +15,25 @@ D:\Facultate\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\Loca
 D:\Facultate\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\refint\LocationServiceFactory.dll
 D:\Facultate\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.pdb
 D:\Facultate\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\ref\LocationServiceFactory.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationServiceFactory.deps.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationServiceFactory.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationServiceFactory.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationServiceFactory.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationService.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationInfo.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationService.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationService.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationInfo.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\bin\Debug\net8.0\LocationInfo.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.csproj.AssemblyReference.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.AssemblyInfoInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.AssemblyInfo.cs
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.csproj.CoreCompileInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.sourcelink.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\Location.B83AE758.Up2Date
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\refint\LocationServiceFactory.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\LocationServiceFactory.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationServiceFactory\LocationServiceFactory\obj\Debug\net8.0\ref\LocationServiceFactory.dll

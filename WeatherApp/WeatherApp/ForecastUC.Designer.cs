@@ -3,14 +3,14 @@
     partial class ForecastUC
     {
         /// <summary> 
-        /// Required designer variable.
+        /// Variabilă necesară pentru designer.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// Clean up any resources being used.
+        /// Eliberează resursele utilizate.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true dacă resursele gestionate trebuie eliberate; altfel, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,8 +23,8 @@
         #region Component Designer generated code
 
         /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
+        /// Metodă necesară pentru suportul designerului – nu modificați
+        /// conținutul acestei metode cu editorul de cod.
         /// </summary>
         private void InitializeComponent()
         {

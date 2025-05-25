@@ -32,3 +32,17 @@ C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-pr
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\refint\ThemeModule.dll
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.pdb
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ref\ThemeModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.deps.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\bin\Debug\net8.0\ThemeModule.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.AssemblyInfoInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.AssemblyInfo.cs
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.csproj.CoreCompileInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.sourcelink.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\refint\ThemeModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ThemeModule.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\ThemeModule\ThemeModule\obj\Debug\net8.0\ref\ThemeModule.dll

@@ -59,89 +59,90 @@ namespace WindowsFormsApp1 {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Sunset.
+        ///   Caută un șir localizat similar cu „Apus”.
         /// </summary>
         internal static string LabelApus {
             get {
                 return ResourceManager.GetString("LabelApus", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Search.
+        ///   Caută un șir localizat similar cu Cauta.
         /// </summary>
         internal static string LabelCauta {
             get {
                 return ResourceManager.GetString("LabelCauta", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Condition.
+        ///   Caută un șir localizat similar cu Conditie.
         /// </summary>
         internal static string LabelConditie {
             get {
                 return ResourceManager.GetString("LabelConditie", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Details.
+        ///   Caută un șir localizat similar cu Detalii.
         /// </summary>
         internal static string LabelDetalii {
             get {
                 return ResourceManager.GetString("LabelDetalii", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Town.
+        ///   Caută un șir localizat similar cu Oras.
         /// </summary>
         internal static string LabelOras {
             get {
                 return ResourceManager.GetString("LabelOras", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Pressure.
+        ///   Caută un șir localizat similar cu „Presiune”.
         /// </summary>
         internal static string LabelPresiune {
             get {
                 return ResourceManager.GetString("LabelPresiune", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Sunrise.
+        ///   Caută un șir localizat similar cu „Răsărit”.
         /// </summary>
         internal static string LabelRasarit {
             get {
                 return ResourceManager.GetString("LabelRasarit", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Change Theme.
+        ///   Caută un șir localizat similar cu „Schimbă Tema”.
         /// </summary>
         internal static string LabelSchimbaTema {
             get {
                 return ResourceManager.GetString("LabelSchimbaTema", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Wind.
+        ///   Caută un șir localizat similar cu „Vânt”.
         /// </summary>
         internal static string LabelVant {
             get {
                 return ResourceManager.GetString("LabelVant", resourceCulture);
             }
         }
+
         /// <summary>
-        ///   Looks up a localized string similar to Humidity.
+        ///   Caută un șir localizat similar cu „Umiditate”.
         /// </summary>
         internal static string LabelUmiditate
         {

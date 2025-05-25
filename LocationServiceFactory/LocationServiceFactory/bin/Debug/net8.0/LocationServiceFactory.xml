@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LocationServiceFactory</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsApp1.ILocationServiceFactory">
+            <summary>
+            Interfata abstracta pentru fabrica de servicii locatie curenta
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.LocationServiceFactory">
+            <summary>
+            Implementare concreta a fabricii de <see cref="T:WindowsFormsApp1.LocationService"/>
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.LocationServiceFactory.CreateService">
+            <summary>
+            Metoda de creare a obiectelor <see cref="T:WindowsFormsApp1.ILocationService"/>
+            </summary>
+            <returns>
+            Un nou obiect <see cref="T:WindowsFormsApp1.LocationService"/>
+            </returns>>
+        </member>
+    </members>
+</doc>

@@ -9,3 +9,17 @@ D:\Facultate\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.dll
 D:\Facultate\LocationInfo\LocationInfo\obj\Debug\net8.0\refint\LocationInfo.dll
 D:\Facultate\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.pdb
 D:\Facultate\LocationInfo\LocationInfo\obj\Debug\net8.0\ref\LocationInfo.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\bin\Debug\net8.0\LocationInfo.deps.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\bin\Debug\net8.0\LocationInfo.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\bin\Debug\net8.0\LocationInfo.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\bin\Debug\net8.0\LocationInfo.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.AssemblyInfoInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.AssemblyInfo.cs
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.csproj.CoreCompileInputs.cache
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.sourcelink.json
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\refint\LocationInfo.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\LocationInfo.pdb
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\LocationInfo\LocationInfo\obj\Debug\net8.0\ref\LocationInfo.dll

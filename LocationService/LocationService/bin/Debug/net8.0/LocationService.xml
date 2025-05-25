@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LocationService</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsApp1.ILocationService">
+            <summary>
+            Interfata abstracta pentru servicii locatie curenta pe baza adresei IP
+            <br/>
+            Orice implementare concreta defineste aceasta metoda
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.LocationService">
+            <summary>
+            Serviciu preluare date locatie curenta
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.LocationService.GetLocationFromIpAsync">
+            <summary>
+            Trimitere cerere HTTP GET la un API public 
+            </summary>
+            <returns>
+            Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+            </returns>
+        </member>
+        <member name="T:WindowsFormsApp1.LocationServiceException">
+            <summary>
+            Clasa de Exceptie pentru a semnala erori în procesul serviciului de locatiei curenta
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.LocationServiceException.LocalNow">
+            <summary>
+            timpul local la care a avut loc exceptia
+            </summary>        
+        </member>
+        <member name="T:WindowsFormsApp1.LoggingLocationService">
+            <summary>
+            Implementare decorator serviciu logging 
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.LoggingLocationService.Message">
+            <summary>
+            Salveaza inregistrari despre locatie si timpul local al accesarii
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.LoggingLocationService.GetLocationFromIpAsync">
+            <summary>
+            Logging pentru access la WeatherApp
+            </summary>
+            <returns>
+            Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+            </returns>>
+        </member>
+        <member name="M:WindowsFormsApp1.LoggingLocationService.GeneralLoggingMessage(System.String,System.Double,System.Double)">
+            <summary>
+            Scrie o intrare de log pentru o locatie specifica 
+            </summary>
+            <param name="city">
+            Numele orașului pentru care se face logging
+            </param>
+            <param name="longitude">
+            Longitudinea locatiei
+            </param>
+            <param name="latitude">
+            Latitudinea locatiei
+            </param>
+        </member>
+        <member name="T:WindowsFormsApp1.RetryLocationService">
+            <summary>
+            Implementare decorator serviciu reincercare 
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.RetryLocationService.GetLocationFromIpAsync">
+            <summary>
+            Reincercare pentru access la WeatherApp
+            </summary>
+            <returns>
+            Obiect al clasei "LocationInfo" sau exceptie in caz de eroare
+            </returns>>
+        </member>
+    </members>
+</doc>

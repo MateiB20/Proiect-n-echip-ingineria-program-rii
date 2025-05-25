@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherModule</name>
+    </assembly>
+    <members>
+        <member name="T:WeatherModule.WeatherForecast">
+            <summary>
+            Reprezintă modelul pentru prognoza meteo pe mai multe intervale.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherForecast.TemperatureInfo">
+            <summary>
+            Informații despre temperaturile minime și maxime estimate.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.TemperatureInfo.MinimumTemperature">
+            <summary>
+            Temperatura minimă estimată pentru intervalul de timp.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.TemperatureInfo.MaximumTemperature">
+            <summary>
+            Temperatura maximă estimată pentru intervalul de timp.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherForecast.WeatherDescription">
+            <summary>
+            Descrierea condițiilor meteo pentru o anumită perioadă.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.WeatherDescription.Condition">
+            <summary>
+            Condiția meteo principală (ex. Clear, Rain, Snow).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.WeatherDescription.DetailedDescription">
+            <summary>
+            Descriere detaliată a condiției meteo.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.WeatherDescription.Icon">
+            <summary>
+            Codul pictogramei meteo.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherForecast.ForecastEntry">
+            <summary>
+            Reprezintă o singură intrare din prognoza meteo.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.ForecastEntry.Timestamp">
+            <summary>
+            Timpul prognozei (timestamp Unix).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.ForecastEntry.TemperatureInfo">
+            <summary>
+            Informații despre temperaturile maxime/minime.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.ForecastEntry.WeatherDescriptions">
+            <summary>
+            Lista condițiilor meteo asociate acestui interval.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherForecast.ForecastInfo">
+            <summary>
+            Obiectul principal care conține lista de prognoze.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherForecast.ForecastInfo.ForecastEntries">
+            <summary>
+            Lista de intrări de prognoză.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo">
+            <summary>
+            Reprezintă modelul datelor pentru vremea curentă.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.Coordinates">
+            <summary>
+            Coordonatele geografice ale locației.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.Coordinates.Longitude">
+            <summary>
+            Longitudinea locației.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.Coordinates.Latitude">
+            <summary>
+            Latitudinea locației.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.WeatherConditions">
+            <summary>
+            Descrierea stării vremii (ex. senin, înnorat).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherConditions.Condition">
+            <summary>
+            Condiția meteo principală (ex. Clear, Clouds).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherConditions.Description">
+            <summary>
+            Descriere detaliată a condiției meteo.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherConditions.Icon">
+            <summary>
+            Codul pictogramei meteo.
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.WeatherMetrics">
+            <summary>
+            Informații despre temperatură, presiune și umiditate.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherMetrics.Temperature">
+            <summary>
+            Temperatura actuală (°C).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherMetrics.Pressure">
+            <summary>
+            Presiunea atmosferică (hPa).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.WeatherMetrics.Humidity">
+            <summary>
+            Umiditatea relativă (%).
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.Wind">
+            <summary>
+            Informații despre vânt.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.Wind.Speed">
+            <summary>
+            Viteza vântului (m/s).
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.SystemInfo">
+            <summary>
+            Informații suplimentare de sistem (răsărit, apus).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.SystemInfo.Sunrise">
+            <summary>
+            Timpul răsăritului (timestamp Unix).
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.SystemInfo.Sunset">
+            <summary>
+            Timpul apusului (timestamp Unix).
+            </summary>
+        </member>
+        <member name="T:WeatherModule.WeatherInfo.CurrentWeatherResponse">
+            <summary>
+            Modelul principal pentru răspunsul API-ului de vreme curentă.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.CurrentWeatherResponse.Coordinates">
+            <summary>
+            Coordonatele locației curente.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.CurrentWeatherResponse.WeatherConditions">
+            <summary>
+            Lista condițiilor meteo curente.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.CurrentWeatherResponse.WeatherMetrics">
+            <summary>
+            Metrici privind temperatura, presiunea și umiditatea.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.CurrentWeatherResponse.Wind">
+            <summary>
+            Informații despre vânt.
+            </summary>
+        </member>
+        <member name="P:WeatherModule.WeatherInfo.CurrentWeatherResponse.SystemInfo">
+            <summary>
+            Informații sistem (răsărit/apus).
+            </summary>
+        </member>
+    </members>
+</doc>

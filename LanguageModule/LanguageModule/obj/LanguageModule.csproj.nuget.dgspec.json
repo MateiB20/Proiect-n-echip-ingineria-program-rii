@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {}
+    "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {
+    "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
+        "projectUniqueName": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
         "projectName": "LanguageModule",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Facultate\\ANUL 3\\IP_proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\obj\\",
+        "projectPath": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\LanguageModule.csproj",
+        "packagesPath": "C:\\Users\\Andreea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LanguageModule\\LanguageModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

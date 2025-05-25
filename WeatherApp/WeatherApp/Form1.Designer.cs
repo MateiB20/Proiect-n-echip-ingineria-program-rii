@@ -3,14 +3,15 @@
     partial class Form1
     {
         /// <summary>
-        /// Required designer variable.
+        /// Componente necesare pentru Designer.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+
         /// <summary>
-        /// Clean up any resources being used.
+        /// Eliberarea resurselor utilizate.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true dacă resursele gestionate trebuie eliberate; altfel, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,9 +23,10 @@
 
         #region Windows Form Designer generated code
 
+
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Metodă necesară pentru suportul Designerului – nu modificați
+        /// conținutul acestei metode folosind editorul de cod.
         /// </summary>
         private void InitializeComponent()
         {

@@ -39,3 +39,5 @@ C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-progr
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\WeatherApp.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\WeatherApp.genruntimeconfig.cache
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\ref\WeatherApp.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherApp.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\WeatherApp.xml

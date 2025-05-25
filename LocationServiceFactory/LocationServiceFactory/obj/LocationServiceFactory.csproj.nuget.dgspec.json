@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj": {}
+    "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj": {
+    "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj",
+        "projectUniqueName": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj",
         "projectName": "LocationServiceFactory",
-        "projectPath": "D:\\Facultate\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\LocationServiceFactory\\LocationServiceFactory\\obj\\",
+        "projectPath": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LocationServiceFactory\\LocationServiceFactory\\LocationServiceFactory.csproj",
+        "packagesPath": "C:\\Users\\Andreea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andreea\\Desktop\\Anul 3\\sem 2\\IP\\proiect\\Proiect-n-echip-ingineria-program-rii\\LocationServiceFactory\\LocationServiceFactory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

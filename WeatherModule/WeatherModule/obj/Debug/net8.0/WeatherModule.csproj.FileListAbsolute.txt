@@ -10,3 +10,5 @@ C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-progr
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\refint\WeatherModule.dll
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\ref\WeatherModule.dll
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\bin\Debug\net8.0\WeatherModule.xml
+C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherModule\WeatherModule\obj\Debug\net8.0\WeatherModule.xml

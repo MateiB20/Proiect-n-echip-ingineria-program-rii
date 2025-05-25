@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LanguageModule</name>
+    </assembly>
+    <members>
+        <member name="T:LanguageModule.ILanguageObserverService">
+            <summary>
+            Interfață pentru serviciile care observă și reacționează la schimbările de limbă (localizare).
+            </summary>
+        </member>
+        <member name="M:LanguageModule.ILanguageObserverService.OnLanguageChanged(System.Globalization.CultureInfo)">
+            <summary>
+            Metodă apelată atunci când cultura aplicației se schimbă.
+            </summary>
+            <param name="newCulture">Noua cultură (ex: "RO", "EN", "FR").</param>
+        </member>
+        <member name="T:LanguageModule.LanguageManagerService">
+            <summary>
+            Gestionar pentru limbajul (localizarea) aplicației. Permite schimbarea limbii
+            și notificarea tuturor componentelor interesate (observatoare).
+            </summary>
+        </member>
+        <member name="M:LanguageModule.LanguageManagerService.#ctor">
+            <summary>
+            Creează o nouă instanță a clasei <see cref="T:LanguageModule.LanguageManagerService"/> și
+            setează cultura curentă pe cea a sistemului.
+            </summary>
+        </member>
+        <member name="M:LanguageModule.LanguageManagerService.Register(LanguageModule.ILanguageObserverService)">
+            <summary>
+            Înregistrează un observator care va fi notificat la schimbarea limbii.
+            </summary>
+            <param name="observer">Observatorul de înregistrat.</param>
+            <exception cref="T:System.ArgumentNullException">Dacă observatorul este null.</exception>
+        </member>
+        <member name="M:LanguageModule.LanguageManagerService.UnRegister(LanguageModule.ILanguageObserverService)">
+            <summary>
+            Dezînregistrează un observator.
+            </summary>
+            <param name="observer">Observatorul de dezînregistrat.</param>
+            <exception cref="T:System.ArgumentNullException">Dacă observatorul este null.</exception>
+            <exception cref="T:System.InvalidOperationException">Dacă observatorul nu a fost înregistrat anterior.</exception>
+        </member>
+        <member name="M:LanguageModule.LanguageManagerService.ChangeLanguage(System.String)">
+            <summary>
+            Schimbă cultura aplicației și notifică toți observatorii înregistrați.
+            </summary>
+            <param name="langCode">Codul limbii (ex: "ro-RO", "en-US").</param>
+            <exception cref="T:System.ArgumentException">Dacă codul de limbă este null sau gol.</exception>
+        </member>
+        <member name="M:LanguageModule.LanguageManagerService.GetCurrentCulture">
+            <summary>
+            Returnează cultura curentă a aplicației.
+            </summary>
+            <returns>Obiect <see cref="T:System.Globalization.CultureInfo"/> corespunzător limbii curente.</returns>
+        </member>
+    </members>
+</doc>
