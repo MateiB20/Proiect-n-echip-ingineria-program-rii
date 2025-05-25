@@ -30,8 +30,12 @@ using WeatherModule;
 namespace WindowsFormsApp1
 {
     /// <summary>
-    /// Formul principal al aplicatiei Weather App. Implementeaza observerii pentru tema si limba.
+    /// Formularul principal al aplicatiei Weather App.
+    /// Se ocupa de gestionarea temei, limbii, locatiei si informatiilor meteo.
     /// </summary>
+    /// <remarks>
+    /// Implementeaza observerii pentru tema si limba.
+    /// </remarks>
     public partial class Form1 : Form, IThemeObserverService, ILanguageObserverService
     {
         #region Private Member Variables
@@ -76,8 +80,9 @@ namespace WindowsFormsApp1
         #region IThemeObserverService Implementation
 
         /// <summary>
-        /// Actualizeaza tema aplicatiei cand utilizatorul o schimba.
+        /// Aplica tema selectata asupra intregului formular si asupra controalelor sale.
         /// </summary>
+        /// <param name="theme">Tema selectata (Dark sau Light).</param>
         public void OnThemeChanged(AppTheme theme)
         {
             try
@@ -106,8 +111,10 @@ namespace WindowsFormsApp1
         #region ILanguageObserverService Implementation
 
         /// <summary>
-        /// Se apeleaza cand utilizatorul schimba limba aplicatiei.
+        /// Se apeleaza automat atunci cand limba aplicatiei este schimbata.
+        /// Actualizeaza textele UI si reincarca datele.
         /// </summary>
+        /// <param name="newCulture">Noua cultura aplicata (ex: "ro-RO").</param>
         public void OnLanguageChanged(CultureInfo newCulture)
         {
             if (newCulture == null)
@@ -138,7 +145,7 @@ namespace WindowsFormsApp1
         #region Weather Handling
 
         /// <summary>
-        /// Preia si afiseaza conditiile meteo curente.
+        /// Preia informatiile meteo curente de la furnizorul selectat si le afiseaza in UI.
         /// </summary>
         async void GetWeather()
         {
@@ -158,8 +165,6 @@ namespace WindowsFormsApp1
                 pictureBoxIcon.ImageLocation = !string.IsNullOrWhiteSpace(weather?.Icon)
                     ? $"https://openweathermap.org/img/w/{weather.Icon}.png"
                     : null;
-
-
 
                 labelCondition.Text = weather?.Condition ?? "N/A";
                 labelDetails.Text = weather?.Description ?? "N/A";
@@ -213,7 +218,8 @@ namespace WindowsFormsApp1
         }
 
         /// <summary>
-        /// Preia si afiseaza prognoza pe urmatoarele 5 zile.
+        /// Preia si afiseaza prognoza meteo pentru urmatoarele 5 zile,
+        /// grupata pe zile si prezentata sub forma de controale personalizate.
         /// </summary>
         async void GetForecast()
         {
@@ -265,8 +271,11 @@ namespace WindowsFormsApp1
         #region Theme Handling
 
         /// <summary>
-        /// Aplica stilul temei pentru fiecare control.
+        /// Aplica stilul temei unui control specific.
+        /// Este apelata recursiv pentru toate controalele formularului.
         /// </summary>
+        /// <param name="ctrl">Controlul asupra caruia se aplica tema.</param>
+        /// <param name="theme">Tema curenta (Light sau Dark).</param>
         private void ApplyThemeToControl(Control ctrl, AppTheme theme)
         {
             if (ctrl == null)
@@ -304,7 +313,8 @@ namespace WindowsFormsApp1
         #region Initialization
 
         /// <summary>
-        /// Initializeaza orasul automat pe baza IP-ului utilizatorului.
+        /// Determina automat locatia utilizatorului pe baza IP-ului.
+        /// Seteaza automat orasul curent in caseta de cautare.
         /// </summary>
         private async Task InitializeAsync()
         {
@@ -318,6 +328,10 @@ namespace WindowsFormsApp1
             
         }
 
+        /// <summary>
+        /// Handler pentru evenimentul de incarcare al formularului.
+        /// Inregistreaza observatorii, initializeaza datele si incarca vremea curenta si prognoza.
+        /// </summary>
         private async void Form1_Load(object sender, EventArgs e)
         {
             await InitializeAsync();
@@ -341,33 +355,52 @@ namespace WindowsFormsApp1
 
         #region Event Handlers
 
+        /// <summary>
+        /// Eveniment declanșat la apăsarea butonului "Caută".
+        /// Preia și afișează informațiile meteo curente și prognoza.
+        /// </summary>
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             GetWeather();
             GetForecast();
         }
 
+        /// <summary>
+        /// Eveniment declanșat la apăsarea butonului de schimbare a temei.
+        /// Comută între tema întunecată și tema luminoasă.
+        /// </summary>
         private void buttonChangeTheme_Click(object sender, EventArgs e)
         {
             var newTheme = _themeManager.GetCurrentTheme() == AppTheme.Dark ? AppTheme.Light : AppTheme.Dark;
             _themeManager.ChangeTheme(newTheme);
         }
 
+        /// <summary>
+        /// Eveniment declanșat când se selectează un alt furnizor de informații meteo din comboBox.
+        /// Actualizează furnizorul meteo folosit pentru apeluri ulterioare.
+        /// </summary>
         private void comboBoxChangeWeatherProvider_SelectedIndexChanged(object sender, EventArgs e)
         {
             var name = comboBoxChangeWeatherProvider.SelectedItem.ToString();
             _weatherProvider = _factory.Create(name);
         }
 
+        /// <summary>
+        /// Eveniment declanșat când se schimbă limba din comboBox.
+        /// Actualizează limba aplicației și notifică observatorii.
+        /// </summary>
         private void comboBoxChangeLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (comboBoxChangeLanguage?.SelectedItem is string selectedLang)
             {
                 _languageManager.ChangeLanguage(selectedLang);
-            }   
+            }
         }
 
+        /// <summary>
+        /// Eveniment placeholder pentru click pe iconița meteo.
+        /// Momentan nu are funcționalitate implementată.
+        /// </summary>
         private void pictureBoxIcon_Click(object sender, EventArgs e)
         {
             // Placeholder - nu se foloseste
@@ -375,6 +408,11 @@ namespace WindowsFormsApp1
 
         #endregion
 
+
+
+        /// <summary>
+        /// Deschide fisierul de ajutor (.chm) al aplicatiei, daca exista.
+        /// </summary>
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string helpFilePath = AppDomain.CurrentDomain.BaseDirectory + "\\WeatherApp.chm";
@@ -389,6 +427,10 @@ namespace WindowsFormsApp1
             }
         }
 
+
+        /// <summary>
+        /// Inchide aplicatia.
+        /// </summary>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();

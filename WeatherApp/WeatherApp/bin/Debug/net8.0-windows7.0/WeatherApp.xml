@@ -89,22 +89,29 @@
         </member>
         <member name="T:WindowsFormsApp1.Form1">
             <summary>
-            Formul principal al aplicatiei Weather App. Implementeaza observerii pentru tema si limba.
+            Formularul principal al aplicatiei Weather App.
+            Se ocupa de gestionarea temei, limbii, locatiei si informatiilor meteo.
             </summary>
+            <remarks>
+            Implementeaza observerii pentru tema si limba.
+            </remarks>
         </member>
         <member name="M:WindowsFormsApp1.Form1.OnThemeChanged(ThemeModule.AppTheme)">
             <summary>
-            Actualizeaza tema aplicatiei cand utilizatorul o schimba.
+            Aplica tema selectata asupra intregului formular si asupra controalelor sale.
             </summary>
+            <param name="theme">Tema selectata (Dark sau Light).</param>
         </member>
         <member name="M:WindowsFormsApp1.Form1.OnLanguageChanged(System.Globalization.CultureInfo)">
             <summary>
-            Se apeleaza cand utilizatorul schimba limba aplicatiei.
+            Se apeleaza automat atunci cand limba aplicatiei este schimbata.
+            Actualizeaza textele UI si reincarca datele.
             </summary>
+            <param name="newCulture">Noua cultura aplicata (ex: "ro-RO").</param>
         </member>
         <member name="M:WindowsFormsApp1.Form1.GetWeather">
             <summary>
-            Preia si afiseaza conditiile meteo curente.
+            Preia informatiile meteo curente de la furnizorul selectat si le afiseaza in UI.
             </summary>
         </member>
         <member name="M:WindowsFormsApp1.Form1.ClearWeatherInfo">
@@ -119,17 +126,68 @@
         </member>
         <member name="M:WindowsFormsApp1.Form1.GetForecast">
             <summary>
-            Preia si afiseaza prognoza pe urmatoarele 5 zile.
+            Preia si afiseaza prognoza meteo pentru urmatoarele 5 zile,
+            grupata pe zile si prezentata sub forma de controale personalizate.
             </summary>
         </member>
         <member name="M:WindowsFormsApp1.Form1.ApplyThemeToControl(System.Windows.Forms.Control,ThemeModule.AppTheme)">
             <summary>
-            Aplica stilul temei pentru fiecare control.
+            Aplica stilul temei unui control specific.
+            Este apelata recursiv pentru toate controalele formularului.
             </summary>
+            <param name="ctrl">Controlul asupra caruia se aplica tema.</param>
+            <param name="theme">Tema curenta (Light sau Dark).</param>
         </member>
         <member name="M:WindowsFormsApp1.Form1.InitializeAsync">
             <summary>
-            Initializeaza orasul automat pe baza IP-ului utilizatorului.
+            Determina automat locatia utilizatorului pe baza IP-ului.
+            Seteaza automat orasul curent in caseta de cautare.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handler pentru evenimentul de incarcare al formularului.
+            Inregistreaza observatorii, initializeaza datele si incarca vremea curenta si prognoza.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.buttonSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            Eveniment declanșat la apăsarea butonului "Caută".
+            Preia și afișează informațiile meteo curente și prognoza.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.buttonChangeTheme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Eveniment declanșat la apăsarea butonului de schimbare a temei.
+            Comută între tema întunecată și tema luminoasă.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.comboBoxChangeWeatherProvider_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Eveniment declanșat când se selectează un alt furnizor de informații meteo din comboBox.
+            Actualizează furnizorul meteo folosit pentru apeluri ulterioare.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.comboBoxChangeLanguage_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Eveniment declanșat când se schimbă limba din comboBox.
+            Actualizează limba aplicației și notifică observatorii.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.pictureBoxIcon_Click(System.Object,System.EventArgs)">
+            <summary>
+            Eveniment placeholder pentru click pe iconița meteo.
+            Momentan nu are funcționalitate implementată.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.helpToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Deschide fisierul de ajutor (.chm) al aplicatiei, daca exista.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApp1.Form1.exitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inchide aplicatia.
             </summary>
         </member>
         <member name="F:WindowsFormsApp1.Form1.components">

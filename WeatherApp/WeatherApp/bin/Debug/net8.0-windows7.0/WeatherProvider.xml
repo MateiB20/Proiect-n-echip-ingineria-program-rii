@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherProvider</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsApp1.ApiKeys">
+            <summary>
+            Fetch la cheile api din Dictionarul extern
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.ApiKeysDictionary">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.ApiKeysDictionary.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.ApiKeysDictionary.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.ApiKeysDictionary.OpenWeather">
+            <summary>
+              Looks up a localized string similar to 70a0b01f4ce43960e5ff1f6891a6dfd3.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.ApiKeysDictionary.WeatherBit">
+            <summary>
+              Looks up a localized string similar to 94b1cbd97eb5415896e2b3219ad164e7.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApp1.ApiKeysDictionary.Wttr">
+            <summary>
+              Looks up a localized string similar to 0.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.IWeatherProvider">
+            <summary>
+            Interfata pentru api-uri de weather provider.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.IWeatherProviderFactory">
+            <summary>
+            Interfata pentru fabrica de weather provider.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.WeatherBitProvider">
+            <summary>
+            Weather provider = WeatherBitProvider: https://weatherbit.com/
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.WeatherProviderFactory">
+            <summary>
+            Fabrica de weather provider.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApp1.WttrProvider">
+            <summary>
+            Weather provider = Wttr: wttr.io
+            </summary>
+        </member>
+    </members>
+</doc>

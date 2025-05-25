@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ThemeModule</name>
+    </assembly>
+    <members>
+        <member name="M:ThemeModule.IThemeObserverService.OnThemeChanged(ThemeModule.AppTheme)">
+            <summary>
+            Metodă pentru schimbarea tematicii grafice a aplicației.
+            </summary>
+            <param name="appTheme"></param>
+        </member>
+        <member name="M:ThemeModule.ThemeManagerService.#ctor">
+            <summary>
+            Constructorul clasei.Se aloca spatiu pentru observeri si se seteaza tema implicita.
+            </summary>
+        </member>
+        <member name="M:ThemeModule.ThemeManagerService.Register(ThemeModule.IThemeObserverService)">
+            <summary>
+            Metoda de inregistrare a observatorilor.
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:ThemeModule.ThemeManagerService.Unregister(ThemeModule.IThemeObserverService)">
+            <summary>
+            Metoda de eliminare a unui observator.
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:ThemeModule.ThemeManagerService.ChangeTheme(ThemeModule.AppTheme)">
+            <summary>
+            Metoda pentru schimbarea temei.Pentru fiecare observator se apeleaza metoda implementata in clasa derivata.
+            </summary>
+            <param name="newTheme"></param>
+        </member>
+        <member name="M:ThemeModule.ThemeManagerService.GetCurrentTheme">
+            <summary>
+            Metoda de tip Get pentru obtinerea temei curente.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
