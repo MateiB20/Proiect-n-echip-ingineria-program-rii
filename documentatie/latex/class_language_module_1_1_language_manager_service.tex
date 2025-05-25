@@ -1,0 +1,107 @@
+\doxysection{Language\+Module.\+Language\+Manager\+Service Class Reference}
+\hypertarget{class_language_module_1_1_language_manager_service}{}\label{class_language_module_1_1_language_manager_service}\index{LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}}
+
+
+Gestionar pentru limbajul (localizarea) aplicației. Permite schimbarea limbii și notificarea tuturor componentelor interesate (observatoare).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_language_module_1_1_language_manager_service_a44eddbabab0047540cd1ba27c88ca153}\label{class_language_module_1_1_language_manager_service_a44eddbabab0047540cd1ba27c88ca153} 
+{\bfseries Language\+Manager\+Service} ()
+\begin{DoxyCompactList}\small\item\em Creează o nouă instanță a clasei \doxylink{class_language_module_1_1_language_manager_service}{Language\+Manager\+Service} și setează cultura curentă pe cea a sistemului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_language_module_1_1_language_manager_service_a9c8eae8d36786de6b6112a2e641b704d}{Register}} (\mbox{\hyperlink{interface_language_module_1_1_i_language_observer_service}{ILanguage\+Observer\+Service}} observer)
+\begin{DoxyCompactList}\small\item\em Înregistrează un observator care va fi notificat la schimbarea limbii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_language_module_1_1_language_manager_service_a3d112e320f8e37d6ef91cfd1c0d6c1e2}{Un\+Register}} (\mbox{\hyperlink{interface_language_module_1_1_i_language_observer_service}{ILanguage\+Observer\+Service}} observer)
+\begin{DoxyCompactList}\small\item\em Dezînregistrează un observator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_language_module_1_1_language_manager_service_a67e931e3db7ea7ef44f41a71fa9a0d74}{Change\+Language}} (string lang\+Code)
+\begin{DoxyCompactList}\small\item\em Schimbă cultura aplicației și notifică toți observatorii înregistrați. \end{DoxyCompactList}\item 
+Culture\+Info \mbox{\hyperlink{class_language_module_1_1_language_manager_service_a04188c34590fd859245e480c558cadf8}{Get\+Current\+Culture}} ()
+\begin{DoxyCompactList}\small\item\em Returnează cultura curentă a aplicației. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestionar pentru limbajul (localizarea) aplicației. Permite schimbarea limbii și notificarea tuturor componentelor interesate (observatoare). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_language_module_1_1_language_manager_service_a67e931e3db7ea7ef44f41a71fa9a0d74}\index{LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}!ChangeLanguage@{ChangeLanguage}}
+\index{ChangeLanguage@{ChangeLanguage}!LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}}
+\doxysubsubsection{\texorpdfstring{ChangeLanguage()}{ChangeLanguage()}}
+{\footnotesize\ttfamily \label{class_language_module_1_1_language_manager_service_a67e931e3db7ea7ef44f41a71fa9a0d74} 
+void Language\+Module.\+Language\+Manager\+Service.\+Change\+Language (\begin{DoxyParamCaption}\item[{string}]{lang\+Code}{}\end{DoxyParamCaption})}
+
+
+
+Schimbă cultura aplicației și notifică toți observatorii înregistrați. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lang\+Code} & Codul limbii (ex\+: "{}ro-\/\+RO"{}, "{}en-\/\+US"{}).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Dacă codul de limbă este null sau gol.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_language_module_1_1_language_manager_service_a04188c34590fd859245e480c558cadf8}\index{LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}!GetCurrentCulture@{GetCurrentCulture}}
+\index{GetCurrentCulture@{GetCurrentCulture}!LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}}
+\doxysubsubsection{\texorpdfstring{GetCurrentCulture()}{GetCurrentCulture()}}
+{\footnotesize\ttfamily \label{class_language_module_1_1_language_manager_service_a04188c34590fd859245e480c558cadf8} 
+Culture\+Info Language\+Module.\+Language\+Manager\+Service.\+Get\+Current\+Culture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returnează cultura curentă a aplicației. 
+
+\begin{DoxyReturn}{Returns}
+Obiect Culture\+Info corespunzător limbii curente.
+\end{DoxyReturn}
+\Hypertarget{class_language_module_1_1_language_manager_service_a9c8eae8d36786de6b6112a2e641b704d}\index{LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}!Register@{Register}}
+\index{Register@{Register}!LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily \label{class_language_module_1_1_language_manager_service_a9c8eae8d36786de6b6112a2e641b704d} 
+void Language\+Module.\+Language\+Manager\+Service.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_language_module_1_1_i_language_observer_service}{ILanguage\+Observer\+Service}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Înregistrează un observator care va fi notificat la schimbarea limbii. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Observatorul de înregistrat.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Dacă observatorul este null.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_language_module_1_1_language_manager_service_a3d112e320f8e37d6ef91cfd1c0d6c1e2}\index{LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}!UnRegister@{UnRegister}}
+\index{UnRegister@{UnRegister}!LanguageModule.LanguageManagerService@{LanguageModule.LanguageManagerService}}
+\doxysubsubsection{\texorpdfstring{UnRegister()}{UnRegister()}}
+{\footnotesize\ttfamily \label{class_language_module_1_1_language_manager_service_a3d112e320f8e37d6ef91cfd1c0d6c1e2} 
+void Language\+Module.\+Language\+Manager\+Service.\+Un\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_language_module_1_1_i_language_observer_service}{ILanguage\+Observer\+Service}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Dezînregistrează un observator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Observatorul de dezînregistrat.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Dacă observatorul este null.\\
+\hline
+{\em Invalid\+Operation\+Exception} & Dacă observatorul nu a fost înregistrat anterior.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Andreea/\+Desktop/\+Anul 3/sem 2/\+IP/proiect/\+Proiect-\/n-\/echip-\/ingineria-\/program-\/rii/\+Language\+Module/\+Language\+Module/Language\+Manager\+Service.\+cs\end{DoxyCompactItemize}

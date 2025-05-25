@@ -8,17 +8,149 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Package List"><param name="Local" value="namespaces.html#top"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageModule"><param name="Local" value="namespace_language_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILanguageObserverService"><param name="Local" value="interface_language_module_1_1_i_language_observer_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnLanguageChanged"><param name="Local" value="interface_language_module_1_1_i_language_observer_service.html#aa2ba8eeb74d05c67237c4755d21eb69e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageManagerService"><param name="Local" value="class_language_module_1_1_language_manager_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageManagerService"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a44eddbabab0047540cd1ba27c88ca153"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeLanguage"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a67e931e3db7ea7ef44f41a71fa9a0d74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetCurrentCulture"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a04188c34590fd859245e480c558cadf8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Register"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a9c8eae8d36786de6b6112a2e641b704d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegister"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a3d112e320f8e37d6ef91cfd1c0d6c1e2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeModule"><param name="Local" value="namespace_theme_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IThemeObserverService"><param name="Local" value="interface_theme_module_1_1_i_theme_observer_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnThemeChanged"><param name="Local" value="interface_theme_module_1_1_i_theme_observer_service.html#a2f87382f001c2f111e7afb73e84e7b9f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeManagerService"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeManagerService"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#ab5834c7647fd0e86b82fea6075e9378e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeTheme"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#a693c2d8396a4354a1f6439f2e5711cc5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetCurrentTheme"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#a4f5329635678795454b1a1b0909e5333"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Register"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#aebee9e4e4c64148767c298c39ee92ef1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Unregister"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#ad53f6bd5f128fddcb171cfa5717331d1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule"><param name="Local" value="namespace_weather_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherForecast"><param name="Local" value="class_weather_module_1_1_weather_forecast.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastEntry"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="TemperatureInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#a8d5f352d59901b52cbf8d64716956060"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Timestamp"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#a6cc956940585c0709b9bbc59cec75f5c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherDescriptions"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#ad688923f2b324219e6c4e22f3eac35b8"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastEntries"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_info.html#aad582c3bf14474255e3165421df1c8ef"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TemperatureInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="MaximumTemperature"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html#a40925309becdd740269368afa41dcaf8"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="MinimumTemperature"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html#aaae618cdedd26d0241ad8b680f96344c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherDescription"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Condition"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#afc558bf01a5fc18bd3dace3652bdceab"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DetailedDescription"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#a6634a0c18e79ff55b0edf237f1a28e38"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Icon"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#afb6aa8f348c98eeb0dc1e5ba134a5c68"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherInfo"><param name="Local" value="class_weather_module_1_1_weather_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Coordinates"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Latitude"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html#a47fd95e85bb570d0800851c992b39de4"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Longitude"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html#a09233f74406df7c7474bcc5807016b1a"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CurrentWeatherResponse"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Coordinates"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#ac6ca278b8c79473ec7a9e16d57376756"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="SystemInfo"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a3626ff2cb284f0c9591572d4534d7575"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherConditions"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a481038909e47b476a4c6b8e8578e04e7"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherMetrics"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a993592e4847a123e9c777d421660d61b"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Wind"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#acab8882728e98ca7f0f5b653da0394b5"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SystemInfo"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Sunrise"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html#a6c4ab4d469adbb439d7c9d2b402d210d"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Sunset"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html#aa6377db69a6ccf1c1ff0cfa61832828d"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherConditions"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Condition"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#ab2494473187fe2656bc81541b1968863"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Description"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#a4c53d119da60de68ce5860d6d3702dc5"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Icon"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#af37f875faf3922f954cb1d731089bdb8"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherMetrics"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Humidity"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#a8adcb692adf803c97f9a2644f45f4cba"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Pressure"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#a8450ffff449d0d7be4ca616692b9709c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Temperature"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#afa30722d0d2e31f8912cc17939a0099b"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Wind"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_wind.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Speed"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_wind.html#a254cbf7596567e0136d91159d8c4f385"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1"><param name="Local" value="namespace_windows_forms_app1.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastUC"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ApiKeys"><param name="Local" value="class_windows_forms_app1_1_1_api_keys.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html#aaa1fcba60e6dc133bad89123a646207d"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILocationService"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a794a40bb1ca26b382a8c51f6f026d823"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnLanguageChanged"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#af6828895b29aa6e2dd06911133376313"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnThemeChanged"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a0fc424dcbe1ff3748a89f33980b88836"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IWeatherProvider"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IWeatherProviderFactory"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationInfo"><param name="Local" value="class_windows_forms_app1_1_1_location_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationService"><param name="Local" value="class_windows_forms_app1_1_1_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_location_service.html#a334f024d9efb28b725edf3c48fe5c2df"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationServiceException"><param name="Local" value="class_windows_forms_app1_1_1_location_service_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_location_service_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateService"><param name="Local" value="class_windows_forms_app1_1_1_location_service_factory.html#ae6023b83900c1d0ecf471d6e4ee98e28"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LoggingLocationService"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GeneralLoggingMessage"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a1cbf0d5b7633349799d47e6b741ae4ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a60078463c619a5657edd076ca15edfe4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Message"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a23b0fa00d6ffc529abe90851e63b27a0"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenWeatherProvider"><param name="Local" value="class_windows_forms_app1_1_1_open_weather_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RetryLocationService"><param name="Local" value="class_windows_forms_app1_1_1_retry_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_retry_location_service.html#abb29b792a1c44637396ba2ae309879a9"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherBitProvider"><param name="Local" value="class_windows_forms_app1_1_1_weather_bit_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WttrProvider"><param name="Local" value="class_windows_forms_app1_1_1_wttr_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
         </UL>
       </UL>
     </UL>
@@ -27,44 +159,200 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html#top"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageModule"><param name="Local" value="namespace_language_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILanguageObserverService"><param name="Local" value="interface_language_module_1_1_i_language_observer_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnLanguageChanged"><param name="Local" value="interface_language_module_1_1_i_language_observer_service.html#aa2ba8eeb74d05c67237c4755d21eb69e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageManagerService"><param name="Local" value="class_language_module_1_1_language_manager_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageManagerService"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a44eddbabab0047540cd1ba27c88ca153"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeLanguage"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a67e931e3db7ea7ef44f41a71fa9a0d74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetCurrentCulture"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a04188c34590fd859245e480c558cadf8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Register"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a9c8eae8d36786de6b6112a2e641b704d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegister"><param name="Local" value="class_language_module_1_1_language_manager_service.html#a3d112e320f8e37d6ef91cfd1c0d6c1e2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeModule"><param name="Local" value="namespace_theme_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IThemeObserverService"><param name="Local" value="interface_theme_module_1_1_i_theme_observer_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnThemeChanged"><param name="Local" value="interface_theme_module_1_1_i_theme_observer_service.html#a2f87382f001c2f111e7afb73e84e7b9f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeManagerService"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeManagerService"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#ab5834c7647fd0e86b82fea6075e9378e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeTheme"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#a693c2d8396a4354a1f6439f2e5711cc5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetCurrentTheme"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#a4f5329635678795454b1a1b0909e5333"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Register"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#aebee9e4e4c64148767c298c39ee92ef1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Unregister"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html#ad53f6bd5f128fddcb171cfa5717331d1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule"><param name="Local" value="namespace_weather_module.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherForecast"><param name="Local" value="class_weather_module_1_1_weather_forecast.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastEntry"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="TemperatureInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#a8d5f352d59901b52cbf8d64716956060"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Timestamp"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#a6cc956940585c0709b9bbc59cec75f5c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherDescriptions"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html#ad688923f2b324219e6c4e22f3eac35b8"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastEntries"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_info.html#aad582c3bf14474255e3165421df1c8ef"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TemperatureInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="MaximumTemperature"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html#a40925309becdd740269368afa41dcaf8"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="MinimumTemperature"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html#aaae618cdedd26d0241ad8b680f96344c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherDescription"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Condition"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#afc558bf01a5fc18bd3dace3652bdceab"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DetailedDescription"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#a6634a0c18e79ff55b0edf237f1a28e38"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Icon"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html#afb6aa8f348c98eeb0dc1e5ba134a5c68"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherInfo"><param name="Local" value="class_weather_module_1_1_weather_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Coordinates"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Latitude"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html#a47fd95e85bb570d0800851c992b39de4"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Longitude"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html#a09233f74406df7c7474bcc5807016b1a"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CurrentWeatherResponse"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Coordinates"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#ac6ca278b8c79473ec7a9e16d57376756"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="SystemInfo"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a3626ff2cb284f0c9591572d4534d7575"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherConditions"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a481038909e47b476a4c6b8e8578e04e7"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherMetrics"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#a993592e4847a123e9c777d421660d61b"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Wind"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html#acab8882728e98ca7f0f5b653da0394b5"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SystemInfo"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Sunrise"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html#a6c4ab4d469adbb439d7c9d2b402d210d"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Sunset"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html#aa6377db69a6ccf1c1ff0cfa61832828d"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherConditions"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Condition"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#ab2494473187fe2656bc81541b1968863"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Description"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#a4c53d119da60de68ce5860d6d3702dc5"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Icon"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html#af37f875faf3922f954cb1d731089bdb8"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherMetrics"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Humidity"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#a8adcb692adf803c97f9a2644f45f4cba"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Pressure"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#a8450ffff449d0d7be4ca616692b9709c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Temperature"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html#afa30722d0d2e31f8912cc17939a0099b"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Wind"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_wind.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Speed"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_wind.html#a254cbf7596567e0136d91159d8c4f385"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1"><param name="Local" value="namespace_windows_forms_app1.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="ForecastUC"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ApiKeys"><param name="Local" value="class_windows_forms_app1_1_1_api_keys.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html#aaa1fcba60e6dc133bad89123a646207d"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILocationService"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a794a40bb1ca26b382a8c51f6f026d823"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnLanguageChanged"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#af6828895b29aa6e2dd06911133376313"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnThemeChanged"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#a0fc424dcbe1ff3748a89f33980b88836"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ILocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IWeatherProvider"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IWeatherProviderFactory"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationInfo"><param name="Local" value="class_windows_forms_app1_1_1_location_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationService"><param name="Local" value="class_windows_forms_app1_1_1_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_location_service.html#a334f024d9efb28b725edf3c48fe5c2df"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationServiceException"><param name="Local" value="class_windows_forms_app1_1_1_location_service_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_location_service_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateService"><param name="Local" value="class_windows_forms_app1_1_1_location_service_factory.html#ae6023b83900c1d0ecf471d6e4ee98e28"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LoggingLocationService"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GeneralLoggingMessage"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a1cbf0d5b7633349799d47e6b741ae4ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a60078463c619a5657edd076ca15edfe4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Message"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html#a23b0fa00d6ffc529abe90851e63b27a0"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenWeatherProvider"><param name="Local" value="class_windows_forms_app1_1_1_open_weather_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RetryLocationService"><param name="Local" value="class_windows_forms_app1_1_1_retry_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLocationFromIpAsync"><param name="Local" value="class_windows_forms_app1_1_1_retry_location_service.html#abb29b792a1c44637396ba2ae309879a9"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherBitProvider"><param name="Local" value="class_windows_forms_app1_1_1_weather_bit_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WttrProvider"><param name="Local" value="class_windows_forms_app1_1_1_wttr_provider.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
         </UL>
       </UL>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Form"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.ApiKeys"><param name="Local" value="class_windows_forms_app1_1_1_api_keys.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.Coordinates"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_coordinates.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.CurrentWeatherResponse"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_current_weather_response.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Exception"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.Form1"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.LocationServiceException"><param name="Local" value="class_windows_forms_app1_1_1_location_service_exception.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="ILanguageObserverService"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherForecast.ForecastEntry"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_entry.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherForecast.ForecastInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_forecast_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageModule.ILanguageObserverService"><param name="Local" value="interface_language_module_1_1_i_language_observer_service.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.ILocationService"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.Form1"><param name="Local" value="class_windows_forms_app1_1_1_form1.html#top"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.LocationService"><param name="Local" value="class_windows_forms_app1_1_1_location_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.LoggingLocationService"><param name="Local" value="class_windows_forms_app1_1_1_logging_location_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.RetryLocationService"><param name="Local" value="class_windows_forms_app1_1_1_retry_location_service.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="IThemeObserverService"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.ILocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_i_location_service_factory.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.Form1"><param name="Local" value="class_windows_forms_app1_1_1_form1.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.LocationServiceFactory"><param name="Local" value="class_windows_forms_app1_1_1_location_service_factory.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="UserControl"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeModule.IThemeObserverService"><param name="Local" value="interface_theme_module_1_1_i_theme_observer_service.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.IWeatherProvider"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.ForecastUC"><param name="Local" value="class_windows_forms_app1_1_1_forecast_u_c.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.OpenWeatherProvider"><param name="Local" value="class_windows_forms_app1_1_1_open_weather_provider.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.WeatherBitProvider"><param name="Local" value="class_windows_forms_app1_1_1_weather_bit_provider.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.WttrProvider"><param name="Local" value="class_windows_forms_app1_1_1_wttr_provider.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.IWeatherProviderFactory"><param name="Local" value="interface_windows_forms_app1_1_1_i_weather_provider_factory.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LanguageModule.LanguageManagerService"><param name="Local" value="class_language_module_1_1_language_manager_service.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WindowsFormsApp1.LocationInfo"><param name="Local" value="class_windows_forms_app1_1_1_location_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.SystemInfo"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_system_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherForecast.TemperatureInfo"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_temperature_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ThemeModule.ThemeManagerService"><param name="Local" value="class_theme_module_1_1_theme_manager_service.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.WeatherConditions"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_conditions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherForecast.WeatherDescription"><param name="Local" value="class_weather_module_1_1_weather_forecast_1_1_weather_description.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherForecast"><param name="Local" value="class_weather_module_1_1_weather_forecast.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo"><param name="Local" value="class_weather_module_1_1_weather_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.WeatherMetrics"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_weather_metrics.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WeatherModule.WeatherInfo.Wind"><param name="Local" value="class_weather_module_1_1_weather_info_1_1_wind.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html#top"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="functions_prop.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
 </UL>

@@ -1,0 +1,82 @@
+\doxysection{Theme\+Module.\+Theme\+Manager\+Service Class Reference}
+\hypertarget{class_theme_module_1_1_theme_manager_service}{}\label{class_theme_module_1_1_theme_manager_service}\index{ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_theme_module_1_1_theme_manager_service_ab5834c7647fd0e86b82fea6075e9378e}\label{class_theme_module_1_1_theme_manager_service_ab5834c7647fd0e86b82fea6075e9378e} 
+{\bfseries Theme\+Manager\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructorul clasei.\+Se aloca spatiu pentru observeri si se seteaza tema implicita. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_theme_module_1_1_theme_manager_service_aebee9e4e4c64148767c298c39ee92ef1}{Register}} (\mbox{\hyperlink{interface_theme_module_1_1_i_theme_observer_service}{ITheme\+Observer\+Service}} observer)
+\begin{DoxyCompactList}\small\item\em Metoda de inregistrare a observatorilor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_theme_module_1_1_theme_manager_service_ad53f6bd5f128fddcb171cfa5717331d1}{Unregister}} (\mbox{\hyperlink{interface_theme_module_1_1_i_theme_observer_service}{ITheme\+Observer\+Service}} observer)
+\begin{DoxyCompactList}\small\item\em Metoda de eliminare a unui observator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_theme_module_1_1_theme_manager_service_a693c2d8396a4354a1f6439f2e5711cc5}{Change\+Theme}} (App\+Theme new\+Theme)
+\begin{DoxyCompactList}\small\item\em Metoda pentru schimbarea temei.\+Pentru fiecare observator se apeleaza metoda implementata in clasa derivata. \end{DoxyCompactList}\item 
+App\+Theme \mbox{\hyperlink{class_theme_module_1_1_theme_manager_service_a4f5329635678795454b1a1b0909e5333}{Get\+Current\+Theme}} ()
+\begin{DoxyCompactList}\small\item\em Metoda de tip Get pentru obtinerea temei curente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_theme_module_1_1_theme_manager_service_a693c2d8396a4354a1f6439f2e5711cc5}\index{ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}!ChangeTheme@{ChangeTheme}}
+\index{ChangeTheme@{ChangeTheme}!ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}}
+\doxysubsubsection{\texorpdfstring{ChangeTheme()}{ChangeTheme()}}
+{\footnotesize\ttfamily \label{class_theme_module_1_1_theme_manager_service_a693c2d8396a4354a1f6439f2e5711cc5} 
+void Theme\+Module.\+Theme\+Manager\+Service.\+Change\+Theme (\begin{DoxyParamCaption}\item[{App\+Theme}]{new\+Theme}{}\end{DoxyParamCaption})}
+
+
+
+Metoda pentru schimbarea temei.\+Pentru fiecare observator se apeleaza metoda implementata in clasa derivata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Theme} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_theme_module_1_1_theme_manager_service_a4f5329635678795454b1a1b0909e5333}\index{ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}!GetCurrentTheme@{GetCurrentTheme}}
+\index{GetCurrentTheme@{GetCurrentTheme}!ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}}
+\doxysubsubsection{\texorpdfstring{GetCurrentTheme()}{GetCurrentTheme()}}
+{\footnotesize\ttfamily \label{class_theme_module_1_1_theme_manager_service_a4f5329635678795454b1a1b0909e5333} 
+App\+Theme Theme\+Module.\+Theme\+Manager\+Service.\+Get\+Current\+Theme (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metoda de tip Get pentru obtinerea temei curente. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_theme_module_1_1_theme_manager_service_aebee9e4e4c64148767c298c39ee92ef1}\index{ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}!Register@{Register}}
+\index{Register@{Register}!ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily \label{class_theme_module_1_1_theme_manager_service_aebee9e4e4c64148767c298c39ee92ef1} 
+void Theme\+Module.\+Theme\+Manager\+Service.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_theme_module_1_1_i_theme_observer_service}{ITheme\+Observer\+Service}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Metoda de inregistrare a observatorilor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_theme_module_1_1_theme_manager_service_ad53f6bd5f128fddcb171cfa5717331d1}\index{ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!ThemeModule.ThemeManagerService@{ThemeModule.ThemeManagerService}}
+\doxysubsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily \label{class_theme_module_1_1_theme_manager_service_ad53f6bd5f128fddcb171cfa5717331d1} 
+void Theme\+Module.\+Theme\+Manager\+Service.\+Unregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_theme_module_1_1_i_theme_observer_service}{ITheme\+Observer\+Service}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Metoda de eliminare a unui observator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Andreea/\+Desktop/\+Anul 3/sem 2/\+IP/proiect/\+Proiect-\/n-\/echip-\/ingineria-\/program-\/rii/\+Theme\+Module/\+Theme\+Module/Theme\+Manager\+Service.\+cs\end{DoxyCompactItemize}

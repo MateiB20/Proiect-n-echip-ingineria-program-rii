@@ -1,0 +1,77 @@
+\doxysection{Windows\+Forms\+App1.\+Logging\+Location\+Service Class Reference}
+\hypertarget{class_windows_forms_app1_1_1_logging_location_service}{}\label{class_windows_forms_app1_1_1_logging_location_service}\index{WindowsFormsApp1.LoggingLocationService@{WindowsFormsApp1.LoggingLocationService}}
+
+
+Implementare decorator serviciu logging.  
+
+
+Inheritance diagram for Windows\+Forms\+App1.\+Logging\+Location\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_windows_forms_app1_1_1_logging_location_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_windows_forms_app1_1_1_logging_location_service_a588ca9a50bde15204149d68e6ea7f687}\label{class_windows_forms_app1_1_1_logging_location_service_a588ca9a50bde15204149d68e6ea7f687} 
+{\bfseries Logging\+Location\+Service} (\mbox{\hyperlink{class_windows_forms_app1_1_1_i_location_service}{ILocation\+Service}} inner)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_windows_forms_app1_1_1_location_info}{Location\+Info}} $>$ \mbox{\hyperlink{class_windows_forms_app1_1_1_logging_location_service_a60078463c619a5657edd076ca15edfe4}{Get\+Location\+From\+Ip\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Logging pentru access la Weather\+App. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_windows_forms_app1_1_1_logging_location_service_a1cbf0d5b7633349799d47e6b741ae4ed}{General\+Logging\+Message}} (String city, double longitude, double latitude)
+\begin{DoxyCompactList}\small\item\em Scrie o intrare de log pentru o locatie specifica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_windows_forms_app1_1_1_i_location_service}{Windows\+Forms\+App1.\+ILocation\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{class_windows_forms_app1_1_1_location_info}{Location\+Info}} $>$ {\bfseries Get\+Location\+From\+Ip\+Async} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_windows_forms_app1_1_1_logging_location_service_a23b0fa00d6ffc529abe90851e63b27a0}\label{class_windows_forms_app1_1_1_logging_location_service_a23b0fa00d6ffc529abe90851e63b27a0} 
+string {\bfseries Message}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Salveaza inregistrari despre locatie si timpul local al accesarii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementare decorator serviciu logging. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_windows_forms_app1_1_1_logging_location_service_a1cbf0d5b7633349799d47e6b741ae4ed}\index{WindowsFormsApp1.LoggingLocationService@{WindowsFormsApp1.LoggingLocationService}!GeneralLoggingMessage@{GeneralLoggingMessage}}
+\index{GeneralLoggingMessage@{GeneralLoggingMessage}!WindowsFormsApp1.LoggingLocationService@{WindowsFormsApp1.LoggingLocationService}}
+\doxysubsubsection{\texorpdfstring{GeneralLoggingMessage()}{GeneralLoggingMessage()}}
+{\footnotesize\ttfamily \label{class_windows_forms_app1_1_1_logging_location_service_a1cbf0d5b7633349799d47e6b741ae4ed} 
+void Windows\+Forms\+App1.\+Logging\+Location\+Service.\+General\+Logging\+Message (\begin{DoxyParamCaption}\item[{String}]{city}{, }\item[{double}]{longitude}{, }\item[{double}]{latitude}{}\end{DoxyParamCaption})}
+
+
+
+Scrie o intrare de log pentru o locatie specifica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Numele orașului pentru care se face logging \\
+\hline
+{\em longitude} & Longitudinea locatiei \\
+\hline
+{\em latitude} & Latitudinea locatiei \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_windows_forms_app1_1_1_logging_location_service_a60078463c619a5657edd076ca15edfe4}\index{WindowsFormsApp1.LoggingLocationService@{WindowsFormsApp1.LoggingLocationService}!GetLocationFromIpAsync@{GetLocationFromIpAsync}}
+\index{GetLocationFromIpAsync@{GetLocationFromIpAsync}!WindowsFormsApp1.LoggingLocationService@{WindowsFormsApp1.LoggingLocationService}}
+\doxysubsubsection{\texorpdfstring{GetLocationFromIpAsync()}{GetLocationFromIpAsync()}}
+{\footnotesize\ttfamily \label{class_windows_forms_app1_1_1_logging_location_service_a60078463c619a5657edd076ca15edfe4} 
+override async Task$<$ \mbox{\hyperlink{class_windows_forms_app1_1_1_location_info}{Location\+Info}} $>$ Windows\+Forms\+App1.\+Logging\+Location\+Service.\+Get\+Location\+From\+Ip\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Logging pentru access la Weather\+App. 
+
+\begin{DoxyReturn}{Returns}
+Obiect al clasei "{}\+Location\+Info"{} sau exceptie in caz de eroare 
+\end{DoxyReturn}
+\texorpdfstring{$>$}{>} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Andreea/\+Desktop/\+Anul 3/sem 2/\+IP/proiect/\+Proiect-\/n-\/echip-\/ingineria-\/program-\/rii/\+Location\+Service/\+Location\+Service/Logging\+Location\+Service.\+cs\end{DoxyCompactItemize}

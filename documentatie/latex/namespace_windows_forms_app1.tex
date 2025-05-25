@@ -3,11 +3,34 @@
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class {\bfseries Dictionary}
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_api_keys}{Api\+Keys}}
+\begin{DoxyCompactList}\small\item\em Fetch la cheile api din Dictionarul extern. \end{DoxyCompactList}\item 
+class {\bfseries Api\+Keys\+Dictionary}
 \begin{DoxyCompactList}\small\item\em A strongly-\/typed resource class, for looking up localized strings, etc. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_windows_forms_app1_1_1_forecast_u_c}{Forecast\+UC}}
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_i_location_service}{ILocation\+Service}}
+\begin{DoxyCompactList}\small\item\em Interfata abstracta pentru servicii locatie curenta pe baza adresei IP ~\newline
+ Orice implementare concreta defineste aceasta metoda. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_i_location_service_factory}{ILocation\+Service\+Factory}}
+\begin{DoxyCompactList}\small\item\em Interfata abstracta pentru fabrica de servicii locatie curenta. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_windows_forms_app1_1_1_i_weather_provider}{IWeather\+Provider}}
+\begin{DoxyCompactList}\small\item\em Interfata pentru api-\/uri de weather provider. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_windows_forms_app1_1_1_i_weather_provider_factory}{IWeather\+Provider\+Factory}}
+\begin{DoxyCompactList}\small\item\em Interfata pentru fabrica de weather provider. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_location_info}{Location\+Info}}
+\begin{DoxyCompactList}\small\item\em Model de date pentru deserializare raspuns JSON. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_location_service}{Location\+Service}}
+\begin{DoxyCompactList}\small\item\em Serviciu preluare date locatie curenta. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_location_service_exception}{Location\+Service\+Exception}}
+\begin{DoxyCompactList}\small\item\em Clasa de Exceptie pentru a semnala erori în procesul serviciului de locatiei curenta. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_location_service_factory}{Location\+Service\+Factory}}
+\begin{DoxyCompactList}\small\item\em Implementare concreta a fabricii de \doxylink{class_windows_forms_app1_1_1_location_service}{Location\+Service} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_logging_location_service}{Logging\+Location\+Service}}
+\begin{DoxyCompactList}\small\item\em Implementare decorator serviciu logging. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_open_weather_provider}{Open\+Weather\+Provider}}
 \item 
-class \mbox{\hyperlink{class_windows_forms_app1_1_1_form1}{Form1}}
-\begin{DoxyCompactList}\small\item\em Formularul principal al aplicatiei Weather App. Se ocupa de gestionarea temei, limbii, locatiei si informatiilor meteo. \end{DoxyCompactList}\item 
-class {\bfseries Program}
-\end{DoxyCompactItemize}
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_retry_location_service}{Retry\+Location\+Service}}
+\begin{DoxyCompactList}\small\item\em Implementare decorator serviciu reincercare. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_weather_bit_provider}{Weather\+Bit\+Provider}}
+\begin{DoxyCompactList}\small\item\em Weather provider = \doxylink{class_windows_forms_app1_1_1_weather_bit_provider}{Weather\+Bit\+Provider}\+: \href{https://weatherbit.com/}{\texttt{ https\+://weatherbit.\+com/}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_windows_forms_app1_1_1_wttr_provider}{Wttr\+Provider}}
+\begin{DoxyCompactList}\small\item\em Weather provider = Wttr\+: wttr.\+io. \end{DoxyCompactList}\end{DoxyCompactItemize}
