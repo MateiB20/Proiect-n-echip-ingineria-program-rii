@@ -92,7 +92,7 @@ namespace ThemeTests
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
-        public void Unregister_UnregisteredObserver_ShouldThrow()
+        public void TestUnregisterNeinregistrat()
         {
             var manager = new ThemeManagerService();
             var observer = new TestThemeObserver();

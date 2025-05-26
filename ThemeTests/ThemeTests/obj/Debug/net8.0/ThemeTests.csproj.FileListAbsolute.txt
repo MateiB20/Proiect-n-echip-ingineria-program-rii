@@ -155,7 +155,6 @@ C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-pr
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\ThemeModule.dll
-C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\ThemeModule.pdb
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\obj\Debug\net8.0\ThemeTests.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\obj\Debug\net8.0\ThemeTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -169,3 +168,4 @@ C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-pr
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\obj\Debug\net8.0\ThemeTests.pdb
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\obj\Debug\net8.0\ThemeTests.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\obj\Debug\net8.0\ref\ThemeTests.dll
+C:\Users\Lenovo\Desktop\Facultate\ANUL 3\IP_proiect\Proiect-n-echip-ingineria-program-rii\ThemeTests\ThemeTests\bin\Debug\net8.0\ThemeModule.xml

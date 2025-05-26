@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThemeTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+225b8b276c30b49e58e07b4caed07962084d801d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a8eb92e2c9edc70b7993f804b694eb7edbf8e9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThemeTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThemeTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
