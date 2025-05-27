@@ -41,17 +41,10 @@ C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-progr
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\ref\WeatherApp.dll
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherApp.xml
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\obj\Debug\net8.0-windows7.0\WeatherApp.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LanguageModule.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LanguageModule.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationInfo.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationInfo.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationService.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationService.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationServiceFactory.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\LocationServiceFactory.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\ThemeModule.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\ThemeModule.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherModule.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherModule.xml
-C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherProvider.pdb
 C:\Users\Andreea\Desktop\Anul 3\sem 2\IP\proiect\Proiect-n-echip-ingineria-program-rii\WeatherApp\WeatherApp\bin\Debug\net8.0-windows7.0\WeatherProvider.xml
